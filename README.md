@@ -1,4 +1,5 @@
 PTAM Plus
+============
 
 PTAM (Parallel Tracking and Mapping) re-released under GPLv3.
 
@@ -32,7 +33,7 @@ For instance,  UI code is completely separated from core slam code.
 1. [CVD library](http://www.edwardrosten.com/cvd)
 2. [TooN](http://www.edwardrosten.com/cvd/toon.html)
 3. [GVars3](http://www.edwardrosten.com/cvd/gvars3.html)
-4. [OpenCV](http://www.opencv.org) : for `apps/slam` and `apps/calibration` to catpure video)
+4. [OpenCV](http://www.opencv.org) : for `apps/slam` and `apps/calibration` to catpure video
 5. [GLUT](http://www.freeglut.org) : for `apps` with OpenGL need
 6. [CMake](http://www.cmake.org): for compilation
 
