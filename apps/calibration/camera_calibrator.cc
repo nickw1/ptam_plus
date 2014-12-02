@@ -20,27 +20,11 @@ int main(int argc, char **argv) {
   GVars3::GUI.StartParserThread();
   atexit(GVars3::GUI.StopParserThread); // Clean up readline when program quits
 
-  VideoCaptureDispatch<CameraFamily::PGR_FIREFLY_MV> videodispatch;
-  string vsource = GVars3::GV3::get<string>("Video.source");
-  if (vsource.length() < 3) {
-    if(!videodispatch.open(atoi(vsource.c_str())))
-      return -1;
-  } else {
-    if(!videodispatch.open(vsource))
-      return -1;
-  }
-  videodispatch.setProperty("Brightness", GVars3::GV3::get<int>("Video.brightness", 50, GVars3::SILENT));
-  videodispatch.setProperty("Exposure", GVars3::GV3::get<int>("Video.exposure", 40, GVars3::SILENT));
-  videodispatch.setProperty("Gain", GVars3::GV3::get<int>("Video.gain", 40, GVars3::SILENT));
-  videodispatch.setProperty("Shutter", GVars3::GV3::get<int>("Video.shutter", 530, GVars3::SILENT));
-
-
   GVars3::GV3::get<TooN::Vector<NUMTRACKERCAMPARAMETERS> >(
         "Camera.Parameters", ATANCamera::mvDefaultParams, GVars3::SILENT);
 
   try {
     CameraCalibrator c;
-    c.mVideoSource = &videodispatch;
     c.Run();
   } catch(CVD::Exceptions::All e) {
     printf("Oops! camera_calibrator.cc main()::%s\n", e.what.c_str());
@@ -50,6 +34,14 @@ int main(int argc, char **argv) {
 namespace ptam {
 CameraCalibrator::CameraCalibrator()
   : mCamera("Camera") {
+
+  if (!capture.open(0)) {
+    printf("ERROR: Cannot open cv::VideoCapture\n");
+    return exit(1);
+  }
+  capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+  capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+
   mbDone = false;
 
   TooN::Vector<2> v2 = mCamera.GetImageSize();
@@ -94,7 +86,9 @@ void CameraCalibrator::Run() {
     CVD::Image<CVD::byte>  imFrameBW(img_size);
 
     // Grab new video frame...
-    rgb_frame = mVideoSource->grabFrame();
+    capture.read(rgb_frame);
+    cv::cvtColor(rgb_frame, rgb_frame, CV_BGR2RGB);
+    
     cv::resize(rgb_frame, rgb_frame, cv::Size(v2[0], v2[1]));
     CVD::SubImage<CVD::Rgb<CVD::byte> > cvd_rgb_frame(
           (CVD::Rgb<CVD::byte>*)rgb_frame.data,

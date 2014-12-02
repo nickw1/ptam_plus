@@ -20,7 +20,8 @@ public:
   void HandleFrame(CVD::Image<CVD::byte> imFrame);
   static void MainLoopCallback(void* pvUserData);
   void MainLoopStep();
-  i3d::VideoCaptureDispatch<i3d::CameraFamily::PGR_FIREFLY_MV>* mVideoSource;
+  
+  cv::VideoCapture capture;
 
   cv::Ptr<GLWindow2> mGLWindow;
   ATANCamera mCamera;

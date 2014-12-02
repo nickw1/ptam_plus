@@ -83,6 +83,8 @@ void SlamSystem::Run() {
 
     // Grab new video frame...
     mCapture.read(rgb_frame);
+    cv::cvtColor(rgb_frame, rgb_frame, CV_BGR2RGB);
+
     cv::resize(rgb_frame, rgb_frame, cv::Size(640, 480));
     CVD::SubImage<CVD::Rgb<CVD::byte> > cvd_rgb_frame(
           (CVD::Rgb<CVD::byte>*)rgb_frame.data,

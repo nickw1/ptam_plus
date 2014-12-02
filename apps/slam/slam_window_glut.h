@@ -24,6 +24,14 @@ template<typename CameraType>
 class SlamWindowCallback : public ptam::GLWindowCallback {
 public:
   SlamWindowCallback() {
+
+    if (!capture.open(0)) {
+      printf("ERROR: Cannot open cv::VideoCapture\n");
+      return exit(1);
+    }
+    capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+    capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+
     // First, check if the camera is calibrated.
     // If not, we need to run the calibration widget.
     TooN::Vector<NUMTRACKERCAMPARAMETERS> vTest;
@@ -64,7 +72,11 @@ protected:
       // Grab new video frame...
       cv::Mat rgb_frame;
       capture.read(rgb_frame);
-      cv::resize(rgb_frame, rgb_frame, cv::Size(640, 480));
+      cv::cvtColor(rgb_frame, rgb_frame, CV_BGR2RGB);
+      
+      if (rgb_frame.cols != 640 || rgb_frame.rows != 480)
+        cv::resize(rgb_frame, rgb_frame, cv::Size(640, 480));
+
       clone_rgb = rgb_frame.clone();
       CVD::SubImage<CVD::Rgb<CVD::byte> > cvd_rgb_frame(
             (CVD::Rgb<CVD::byte>*)rgb_frame.data,
