@@ -37,8 +37,9 @@ For instance,  UI code is completely separated from core slam code.
 
 ## External dependencies
 4. [OpenCV](http://www.opencv.org) : for `apps/slam` and `apps/calibration` to catpure video
-5. [GLUT](http://www.freeglut.org) : for `apps` with OpenGL need
-6. [CMake](http://www.cmake.org): for compilation
+5. [GLUT](http://freeglut.sourceforge.net) : for `apps` with OpenGL need
+6. [GLEW](http://glew.sourceforge.net): for windows only
+7. [CMake](http://www.cmake.org): for compilation
 
 # Todo
 - more cleanup, c++11 code (modern c++).
