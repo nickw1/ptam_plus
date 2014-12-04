@@ -7,7 +7,7 @@
 //  user-interface funtionality: A gvars-driven clickable menu, and a
 //  caption line for text display. Also provides some handy GL helpers
 //  and a wrapper for CVD's text display routines.
-
+#include "ui/open_gl.h"
 #include <cvd/glwindow.h>
 #include <TooN/TooN.h>
 

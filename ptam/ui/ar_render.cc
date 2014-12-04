@@ -1,7 +1,7 @@
 // authors: Thanh Nguyen<thanh@icg.tugraz.at>
 // Copyright 2012, TU Graz
-
 #include "ui/ar_render.h"
+#include <algorithm>
 #include <cvd/gl_helpers.h>
 #include "math/atan_camera.h"
 

@@ -1,128 +1,127 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.9)
 
-project(ptam_and_apps)
+set(THE_PROJECT_NAME PTAM_and_apps)
+project(${THE_PROJECT_NAME})
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)  # for organizing code to folders
 
-#set(CMAKE_BUILD_TYPE Release)
-set(CMAKE_BUILD_TYPE RelWithDebInfo)
-#set(CMAKE_BUILD_TYPE Debug)
+set(PTAM_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+if(NOT THE_PROJECT_ROOT OR THE_PROJECT_ROOT STREQUAL "")
+  set(THE_PROJECT_ROOT ${PTAM_ROOT})
+endif()
 
-if(WIN32)
-  add_definitions(-DGL_GLEXT_PROTOTYPES=1 -DUSE_EIGEN_OPENGLSUPPORT
-                  -D_ITERATOR_DEBUG_LEVEL=0  # this is for boost built compatability (with thirtparty libs:freeglut, glew, etc)
-                  -DEIGEN_DONT_ALIGN_STATICALLY  # this is unusual
-                  -DHAVE_GLEW   # this is used in GL/gl.h to include GL/glew.h ontop (quick solution for glew)
-                  )
-  if(CMAKE_BUILD_TYPE STREQUAL Debug)
-    #add_definitions(-D_ITERATOR_DEBUG_LEVEL=2)
-  else()
-    add_definitions(/O2 /arch:SSE2 /arch:SSE3 -D_SECURE_SCL=0)
-    if(CMAKE_CXX_FLAGS MATCHES "/RTC1")
-     string(REPLACE "/RTC1" " " CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
-     message(STATUS ${PROJECT_NAME}  " CMAKE_CXX_FLAGS removing /RTC1")
-    endif()
-  endif()
-
-  set(EXTRA_INC_DIRS ${EXTRA_INC_DIRS} $ENV{OPENGL_ROOT}/include)
-  STRING (REGEX REPLACE "/RTC(su|[1su])" "" CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
-else(WIN32)
-  add_definitions(-DGL_GLEXT_PROTOTYPES=1 -DUSE_EIGEN_OPENGLSUPPORT)
-  if(NOT(CMAKE_BUILD_TYPE STREQUAL Debug))
-    add_definitions(-O3 -msse3)
-  endif()
-endif(WIN32)
 ## Add directories of own CMake modules
 # e.g. define ICG_CMAKE_MODULE_PATH in your environment
 file(TO_CMAKE_PATH "$ENV{CMAKE_MODULE_PATH}" OT_CMAKE_MODULE_PATH)
-set(CMAKE_MODULE_PATH ${OT_CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules )
-include(Config)
-include(Util)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} 
+                      ${CMAKE_CURRENT_SOURCE_DIR}/cmake
+                      ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules )
+include(PTAMUtil)
 message("PTAM cmake modules: " ${CMAKE_MODULE_PATH} )
 
-##-----------------------------------------------------------------------------
-# Optional Configuration
-option(WITH_UI "Build Library with UI" ON)
 
-##-----------------------------------------------------------------------------
+
+# postfix, based on type
+set(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "postfix applied to debug build of libraries")
+set(CMAKE_RELEASE_POSTFIX "" CACHE STRING "postfix applied to release build of libraries")
+set(CMAKE_RELWITHDEBINFO_POSTFIX "_rd" CACHE STRING "postfix applied to release-with-debug-information libraries")
+set(CMAKE_MINSIZEREL_POSTFIX "_s" CACHE STRING "postfix applied to minimium-size-build libraries")
+
+# work out the postfix; required where we use OUTPUT_NAME
+if(CMAKE_BUILD_TYPE MATCHES Release)
+  set(EXE_POSTFIX)
+elseif(CMAKE_BUILD_TYPE MATCHES Debug)
+  set(EXE_POSTFIX ${CMAKE_DEBUG_POSTFIX})
+elseif(CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
+  set(EXE_POSTFIX ${CMAKE_RELWITHDEBINFO_POSTFIX})
+elseif(CMAKE_BUILD_TYPE MATCHES MinSizeRel)
+  set(EXE_POSTFIX ${CMAKE_MINSIZEREL_POSTFIX})
+endif(CMAKE_BUILD_TYPE MATCHES Release)
+
+if(NOT THE_PROJECT_ROOT OR THE_PROJECT_ROOT STREQUAL "")
+  cmaker_print_error("Please set THE_PROJECT_ROOT to your project root!!!")
+endif()
+
+if(NOT THE_LIB_RUNTIME_OUTPUT_DIRECTORY)
+  set(THE_LIB_RUNTIME_OUTPUT_DIRECTORY ${THE_PROJECT_ROOT}/bin CACHE PATH "Target for the binaries")
+  set(THE_LIB_LIBRARY_OUTPUT_DIRECTORY ${THE_PROJECT_ROOT}/lib CACHE PATH "Target for the libraries")
+endif()
+link_directories(${THE_LIB_LIBRARY_OUTPUT_DIRECTORY})
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${THE_LIB_LIBRARY_OUTPUT_DIRECTORY})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG ${THE_LIB_LIBRARY_OUTPUT_DIRECTORY})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${THE_LIB_RUNTIME_OUTPUT_DIRECTORY})
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${THE_LIB_LIBRARY_OUTPUT_DIRECTORY})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE ${THE_LIB_LIBRARY_OUTPUT_DIRECTORY})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${THE_LIB_RUNTIME_OUTPUT_DIRECTORY})
+
+set(PTAM_WORLD_VERSION 1)
+set(PTAM_MAJOR_VERSION 0)
+set(PTAM_MINOR_VERSION 0)
+message(STATUS "Welcome! ptam version ${PTAM_COLOR_BLUE}${PTAM_WORLD_VERSION}.${PTAM_MAJOR_VERSION}.${PTAM_MINOR_VERSION}${PTAM_COLOR_RESET}")
+message(STATUS "ptam cmake module paths: ${PTAM_COLOR_BLUE}${CMAKE_MODULE_PATH}${PTAM_COLOR_RESET}")
+
+set(PTAM_CXX_FLAGS)
+add_definitions(-DPTAM_ROOT="${PTAM_ROOT}")
+
+if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+  set(PTAM_CXX_FLAGS " -stdlib=libstdc++ ")  # prevent default libc++ on new mac
+endif()
+
+## Common configuration
+add_definitions(-Dptam3_HAVE_TOON -DTOON_TYPEOF_DECLTYPE)
+set(CMAKE_CXX_FLAGS ${PTAM_CXX_FLAGS})
+PTAM_build_setting()
+
+## Build Options ===============================================================
+# Allow the developer to select if Dynamic or Static libraries are built
+option(PTAM_BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" OFF)
+set(PTAM_LIB_TYPE STATIC)
+if(PTAM_BUILD_SHARED_LIBS)
+  set(PTAM_LIB_TYPE SHARED)
+  add_definitions(-DPTAM_SHARED_LIBS)
+endif()
+
+## External libraries (included in this repo) ==================================
+# TooN
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/external/TooN)
+  set(TooN_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external)
+elseif(NOT TooN_INCLUDE_DIR OR TooN_INCLUDE_DIR STREQUAL "")
+  message(ERROR "Please set TooN_INCLUDE_DIR to the TooN library folder")
+endif()
+include_directories(${TooN_INCLUDE_DIR})
+
 ##  LibCVD
-find_package(CVD REQUIRED)
-set(EXTRA_INC_DIRS
-    ${EXTRA_INC_DIRS}
-    ${CVD_INCLUDE_DIR}
-)
-set(EXTRA_LIBRARIES
-    ${EXTRA_LIBRARIES}
-    ${CVD_LIBRARY}
-)
-message("Found CVD libs: ${CVD_LIBRARY}")
-message("CVD INC DIR: ${CVD_INCLUDE_DIR}")
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/external/libcvd)
+  add_subdirectory(external/libcvd)
+  include_directories(${CMAKE_CURRENT_SOURCE_DIR}/external/libcvd)
+  list(APPEND PTAM_EXTERNAL_LIBS libcvd)
+else()
+  find_package(CVD REQUIRED)
+  include(${CVD_INCLUDE_DIR})
+  list(APPEND PTAM_EXTERNAL_LIBS ${CVD_LIBRARY})
+endif()
 
-##-----------------------------------------------------------------------------
-## TooN
-find_package(TooN REQUIRED)
-
-set(EXTRA_INC_DIRS
-    ${EXTRA_INC_DIRS}
-    ${TooN_INCLUDE_DIR}
-)
-set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} blas clapack)
-
-##-----------------------------------------------------------------------------
 ## GVars3
-find_package(GVars3 REQUIRED)
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/external/gvars-3.0)
+  add_subdirectory(external/gvars-3.0)
+  include_directories(${CMAKE_CURRENT_SOURCE_DIR}/external/gvars-3.0)
+  list(APPEND PTAM_EXTERNAL_LIBS gvars)
+else()
+  find_package(GVars3 REQUIRED)
+  include(${GVars3_INCLUDE_DIR})
+  list(APPEND PTAM_EXTERNAL_LIBS ${GVars3_LIBRARY})
+endif()
 
-set(EXTRA_INC_DIRS
-    ${EXTRA_INC_DIRS}
-    ${GVars3_INCLUDE_DIR}
-)
-set(EXTRA_LIBRARIES
-    ${EXTRA_LIBRARIES}
-    ${GVars3_LIBRARY}
-)
+option(PTAM_WITH_UI "Build Library with UI" OFF)
+if(PTAM_WITH_UI)
+  include(PTAM_UI_Dependencies)  # more dependencies: opencv, opengl, glut, glew.
+endif()
 
-##-----------------------------------------------------------------------------
-## Boost
-set(Boost_ADDITIONAL_VERSIONS "1.50.0")
-set(Boost_USE_STATIC_LIBS        ON)
-
-find_package(Boost REQUIRED COMPONENTS thread chrono date_time filesystem system serialization)
-
-if(Boost_FOUND)
-set(EXTRA_INC_DIRS
-    ${EXTRA_INC_DIRS}
-    ${Boost_INCLUDE_DIRS}
-)
-set(EXTRA_LIBRARIES
-    ${EXTRA_LIBRARIES}
-    ${Boost_LIBRARIES})
-message("Found Boost Version ")
-message("boost libs: ${Boost_LIBRARIES}")
-endif(Boost_FOUND)
-
-if(WITH_UI)
-##-----------------------------------------------------------------------------
-# dc1394_2
-find_package(DC1394)
-if(DC1394_2_FOUND)
-  add_definitions(-DHAVE_DC1394_2)
-  set(EXTRA_INC_DIRS
-    ${EXTRA_INC_DIRS}
-    ${DC1394_2_INCLUDE_DIR})
-  set(EXTRA_LIBRARIES
-    ${EXTRA_LIBRARIES}
-    ${DC1394_LIBRARIES})
-endif(DC1394_2_FOUND)
-
-endif(WITH_UI)
-
-# the lib
-set(PTAM_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
-set(PTAM_DIR ${CMAKE_CURRENT_SOURCE_DIR}/ptam)
-set(EXTRA_INC_DIRS  ${EXTRA_INC_DIRS} ${PTAM_DIR})
-set(PTAM_LIBRARIES ptam_construct ptam_track ptam_math ptam_sensor ptam_ui)
-
-message("EXTRA_INC_DIRS:${EXTRA_INC_DIRS}")
-
+## ptam library ===============================================================
 add_subdirectory(ptam)
+set(PTAM_LIBS PTAM)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ptam)
 
 # applications
 add_subdirectory(apps)

@@ -1,9 +1,9 @@
 #ifndef APPS_CALIBRATION_CONFIG_H
 #define APPS_CALIBRATION_CONFIG_H
 
-#define CONFIG_DIR "/Users/thanhnguyen/dev/ptam_plus/trunk/apps/calibration"
+#define CONFIG_DIR "C:/Users/Thanh/dev/ptam_plus/apps/calibration"
 
-#define CONFIG_FILE  "/Users/thanhnguyen/dev/ptam_plus/trunk/apps/calibration/calibrator_settings.cfg"
+#define CONFIG_FILE  "C:/Users/Thanh/dev/ptam_plus/apps/calibration/calibrator_settings.cfg"
 
 
 #define DATA_PATH(file) CONFIG_DIR "/" file

@@ -571,7 +571,7 @@ vector<CalibImage::ErrorAndJacobians> CalibImage::Project(ATANCamera &Camera) {
     TooN::Matrix<2> m2CamDerivs = Camera.GetProjectionDerivs();
 
     for (int dof = 0; dof < 6; dof++) {
-      const TooN::Vector<4> v4Motion = SE3<>::generator_field(dof, unproject(v3Cam));
+      const TooN::Vector<4> v4Motion = TooN::SE3<>::generator_field(dof, unproject(v3Cam));
       TooN::Vector<2> v2CamFrameMotion;
       v2CamFrameMotion[0] = (v4Motion[0] - v3Cam[0] * v4Motion[2] * dOneOverCameraZ) * dOneOverCameraZ;
       v2CamFrameMotion[1] = (v4Motion[1] - v3Cam[1] * v4Motion[2] * dOneOverCameraZ) * dOneOverCameraZ;

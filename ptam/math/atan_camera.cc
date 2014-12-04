@@ -1,8 +1,9 @@
 // Copyright 2008 Isis Innovation Limited
 #include "math/atan_camera.h"
+#include <algorithm>
+#include <iostream>
 #include <TooN/helpers.h>
 #include <cvd/vector_image_ref.h>
-#include <iostream>
 #include <gvars3/instances.h>
 using namespace std;
 
@@ -52,8 +53,8 @@ void ATANCamera::RefreshParams() {
 
   // work out biggest radius in image
   TooN::Vector<2> v2;
-  v2[0]= max((*mgvvCameraParams)[2], 1.0 - (*mgvvCameraParams)[2]) / (*mgvvCameraParams)[0];
-  v2[1]= max((*mgvvCameraParams)[3], 1.0 - (*mgvvCameraParams)[3]) / (*mgvvCameraParams)[1];
+  v2[0]= std::max((*mgvvCameraParams)[2], 1.0 - (*mgvvCameraParams)[2]) / (*mgvvCameraParams)[0];
+  v2[1]= std::max((*mgvvCameraParams)[3], 1.0 - (*mgvvCameraParams)[3]) / (*mgvvCameraParams)[1];
   mdLargestRadius = invrtrans(sqrt(v2*v2));
 
   // At what stage does the model become invalid?

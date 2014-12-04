@@ -384,7 +384,7 @@ bool Bundle::Do_LM_Step(bool *pbAbortSignal) {
 #ifndef WIN32
         mS.slice(nJRow, nKRow, 6, 6) -= m63_MIJW_times_m3VStarInv * pMeas_ik->m63W.T();
 #else
-        Matrix<6> m = mS.slice(nJRow, nKRow, 6, 6);
+        TooN::Matrix<6> m = mS.slice(nJRow, nKRow, 6, 6);
         m -= m63_MIJW_times_m3VStarInv * pMeas_ik->m63W.T();
         mS.slice(nJRow, nKRow, 6, 6) = m;
 #endif

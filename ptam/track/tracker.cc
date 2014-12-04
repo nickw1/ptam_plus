@@ -1,12 +1,10 @@
 // Copyright 2008 Isis Innovation Limited
-#include "ui/open_gl.h"
 #include "track/tracker.h"
 
 #include <fstream>
 #include <fcntl.h>
 
 #include <cvd/utility.h>
-#include <cvd/gl_helpers.h>
 #include <cvd/fast_corner.h>
 #include <cvd/vision.h>
 #include <TooN/wls.h>
@@ -67,11 +65,7 @@ void Tracker::Reset() {
   // MapMaker will also clear the map.
   mMapMaker.RequestReset();
   while(!mMapMaker.ResetDone())
-#ifndef WIN32
-    usleep(10);
-#else
-    Sleep(1);
-#endif
+    std::this_thread::sleep_for(std::chrono::milliseconds(1));
 }
 
 // TrackFrame is called by System.cc with each incoming video frame.
@@ -799,9 +793,9 @@ string Tracker::GetMessageForUser() {
 
 void Tracker::CalcSBIRotation() {
   mpSBILastFrame->MakeJacs();
-  pair<SE2<>, double> result_pair;
+  pair<TooN::SE2<>, double> result_pair;
   result_pair = mpSBIThisFrame->IteratePosRelToTarget(*mpSBILastFrame, 6);
-  SE3<> se3Adjust = SmallBlurryImage::SE3fromSE2(result_pair.first, mCamera);
+  TooN::SE3<> se3Adjust = SmallBlurryImage::SE3fromSE2(result_pair.first, mCamera);
   mv6SBIRot = se3Adjust.ln();
 }
 

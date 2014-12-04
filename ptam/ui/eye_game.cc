@@ -196,7 +196,7 @@ void EyeGame::LookAt(int nEye, TooN::Vector<3> v3, double dRotLimit) {
   if (dMagn > dRotLimit) {
     v3Log = v3Log * ( dRotLimit / dMagn);
   }
-  ase3WorldFromEye[nEye].get_rotation() = ase3WorldFromEye[nEye].get_rotation() * SO3<>::exp(-v3Log);
+  ase3WorldFromEye[nEye].get_rotation() = ase3WorldFromEye[nEye].get_rotation() * TooN::SO3<>::exp(-v3Log);
 }
 
 void EyeGame::MakeShadowTex(){

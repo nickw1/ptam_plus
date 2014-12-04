@@ -33,7 +33,7 @@ MapMaker::MapMaker(Map& m, const ATANCamera &cam) : mMap(m), mCamera(cam), bStop
 //  start(); // This CVD::thread func starts the map-maker thread with function run()
   GVars3::GV3::Register(mgvdWiggleScale,
                         "MapMaker.WiggleScale", 0.1, GVars3::SILENT); // Default to 10cm between keyframes
-  mpThread = boost::shared_ptr<boost::thread>(new boost::thread(boost::bind(&MapMaker::run,this)));
+  mpThread = std::shared_ptr<std::thread>(new std::thread(std::bind(&MapMaker::run,this)));
 }
 
 void MapMaker::Reset() {
@@ -65,7 +65,8 @@ void MapMaker::run() {
   // ShouldStop is a CVD::Thread func which return true if the thread is told to exit.
   while (!shouldStop()) {
     CHECK_RESET;
-    sleep(5); // Sleep not really necessary, especially if mapmaker is busy
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(5));  // Sleep not really necessary, especially if mapmaker is busy
     CHECK_RESET;
 
     if (!mMap.IsGood())  // Nothing to do if there is no map yet!

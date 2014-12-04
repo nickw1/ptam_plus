@@ -1,18 +1,18 @@
 project(apps)
 
 
-if(WITH_UI)
+if(PTAM_WITH_UI)
 ##-----------------------------------------------------------------------------
 # Optional Apps
 
-option(APP_CALIBRATION "Build Calibration" ON)
-if(APP_CALIBRATION)
+option(PTAM_APP_CALIBRATION "Build Calibration" ON)
+if(PTAM_APP_CALIBRATION)
   add_subdirectory(calibration)
-endif(APP_CALIBRATION)
+endif(PTAM_APP_CALIBRATION)
 
-option(APP_SLAM "Build Slam" ON)
-if(APP_SLAM)
+option(PTAM_APP_SLAM "Build Slam" ON)
+if(PTAM_APP_SLAM)
   add_subdirectory(slam)
-endif(APP_SLAM)
+endif(PTAM_APP_SLAM)
 
-endif(WITH_UI)
+endif(PTAM_WITH_UI)
