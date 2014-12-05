@@ -37,7 +37,7 @@ CameraCalibrator::CameraCalibrator()
 
   if (!capture.open(0)) {
     printf("ERROR: Cannot open cv::VideoCapture\n");
-    return exit(1);
+    exit(1);
   }
   capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
   capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
