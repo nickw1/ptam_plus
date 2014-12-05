@@ -1,12 +1,10 @@
-// authors: Thanh Nguyen<thanh@icg.tugraz.at>
-// Copyright 2012, TU Graz
-
-#ifndef PTAM_UI_ARRENDER_H_
-#define PTAM_UI_ARRENDER_H_
+// Copyright(C) 2007-2014 The PTAM Authors. All rights reserved.
+#pragma once
 
 #include <vector>
 #include <TooN/TooN.h>
-#include <ui/open_gl.h>
+#include <TooN/se3.h>
+#include "ptam/ui/opengl.h"
 
 namespace ptam {
 // drawable object will inherate this
@@ -31,9 +29,11 @@ class ARRender {
 
   virtual void Render();
 
-  virtual int width() {return currentviewport_width;}
+  virtual int width() const {return currentviewport_width;}
 
-  virtual int height() {return currentviewport_height;}
+  virtual int height() const {return currentviewport_height;}
+
+  TooN::Vector<2> GetImageSize() const;
 
   virtual void resize_window(const int w, const int h) {
     currentviewport_width = w;
@@ -69,28 +69,7 @@ class ARRender {
 
  protected :
   // set frustum
-  virtual void set_frustum(double z_near = 0.001, double z_far = 1.e+6) {
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    // figure out right frustum for whole FrameBuffer
-    // (larger size than video frame, to cover texture)
-    static const TooN::Vector<2>
-        v2 = TooN::makeVector((framebuffer_width-frametexture_width) * 0.5,
-           (framebuffer_height-frametexture_height) * 0.5);
-    // note: this is in OpenGL coordinates (start bottom-left)
-    static const TooN::Vector<2> bl =
-        video_camera->UnProjectLinear(
-          TooN::makeVector(-v2[0], -v2[1]));
-    static const TooN::Vector<2> tr =
-        video_camera->UnProjectLinear(TooN::makeVector(
-                                        frametexture_width+v2[0],
-                                        frametexture_height+v2[1]));
-    double left = bl[0] * z_near;
-    double right = tr[0] * z_near;
-    double top = tr[1] * z_near;
-    double bottom = bl[1] * z_near;
-    ::glFrustum(left, right, bottom, top, z_near, z_far);
-  }
+   virtual void set_frustum(double z_near = 0.001, double z_far = 1.e+6);
 
   // generate texture mapping coordinates for distortion/undistortion rendering
   virtual void GenerateTextureMappingCoordinates();
@@ -140,4 +119,3 @@ class ARRender {
   int currentviewport_height;
 };
 }  // namespace ptam
-#endif  // PTAM_UI_ARRENDER_H_

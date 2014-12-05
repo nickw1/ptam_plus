@@ -3,15 +3,13 @@
 //
 // SmallBlurryImage - A small and blurry representation of an image.
 // used by the relocaliser.
-
-#ifndef PTAM_CONSTRUCT_SMALLBLURRYIMAGE_H_
-#define PTAM_CONSTRUCT_SMALLBLURRYIMAGE_H_
+#pragma once
 #include <cvd/image.h>
 #include <cvd/byte.h>
 #include <TooN/se2.h>
 #include <TooN/se3.h>
-#include "math/atan_camera.h"
-#include "construct/keyframe.h"
+#include "ptam/math/atan_camera.h"
+#include "ptam/construct/keyframe.h"
 
 namespace ptam {
 class SmallBlurryImage {
@@ -33,13 +31,3 @@ class SmallBlurryImage {
   static CVD::ImageRef mirSize;
 };
 }  // namespace ptam
-#endif
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4B6DF503-AF81-4AA8-BA81-2EA8A466AC38}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>tmglib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmglib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmglib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmglib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmglib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">tmglib.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">tmglib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">tmglib.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">tmglib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\TESTING\MATGEN\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\TESTING\MATGEN\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatms.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatme.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatmr.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatmt.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slagge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slagsy.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slakf2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slarge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slaror.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slarot.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm3.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm5.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm6.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm7.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slahilb.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatms.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatme.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatmr.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatmt.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clagge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\claghe.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clagsy.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clakf2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clarge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\claror.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clarot.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatm1.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clarnd.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatm2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatm3.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatm5.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clatm6.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\clahilb.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slatm1.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slaran.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\slarnd.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatms.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatme.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatmr.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatmt.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlagge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlagsy.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlakf2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlarge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlaror.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlarot.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm3.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm5.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm6.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm7.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlahilb.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatms.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatme.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatmr.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatmt.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlagge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlaghe.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlagsy.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlakf2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlarge.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlaror.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlarot.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatm1.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlarnd.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatm2.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatm3.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatm5.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlatm6.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\zlahilb.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlatm1.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlaran.c"  />
+    <ClCompile Include="..\..\..\TESTING\MATGEN\dlarnd.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/ZERO_CHECK.vcxproj">
+      <Project>8BD7F73F-12E3-4DF2-A4AF-719B4438F3E6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

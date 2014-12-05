@@ -9,9 +9,7 @@
 // report.
 //
 // Implementation according to Faugeras and Lustman
-
-#ifndef PTAM_TRACK_HOMOGRAPHY_INIT_H_
-#define PTAM_TRACK_HOMOGRAPHY_INIT_H_
+#pragma once
 #include <vector>
 #include <TooN/TooN.h>
 #include <TooN/se3.h>
@@ -59,4 +57,3 @@ class HomographyInit {
   std::vector<HomographyDecomposition> mvDecompositions;
 };
 }  // namespace ptam
-#endif

@@ -10,9 +10,7 @@
 // to search for that point.
 // Also stores stuff like inlier/outlier counts, and privat information for
 // both Tracker and MapMaker.
-
-#ifndef PTAM_CONSTRUCT_MAP_POINT_H_
-#define PTAM_CONSTRUCT_MAP_POINT_H_
+#pragma once
 #include <set>
 #include <TooN/TooN.h>
 #include <cvd/image_ref.h>
@@ -71,4 +69,3 @@ struct MapPoint {
   double dCreationTime; //timer.get_time() time of creation
 };
 }  // namespace ptam
-#endif

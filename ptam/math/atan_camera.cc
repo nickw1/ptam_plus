@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "math/atan_camera.h"
+#include "ptam/math/atan_camera.h"
 #include <algorithm>
 #include <iostream>
 #include <TooN/helpers.h>

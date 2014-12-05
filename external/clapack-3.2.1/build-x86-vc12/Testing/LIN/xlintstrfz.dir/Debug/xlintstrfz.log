@@ -1,0 +1,61 @@
+﻿Build started 12/5/2014 12:32:52 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfz.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintstrfz.dir\Debug\\" /Fd"xlintstrfz.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\zchkrfp.c ..\..\..\TESTING\LIN\zdrvrfp.c ..\..\..\TESTING\LIN\zdrvrf1.c ..\..\..\TESTING\LIN\zdrvrf2.c ..\..\..\TESTING\LIN\zdrvrf3.c ..\..\..\TESTING\LIN\zdrvrf4.c ..\..\..\TESTING\LIN\zerrrfp.c ..\..\..\TESTING\LIN\zlatb4.c ..\..\..\TESTING\LIN\zlaipd.c ..\..\..\TESTING\LIN\zlarhs.c ..\..\..\TESTING\LIN\zsbmv.c ..\..\..\TESTING\LIN\zget04.c ..\..\..\TESTING\LIN\zpot01.c ..\..\..\TESTING\LIN\zpot03.c ..\..\..\TESTING\LIN\zpot02.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\alasvm.c ..\..\..\INSTALL\windsecnd.c
+         zchkrfp.c
+         zdrvrfp.c
+         zdrvrf1.c
+         zdrvrf2.c
+         zdrvrf3.c
+         zdrvrf4.c
+         zerrrfp.c
+         zlatb4.c
+         zlaipd.c
+         zlarhs.c
+         zsbmv.c
+         zget04.c
+         zpot01.c
+         zpot03.c
+         zpot02.c
+         chkxer.c
+         xerbla.c
+         alaerh.c
+         aladhd.c
+         alahd.c
+         Generating Code...
+         Compiling...
+         alasvm.c
+         windsecnd.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfz.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfz.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfz.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintstrfz.dir\Debug\zchkrfp.obj
+         xlintstrfz.dir\Debug\zdrvrfp.obj
+         xlintstrfz.dir\Debug\zdrvrf1.obj
+         xlintstrfz.dir\Debug\zdrvrf2.obj
+         xlintstrfz.dir\Debug\zdrvrf3.obj
+         xlintstrfz.dir\Debug\zdrvrf4.obj
+         xlintstrfz.dir\Debug\zerrrfp.obj
+         xlintstrfz.dir\Debug\zlatb4.obj
+         xlintstrfz.dir\Debug\zlaipd.obj
+         xlintstrfz.dir\Debug\zlarhs.obj
+         xlintstrfz.dir\Debug\zsbmv.obj
+         xlintstrfz.dir\Debug\zget04.obj
+         xlintstrfz.dir\Debug\zpot01.obj
+         xlintstrfz.dir\Debug\zpot03.obj
+         xlintstrfz.dir\Debug\zpot02.obj
+         xlintstrfz.dir\Debug\chkxer.obj
+         xlintstrfz.dir\Debug\xerbla.obj
+         xlintstrfz.dir\Debug\alaerh.obj
+         xlintstrfz.dir\Debug\aladhd.obj
+         xlintstrfz.dir\Debug\alahd.obj
+         xlintstrfz.dir\Debug\alasvm.obj
+         xlintstrfz.dir\Debug\windsecnd.obj
+         xlintstrfz.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfz.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfz.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.41

@@ -1,9 +1,8 @@
-// authors: Thanh Nguyen<thanh@icg.tugraz.at>
-// Copyright 2012, TU Graz
-#include "ui/ar_render.h"
+// Copyright(C) 2007-2014 The PTAM Authors. All rights reserved.
+#include "ptam/ui/ar_render.h"
 #include <algorithm>
 #include <cvd/gl_helpers.h>
-#include "math/atan_camera.h"
+#include "ptam/math/atan_camera.h"
 
 using std::cout;
 using std::endl;
@@ -24,7 +23,7 @@ void ARRender<CameraType>::Init() {
   glEnable(GL_DEPTH_TEST);
   glEnable(GL_COLOR_MATERIAL);
 
-#ifdef WIN32
+#if defined(WIN32) && 1
   int ifake = 1;
   char* ca_fake = "";
   glutInit(&ifake, &ca_fake);
@@ -68,6 +67,11 @@ void ARRender<CameraType>::Configure(CameraType* camera) {
   framebuffer_height = frametexture_height*max_ratio;
   GenerateTextureMappingCoordinates();
   texture_initialized = false;
+}
+
+template<typename CameraType>
+TooN::Vector<2> ARRender<CameraType>::GetImageSize() const {
+  return video_camera->GetImageSize(); 
 }
 
 template<typename CameraType>
@@ -233,6 +237,30 @@ void ARRender<CameraType>::MapFBO2SystemFBO() {
 }
 
 template<typename CameraType>
+void ARRender<CameraType>::set_frustum(double z_near, double z_far) {
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  // figure out right frustum for whole FrameBuffer
+  // (larger size than video frame, to cover texture)
+  static const TooN::Vector<2>
+    v2 = TooN::makeVector((framebuffer_width - frametexture_width) * 0.5,
+    (framebuffer_height - frametexture_height) * 0.5);
+  // note: this is in OpenGL coordinates (start bottom-left)
+  static const TooN::Vector<2> bl =
+    video_camera->UnProjectLinear(
+    TooN::makeVector(-v2[0], -v2[1]));
+  static const TooN::Vector<2> tr =
+    video_camera->UnProjectLinear(TooN::makeVector(
+    frametexture_width + v2[0],
+    frametexture_height + v2[1]));
+  double left = bl[0] * z_near;
+  double right = tr[0] * z_near;
+  double top = tr[1] * z_near;
+  double bottom = bl[1] * z_near;
+  ::glFrustum(left, right, bottom, top, z_near, z_far);
+}
+
+template<typename CameraType>
 void ARRender<CameraType>::GenerateTextureMappingCoordinates() {
   // scaled by aspect ratio
   int y_step = static_cast<int>(
@@ -330,4 +358,6 @@ template ARRender<ATANCamera>::~ARRender();
 template void ARRender<ATANCamera>::Init();
 template void ARRender<ATANCamera>::Render();
 template void ARRender<ATANCamera>::Configure(ATANCamera* camera);
+template TooN::Vector<2> ARRender<ATANCamera>::GetImageSize() const;
+template void ARRender<ATANCamera>::set_frustum(double, double);
 }  // namespace ptam

@@ -1,12 +1,12 @@
 // Copyright 2008 Isis Innovation Limited
-#include "track/homography_init.h"
-#include "track/small_matrix_opts.h"
+#include "ptam/track/homography_init.h"
+#include "ptam/track/small_matrix_opts.h"
 #include <utility>
 #include <TooN/se3.h>
 #include <TooN/SVD.h>
 #include <TooN/SymEigen.h>
 #include <TooN/wls.h>
-#include "track/m_estimator.h"
+#include "ptam/track/m_estimator.h"
 
 using namespace std;
 

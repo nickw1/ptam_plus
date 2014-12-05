@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "track/relocaliser.h"
-#include "construct/small_blurry_image.h"
+#include "ptam/track/relocaliser.h"
+#include "ptam/construct/small_blurry_image.h"
 #include <cvd/utility.h>
 #include <gvars3/instances.h>
 

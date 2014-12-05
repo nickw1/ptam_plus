@@ -1,0 +1,1043 @@
+﻿Build started 12/5/2014 12:32:37 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintsts.vcxproj" on node 9 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintsts.dir\Debug\\" /Fd"xlintsts.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\alaesm.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\alareq.c ..\..\..\TESTING\LIN\alasum.c ..\..\..\TESTING\LIN\alasvm.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\icopy.c ..\..\..\TESTING\LIN\ilaenv.c ..\..\..\TESTING\LIN\xlaenv.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\slaord.c ..\..\..\TESTING\LIN\schkaa.c ..\..\..\TESTING\LIN\schkeq.c ..\..\..\TESTING\LIN\schkgb.c ..\..\..\TESTING\LIN\schkge.c ..\..\..\TESTING\LIN\schkgt.c ..\..\..\TESTING\LIN\schklq.c ..\..\..\TESTING\LIN\schkpb.c ..\..\..\TESTING\LIN\schkpo.c ..\..\..\TESTING\LIN\schkps.c ..\..\..\TESTING\LIN\schkpp.c ..\..\..\TESTING\LIN\schkpt.c ..\..\..\TESTING\LIN\schkq3.c ..\..\..\TESTING\LIN\schkql.c ..\..\..\TESTING\LIN\schkqp.c ..\..\..\TESTING\LIN\schkqr.c ..\..\..\TESTING\LIN\schkrq.c ..\..\..\TESTING\LIN\schksp.c ..\..\..\TESTING\LIN\schksy.c ..\..\..\TESTING\LIN\schktb.c ..\..\..\TESTING\LIN\schktp.c ..\..\..\TESTING\LIN\schktr.c ..\..\..\TESTING\LIN\schktz.c ..\..\..\TESTING\LIN\sdrvgt.c ..\..\..\TESTING\LIN\sdrvls.c ..\..\..\TESTING\LIN\sdrvpb.c ..\..\..\TESTING\LIN\sdrvpp.c ..\..\..\TESTING\LIN\sdrvpt.c ..\..\..\TESTING\LIN\sdrvsp.c ..\..\..\TESTING\LIN\sdrvsy.c ..\..\..\TESTING\LIN\serrgt.c ..\..\..\TESTING\LIN\serrlq.c ..\..\..\TESTING\LIN\serrls.c ..\..\..\TESTING\LIN\serrpo.c ..\..\..\TESTING\LIN\serrps.c ..\..\..\TESTING\LIN\serrql.c ..\..\..\TESTING\LIN\serrqp.c ..\..\..\TESTING\LIN\serrqr.c ..\..\..\TESTING\LIN\serrrq.c ..\..\..\TESTING\LIN\serrsy.c ..\..\..\TESTING\LIN\serrtr.c ..\..\..\TESTING\LIN\serrtz.c ..\..\..\TESTING\LIN\serrvx.c ..\..\..\TESTING\LIN\sgbt01.c ..\..\..\TESTING\LIN\sgbt02.c ..\..\..\TESTING\LIN\sgbt05.c ..\..\..\TESTING\LIN\sgelqs.c ..\..\..\TESTING\LIN\sgeqls.c ..\..\..\TESTING\LIN\sgeqrs.c ..\..\..\TESTING\LIN\sgerqs.c ..\..\..\TESTING\LIN\sget01.c ..\..\..\TESTING\LIN\sget02.c ..\..\..\TESTING\LIN\sget03.c ..\..\..\TESTING\LIN\sget04.c ..\..\..\TESTING\LIN\sget06.c ..\..\..\TESTING\LIN\sget07.c ..\..\..\TESTING\LIN\sgtt01.c ..\..\..\TESTING\LIN\sgtt02.c ..\..\..\TESTING\LIN\sgtt05.c ..\..\..\TESTING\LIN\slaptm.c ..\..\..\TESTING\LIN\slarhs.c ..\..\..\TESTING\LIN\slatb4.c ..\..\..\TESTING\LIN\slatb5.c ..\..\..\TESTING\LIN\slattb.c ..\..\..\TESTING\LIN\slattp.c ..\..\..\TESTING\LIN\slattr.c ..\..\..\TESTING\LIN\slavsp.c ..\..\..\TESTING\LIN\slavsy.c ..\..\..\TESTING\LIN\slqt01.c ..\..\..\TESTING\LIN\slqt02.c ..\..\..\TESTING\LIN\slqt03.c ..\..\..\TESTING\LIN\spbt01.c ..\..\..\TESTING\LIN\spbt02.c ..\..\..\TESTING\LIN\spbt05.c ..\..\..\TESTING\LIN\spot01.c ..\..\..\TESTING\LIN\spot02.c ..\..\..\TESTING\LIN\spot03.c ..\..\..\TESTING\LIN\spot05.c ..\..\..\TESTING\LIN\spst01.c ..\..\..\TESTING\LIN\sppt01.c ..\..\..\TESTING\LIN\sppt02.c ..\..\..\TESTING\LIN\sppt03.c ..\..\..\TESTING\LIN\sppt05.c ..\..\..\TESTING\LIN\sptt01.c ..\..\..\TESTING\LIN\sptt02.c ..\..\..\TESTING\LIN\sptt05.c ..\..\..\TESTING\LIN\sqlt01.c ..\..\..\TESTING\LIN\sqlt02.c ..\..\..\TESTING\LIN\sqlt03.c ..\..\..\TESTING\LIN\sqpt01.c ..\..\..\TESTING\LIN\sqrt01.c ..\..\..\TESTING\LIN\sqrt02.c ..\..\..\TESTING\LIN\sqrt03.c ..\..\..\TESTING\LIN\sqrt11.c ..\..\..\TESTING\LIN\sqrt12.c ..\..\..\TESTING\LIN\sqrt13.c ..\..\..\TESTING\LIN\sqrt14.c ..\..\..\TESTING\LIN\sqrt15.c ..\..\..\TESTING\LIN\sqrt16.c ..\..\..\TESTING\LIN\sqrt17.c ..\..\..\TESTING\LIN\srqt01.c ..\..\..\TESTING\LIN\srqt02.c ..\..\..\TESTING\LIN\srqt03.c ..\..\..\TESTING\LIN\srzt01.c ..\..\..\TESTING\LIN\srzt02.c ..\..\..\TESTING\LIN\sspt01.c ..\..\..\TESTING\LIN\ssyt01.c ..\..\..\TESTING\LIN\stbt02.c ..\..\..\TESTING\LIN\stbt03.c ..\..\..\TESTING\LIN\stbt05.c ..\..\..\TESTING\LIN\stbt06.c ..\..\..\TESTING\LIN\stpt01.c ..\..\..\TESTING\LIN\stpt02.c ..\..\..\TESTING\LIN\stpt03.c ..\..\..\TESTING\LIN\stpt05.c ..\..\..\TESTING\LIN\stpt06.c ..\..\..\TESTING\LIN\strt01.c ..\..\..\TESTING\LIN\strt02.c ..\..\..\TESTING\LIN\strt03.c ..\..\..\TESTING\LIN\strt05.c ..\..\..\TESTING\LIN\strt06.c ..\..\..\TESTING\LIN\stzt01.c ..\..\..\TESTING\LIN\stzt02.c ..\..\..\TESTING\LIN\sgennd.c ..\..\..\TESTING\LIN\sdrvge.c ..\..\..\TESTING\LIN\serrge.c ..\..\..\TESTING\LIN\sdrvgb.c ..\..\..\TESTING\LIN\sdrvpo.c ..\..\..\INSTALL\winsecond.c
+         aladhd.c
+         alaerh.c
+         alaesm.c
+         alahd.c
+         alareq.c
+         alasum.c
+         alasvm.c
+         chkxer.c
+         icopy.c
+         ilaenv.c
+         xlaenv.c
+         xerbla.c
+         slaord.c
+         schkaa.c
+     1>..\..\..\TESTING\LIN\schkaa.c(410): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkaa.c(793): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkaa.c(798): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkaa.c(803): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkaa.c(1346): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkeq.c
+     1>..\..\..\TESTING\LIN\schkeq.c(124): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(131): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(167): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(278): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(281): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(287): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(288): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(296): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(299): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(305): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(306): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(310): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(311): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(320): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(321): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(327): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(328): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(340): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(341): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(347): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(348): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(389): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(390): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(393): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(394): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(399): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(400): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(439): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(440): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(443): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(444): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(449): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(450): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(479): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(480): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(483): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(484): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(489): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(490): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(537): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(538): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(541): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(542): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(547): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(548): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(588): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(589): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(592): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(593): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(598): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkeq.c(599): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkgb.c
+     1>..\..\..\TESTING\LIN\schkgb.c(613): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgb.c(615): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgb.c(634): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgb.c(645): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgb.c(811): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkge.c
+     1>..\..\..\TESTING\LIN\schkge.c(430): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkge.c(434): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkge.c(436): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkge.c(448): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkge.c(449): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkge.c(634): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkgt.c
+     1>..\..\..\TESTING\LIN\schkgt.c(429): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgt.c(450): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgt.c(451): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkgt.c(487): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schklq.c
+         schkpb.c
+     1>..\..\..\TESTING\LIN\schkpb.c(531): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpb.c(533): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpb.c(652): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         schkpo.c
+     1>..\..\..\TESTING\LIN\schkpo.c(546): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpo.c(559): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkps.c
+         schkpp.c
+     1>..\..\..\TESTING\LIN\schkpp.c(510): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpp.c(522): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkpt.c
+     1>..\..\..\TESTING\LIN\schkpt.c(319): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(321): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(323): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(328): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(445): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(462): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(463): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(468): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkpt.c(575): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkq3.c
+     1>..\..\..\TESTING\LIN\schkq3.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkq3.c(337): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkq3.c(342): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkq3.c(347): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkql.c
+         schkqp.c
+     1>..\..\..\TESTING\LIN\schkqp.c(200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkqp.c(309): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkqp.c(314): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schkqp.c(319): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schkqr.c
+         schkrq.c
+         schksp.c
+     1>..\..\..\TESTING\LIN\schksp.c(582): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schksp.c(594): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schksy.c
+     1>..\..\..\TESTING\LIN\schksy.c(617): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schksy.c(630): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schktb.c
+     1>..\..\..\TESTING\LIN\schktb.c(368): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktb.c(370): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktb.c(380): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktb.c(382): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schktp.c
+     1>..\..\..\TESTING\LIN\schktp.c(332): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktp.c(333): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schktr.c
+     1>..\..\..\TESTING\LIN\schktr.c(350): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktr.c(352): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         schktz.c
+     1>..\..\..\TESTING\LIN\schktz.c(204): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(284): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(289): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(294): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(335): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(340): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\schktz.c(345): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvgt.c
+     1>..\..\..\TESTING\LIN\sdrvgt.c(396): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(397): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(420): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(421): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(449): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(450): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgt.c(659): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvls.c
+     1>..\..\..\TESTING\LIN\sdrvls.c(287): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(291): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(427): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(434): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(518): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(536): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(547): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(632): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(651): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(662): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(696): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(716): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(725): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(765): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(785): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvls.c(794): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvpb.c
+     1>..\..\..\TESTING\LIN\sdrvpb.c(528): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpb.c(546): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpb.c(741): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvpp.c
+     1>..\..\..\TESTING\LIN\sdrvpp.c(440): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpp.c(453): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpp.c(635): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvpt.c
+     1>..\..\..\TESTING\LIN\sdrvpt.c(313): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(315): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(317): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(322): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(427): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(454): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(455): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpt.c(610): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         sdrvsp.c
+     1>..\..\..\TESTING\LIN\sdrvsp.c(414): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvsp.c(426): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvsp.c(618): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvsy.c
+     1>..\..\..\TESTING\LIN\sdrvsy.c(414): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvsy.c(428): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvsy.c(621): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         serrgt.c
+         serrlq.c
+         serrls.c
+         serrpo.c
+         serrps.c
+         serrql.c
+         serrqp.c
+         serrqr.c
+         serrrq.c
+         serrsy.c
+         serrtr.c
+         serrtz.c
+         serrvx.c
+         sgbt01.c
+     1>..\..\..\TESTING\LIN\sgbt01.c(139): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt01.c(153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt01.c(154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt01.c(221): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt01.c(222): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgbt02.c
+     1>..\..\..\TESTING\LIN\sgbt02.c(148): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt02.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt02.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt02.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt02.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt02.c(198): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgbt05.c
+     1>..\..\..\TESTING\LIN\sgbt05.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(201): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(219): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(235): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(244): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(256): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(263): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(269): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgbt05.c(273): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgelqs.c
+         sgeqls.c
+         Generating Code...
+         Compiling...
+         sgeqrs.c
+         sgerqs.c
+         sget01.c
+     1>..\..\..\TESTING\LIN\sget01.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget01.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget01.c(157): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget01.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sget02.c
+     1>..\..\..\TESTING\LIN\sget02.c(153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget02.c(154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget02.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget02.c(173): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget02.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sget03.c
+     1>..\..\..\TESTING\LIN\sget03.c(126): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget03.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget03.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget03.c(148): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sget04.c
+     1>..\..\..\TESTING\LIN\sget04.c(114): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget04.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget04.c(134): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget04.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget04.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sget06.c
+     1>..\..\..\TESTING\LIN\sget06.c(61): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget06.c(64): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sget07.c
+     1>..\..\..\TESTING\LIN\sget07.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(231): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(238): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(245): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(251): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sget07.c(255): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgtt01.c
+     1>..\..\..\TESTING\LIN\sgtt01.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt01.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt01.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgtt02.c
+     1>..\..\..\TESTING\LIN\sgtt02.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt02.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt02.c(150): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt02.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt02.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt02.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgtt05.c
+     1>..\..\..\TESTING\LIN\sgtt05.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(225): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(236): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(237): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(242): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(243): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(248): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(252): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(259): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(260): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(265): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(266): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(271): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sgtt05.c(275): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slaptm.c
+         slarhs.c
+         slatb4.c
+     1>..\..\..\TESTING\LIN\slatb4.c(122): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slatb4.c(124): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slatb4.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slatb5.c
+     1>..\..\..\TESTING\LIN\slatb5.c(113): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slatb5.c(115): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slatb5.c(116): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slattb.c
+     1>..\..\..\TESTING\LIN\slattb.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(249): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(286): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(287): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(292): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\LIN\slattb.c(296): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(297): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(324): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(325): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(326): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(327): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(328): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(342): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(346): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(350): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(392): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(404): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(413): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(414): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(437): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(452): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(474): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(485): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(570): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(623): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(638): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(777): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(778): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(789): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(802): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattb.c(817): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slattp.c
+     1>..\..\..\TESTING\LIN\slattp.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(339): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(342): warning C4244: '*=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(346): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(350): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(356): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(358): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(511): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(521): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(531): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(532): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(544): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(553): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(554): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(567): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(568): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(588): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(589): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(600): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(601): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(686): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(689): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(738): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(752): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(846): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(847): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(858): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(861): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(870): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattp.c(885): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slattr.c
+     1>..\..\..\TESTING\LIN\slattr.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(335): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(338): warning C4244: '*=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(342): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(346): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(352): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(354): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(478): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(486): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(495): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(496): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(508): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(515): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(528): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(545): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(554): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(634): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(637): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(681): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(693): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(781): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(782): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(794): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(797): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(805): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slattr.c(818): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slavsp.c
+         slavsy.c
+         Generating Code...
+         Compiling...
+         slqt01.c
+     1>..\..\..\TESTING\LIN\slqt01.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt01.c(199): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt01.c(200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt01.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slqt02.c
+     1>..\..\..\TESTING\LIN\slqt02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt02.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt02.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt02.c(207): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slqt03.c
+     1>..\..\..\TESTING\LIN\slqt03.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt03.c(210): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt03.c(247): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\slqt03.c(248): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         spbt01.c
+     1>..\..\..\TESTING\LIN\spbt01.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt01.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt01.c(160): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt01.c(234): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spbt02.c
+     1>..\..\..\TESTING\LIN\spbt02.c(142): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt02.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt02.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt02.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spbt05.c
+     1>..\..\..\TESTING\LIN\spbt05.c(175): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(199): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(217): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(241): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(249): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(258): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(266): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(273): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(279): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spbt05.c(283): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spot01.c
+     1>..\..\..\TESTING\LIN\spot01.c(126): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot01.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot01.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot01.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spot02.c
+     1>..\..\..\TESTING\LIN\spot02.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot02.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot02.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot02.c(159): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spot03.c
+     1>..\..\..\TESTING\LIN\spot03.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot03.c(142): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot03.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot03.c(188): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spot05.c
+     1>..\..\..\TESTING\LIN\spot05.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(210): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(231): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(237): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(244): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(250): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(257): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(263): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spot05.c(267): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         spst01.c
+     1>..\..\..\TESTING\LIN\spst01.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spst01.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spst01.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\spst01.c(291): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sppt01.c
+     1>..\..\..\TESTING\LIN\sppt01.c(120): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt01.c(121): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt01.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt01.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sppt02.c
+     1>..\..\..\TESTING\LIN\sppt02.c(136): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt02.c(137): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt02.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt02.c(159): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sppt03.c
+     1>..\..\..\TESTING\LIN\sppt03.c(126): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt03.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt03.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt03.c(218): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sppt05.c
+     1>..\..\..\TESTING\LIN\sppt05.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(219): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(225): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(232): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(241): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(248): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(255): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(261): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sppt05.c(265): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sptt01.c
+     1>..\..\..\TESTING\LIN\sptt01.c(98): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(115): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(118): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(119): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(120): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(122): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(124): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(130): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(131): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt01.c(136): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sptt02.c
+     1>..\..\..\TESTING\LIN\sptt02.c(123): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt02.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt02.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt02.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt02.c(151): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sptt05.c
+     1>..\..\..\TESTING\LIN\sptt05.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(157): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(211): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(221): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(222): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(232): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sptt05.c(236): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqlt01.c
+     1>..\..\..\TESTING\LIN\sqlt01.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt01.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt01.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt01.c(244): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqlt02.c
+     1>..\..\..\TESTING\LIN\sqlt02.c(174): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt02.c(212): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt02.c(214): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt02.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         sqlt03.c
+     1>..\..\..\TESTING\LIN\sqlt03.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt03.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt03.c(271): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqlt03.c(272): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         sqpt01.c
+     1>..\..\..\TESTING\LIN\sqpt01.c(146): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqpt01.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt01.c
+     1>..\..\..\TESTING\LIN\sqrt01.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt01.c(197): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt01.c(198): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt01.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt02.c
+     1>..\..\..\TESTING\LIN\sqrt02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt02.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt02.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt02.c(206): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt03.c
+     1>..\..\..\TESTING\LIN\sqrt03.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt03.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt03.c(246): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt03.c(247): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         sqrt11.c
+     1>..\..\..\TESTING\LIN\sqrt11.c(149): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt12.c
+     1>..\..\..\TESTING\LIN\sqrt12.c(137): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt12.c(154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt12.c(160): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt12.c(210): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt13.c
+     1>..\..\..\TESTING\LIN\sqrt13.c(119): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt13.c(120): warning C4244: '+=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt13.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt13.c(129): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt13.c(132): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt13.c(150): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt14.c
+     1>..\..\..\TESTING\LIN\sqrt14.c(160): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(174): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(180): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(201): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(222): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(243): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(244): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt14.c(254): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt15.c
+     1>..\..\..\TESTING\LIN\sqrt15.c(167): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(196): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(198): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(262): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(291): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt15.c(293): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt16.c
+     1>..\..\..\TESTING\LIN\sqrt16.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt16.c(148): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt16.c(153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt16.c(167): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt16.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt16.c(176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sqrt17.c
+     1>..\..\..\TESTING\LIN\sqrt17.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(187): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(196): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(210): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(220): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(225): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sqrt17.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         srqt01.c
+     1>..\..\..\TESTING\LIN\srqt01.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt01.c(230): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt01.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt01.c(246): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         srqt02.c
+     1>..\..\..\TESTING\LIN\srqt02.c(174): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt02.c(212): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt02.c(214): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt02.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         srqt03.c
+     1>..\..\..\TESTING\LIN\srqt03.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt03.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt03.c(271): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srqt03.c(272): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         srzt01.c
+     1>..\..\..\TESTING\LIN\srzt01.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srzt01.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\srzt01.c(160): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+         srzt02.c
+     1>..\..\..\TESTING\LIN\srzt02.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sspt01.c
+     1>..\..\..\TESTING\LIN\sspt01.c(129): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sspt01.c(130): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sspt01.c(176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         ssyt01.c
+     1>..\..\..\TESTING\LIN\ssyt01.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\ssyt01.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\ssyt01.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stbt02.c
+     1>..\..\..\TESTING\LIN\stbt02.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt02.c(165): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt02.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt02.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt02.c(187): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt02.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         stbt03.c
+     1>..\..\..\TESTING\LIN\stbt03.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(204): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(218): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(219): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt03.c(248): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stbt05.c
+     1>..\..\..\TESTING\LIN\stbt05.c(189): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(253): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(262): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(266): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(270): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(278): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(290): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(294): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(298): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(306): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(314): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(320): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt05.c(324): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stbt06.c
+     1>..\..\..\TESTING\LIN\stbt06.c(119): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(120): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(121): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(151): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(155): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stbt06.c(159): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stpt01.c
+     1>..\..\..\TESTING\LIN\stpt01.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt01.c(126): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt01.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt01.c(181): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stpt02.c
+     1>..\..\..\TESTING\LIN\stpt02.c(154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt02.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt02.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt02.c(176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt02.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt02.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stpt03.c
+     1>..\..\..\TESTING\LIN\stpt03.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(180): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(201): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(223): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(225): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt03.c(244): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stpt05.c
+     1>..\..\..\TESTING\LIN\stpt05.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(201): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(219): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(239): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(246): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(250): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(255): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(261): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(272): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(277): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(282): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(287): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(295): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(301): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt05.c(305): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stpt06.c
+     1>..\..\..\TESTING\LIN\stpt06.c(109): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(110): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(111): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(147): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stpt06.c(148): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         strt01.c
+     1>..\..\..\TESTING\LIN\strt01.c(137): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt01.c(138): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt01.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt01.c(188): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         strt02.c
+     1>..\..\..\TESTING\LIN\strt02.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt02.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt02.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt02.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt02.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt02.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         strt03.c
+     1>..\..\..\TESTING\LIN\strt03.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(218): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt03.c(237): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         strt05.c
+     1>..\..\..\TESTING\LIN\strt05.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(201): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(246): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(252): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(256): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(260): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(265): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(274): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(278): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(282): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(287): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(295): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(301): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt05.c(305): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         strt06.c
+     1>..\..\..\TESTING\LIN\strt06.c(117): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(118): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(119): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(149): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(152): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(155): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\strt06.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         stzt01.c
+     1>..\..\..\TESTING\LIN\stzt01.c(126): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stzt01.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\stzt01.c(163): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+         stzt02.c
+     1>..\..\..\TESTING\LIN\stzt02.c(149): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sgennd.c
+         sdrvge.c
+     1>..\..\..\TESTING\LIN\sdrvge.c(455): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(457): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(472): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(481): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(635): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(640): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(644): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(649): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(654): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvge.c(709): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         serrge.c
+         sdrvgb.c
+     1>..\..\..\TESTING\LIN\sdrvgb.c(579): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(581): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(601): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(612): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(800): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(801): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(813): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(822): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(827): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(832): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvgb.c(890): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sdrvpo.c
+     1>..\..\..\TESTING\LIN\sdrvpo.c(442): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpo.c(456): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\sdrvpo.c(638): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         winsecond.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintsts.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintsts.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintsts.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintsts.dir\Debug\aladhd.obj
+         xlintsts.dir\Debug\alaerh.obj
+         xlintsts.dir\Debug\alaesm.obj
+         xlintsts.dir\Debug\alahd.obj
+         xlintsts.dir\Debug\alareq.obj
+         xlintsts.dir\Debug\alasum.obj
+         xlintsts.dir\Debug\alasvm.obj
+         xlintsts.dir\Debug\chkxer.obj
+         xlintsts.dir\Debug\icopy.obj
+         xlintsts.dir\Debug\ilaenv.obj
+         xlintsts.dir\Debug\xlaenv.obj
+         xlintsts.dir\Debug\xerbla.obj
+         xlintsts.dir\Debug\slaord.obj
+         xlintsts.dir\Debug\schkaa.obj
+         xlintsts.dir\Debug\schkeq.obj
+         xlintsts.dir\Debug\schkgb.obj
+         xlintsts.dir\Debug\schkge.obj
+         xlintsts.dir\Debug\schkgt.obj
+         xlintsts.dir\Debug\schklq.obj
+         xlintsts.dir\Debug\schkpb.obj
+         xlintsts.dir\Debug\schkpo.obj
+         xlintsts.dir\Debug\schkps.obj
+         xlintsts.dir\Debug\schkpp.obj
+         xlintsts.dir\Debug\schkpt.obj
+         xlintsts.dir\Debug\schkq3.obj
+         xlintsts.dir\Debug\schkql.obj
+         xlintsts.dir\Debug\schkqp.obj
+         xlintsts.dir\Debug\schkqr.obj
+         xlintsts.dir\Debug\schkrq.obj
+         xlintsts.dir\Debug\schksp.obj
+         xlintsts.dir\Debug\schksy.obj
+         xlintsts.dir\Debug\schktb.obj
+         xlintsts.dir\Debug\schktp.obj
+         xlintsts.dir\Debug\schktr.obj
+         xlintsts.dir\Debug\schktz.obj
+         xlintsts.dir\Debug\sdrvgt.obj
+         xlintsts.dir\Debug\sdrvls.obj
+         xlintsts.dir\Debug\sdrvpb.obj
+         xlintsts.dir\Debug\sdrvpp.obj
+         xlintsts.dir\Debug\sdrvpt.obj
+         xlintsts.dir\Debug\sdrvsp.obj
+         xlintsts.dir\Debug\sdrvsy.obj
+         xlintsts.dir\Debug\serrgt.obj
+         xlintsts.dir\Debug\serrlq.obj
+         xlintsts.dir\Debug\serrls.obj
+         xlintsts.dir\Debug\serrpo.obj
+         xlintsts.dir\Debug\serrps.obj
+         xlintsts.dir\Debug\serrql.obj
+         xlintsts.dir\Debug\serrqp.obj
+         xlintsts.dir\Debug\serrqr.obj
+         xlintsts.dir\Debug\serrrq.obj
+         xlintsts.dir\Debug\serrsy.obj
+         xlintsts.dir\Debug\serrtr.obj
+         xlintsts.dir\Debug\serrtz.obj
+         xlintsts.dir\Debug\serrvx.obj
+         xlintsts.dir\Debug\sgbt01.obj
+         xlintsts.dir\Debug\sgbt02.obj
+         xlintsts.dir\Debug\sgbt05.obj
+         xlintsts.dir\Debug\sgelqs.obj
+         xlintsts.dir\Debug\sgeqls.obj
+         xlintsts.dir\Debug\sgeqrs.obj
+         xlintsts.dir\Debug\sgerqs.obj
+         xlintsts.dir\Debug\sget01.obj
+         xlintsts.dir\Debug\sget02.obj
+         xlintsts.dir\Debug\sget03.obj
+         xlintsts.dir\Debug\sget04.obj
+         xlintsts.dir\Debug\sget06.obj
+         xlintsts.dir\Debug\sget07.obj
+         xlintsts.dir\Debug\sgtt01.obj
+         xlintsts.dir\Debug\sgtt02.obj
+         xlintsts.dir\Debug\sgtt05.obj
+         xlintsts.dir\Debug\slaptm.obj
+         xlintsts.dir\Debug\slarhs.obj
+         xlintsts.dir\Debug\slatb4.obj
+         xlintsts.dir\Debug\slatb5.obj
+         xlintsts.dir\Debug\slattb.obj
+         xlintsts.dir\Debug\slattp.obj
+         xlintsts.dir\Debug\slattr.obj
+         xlintsts.dir\Debug\slavsp.obj
+         xlintsts.dir\Debug\slavsy.obj
+         xlintsts.dir\Debug\slqt01.obj
+         xlintsts.dir\Debug\slqt02.obj
+         xlintsts.dir\Debug\slqt03.obj
+         xlintsts.dir\Debug\spbt01.obj
+         xlintsts.dir\Debug\spbt02.obj
+         xlintsts.dir\Debug\spbt05.obj
+         xlintsts.dir\Debug\spot01.obj
+         xlintsts.dir\Debug\spot02.obj
+         xlintsts.dir\Debug\spot03.obj
+         xlintsts.dir\Debug\spot05.obj
+         xlintsts.dir\Debug\spst01.obj
+         xlintsts.dir\Debug\sppt01.obj
+         xlintsts.dir\Debug\sppt02.obj
+         xlintsts.dir\Debug\sppt03.obj
+         xlintsts.dir\Debug\sppt05.obj
+         xlintsts.dir\Debug\sptt01.obj
+         xlintsts.dir\Debug\sptt02.obj
+         xlintsts.dir\Debug\sptt05.obj
+         xlintsts.dir\Debug\sqlt01.obj
+         xlintsts.dir\Debug\sqlt02.obj
+         xlintsts.dir\Debug\sqlt03.obj
+         xlintsts.dir\Debug\sqpt01.obj
+         xlintsts.dir\Debug\sqrt01.obj
+         xlintsts.dir\Debug\sqrt02.obj
+         xlintsts.dir\Debug\sqrt03.obj
+         xlintsts.dir\Debug\sqrt11.obj
+         xlintsts.dir\Debug\sqrt12.obj
+         xlintsts.dir\Debug\sqrt13.obj
+         xlintsts.dir\Debug\sqrt14.obj
+         xlintsts.dir\Debug\sqrt15.obj
+         xlintsts.dir\Debug\sqrt16.obj
+         xlintsts.dir\Debug\sqrt17.obj
+         xlintsts.dir\Debug\srqt01.obj
+         xlintsts.dir\Debug\srqt02.obj
+         xlintsts.dir\Debug\srqt03.obj
+         xlintsts.dir\Debug\srzt01.obj
+         xlintsts.dir\Debug\srzt02.obj
+         xlintsts.dir\Debug\sspt01.obj
+         xlintsts.dir\Debug\ssyt01.obj
+         xlintsts.dir\Debug\stbt02.obj
+         xlintsts.dir\Debug\stbt03.obj
+         xlintsts.dir\Debug\stbt05.obj
+         xlintsts.dir\Debug\stbt06.obj
+         xlintsts.dir\Debug\stpt01.obj
+         xlintsts.dir\Debug\stpt02.obj
+         xlintsts.dir\Debug\stpt03.obj
+         xlintsts.dir\Debug\stpt05.obj
+         xlintsts.dir\Debug\stpt06.obj
+         xlintsts.dir\Debug\strt01.obj
+         xlintsts.dir\Debug\strt02.obj
+         xlintsts.dir\Debug\strt03.obj
+         xlintsts.dir\Debug\strt05.obj
+         xlintsts.dir\Debug\strt06.obj
+         xlintsts.dir\Debug\stzt01.obj
+         xlintsts.dir\Debug\stzt02.obj
+         xlintsts.dir\Debug\sgennd.obj
+         xlintsts.dir\Debug\sdrvge.obj
+         xlintsts.dir\Debug\serrge.obj
+         xlintsts.dir\Debug\sdrvgb.obj
+         xlintsts.dir\Debug\sdrvpo.obj
+         xlintsts.dir\Debug\winsecond.obj
+         xlintsts.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintsts.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintsts.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.62

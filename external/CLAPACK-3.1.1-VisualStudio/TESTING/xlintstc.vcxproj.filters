@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f4392e10-8e49-4b22-95bc-7c14fbbdb2aa}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\alintst">
+      <UniqueIdentifier>{feccbbdc-efae-4bcf-994e-22faf09d16d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\clintst">
+      <UniqueIdentifier>{5faa1e04-e43b-4b9d-97d2-835a3493ceee}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lin\aladhd.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alaerh.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alaesm.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alahd.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alareq.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alasum.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alasvm.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\cchkq3.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ilaenv.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\xerbla.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\xlaenv.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkaa.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkeq.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkgb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkge.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkgt.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkhe.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkhp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchklq.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkpb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkpo.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkpp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkpt.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkql.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkqp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkqr.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchkrq.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchksp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchksy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchktb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchktp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchktr.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cchktz.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvgb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvge.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvgt.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvhe.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvhp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvls.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvpb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvpo.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvpp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvpt.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvsp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cdrvsy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrge.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrgt.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrhe.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrlq.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrls.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrpo.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrql.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrqp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrqr.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrrq.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrsy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrtr.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrtz.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cerrvx.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgbt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgbt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgbt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgelqs.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgeqls.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgeqrs.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgerqs.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cget01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cget02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cget03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cget04.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cget07.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgtt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgtt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cgtt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\chet01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\chkxer.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\chpt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\claipd.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\claptm.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clarhs.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clatb4.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clatsp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clatsy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clattb.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clattp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clattr.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clavhe.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clavhp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clavsp.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clavsy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clqt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clqt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\clqt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpbt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpbt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpbt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpot01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpot02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpot03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cpot05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cppt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cppt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cppt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cppt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cptt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cptt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cptt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqlt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqlt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqlt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqpt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt11.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt12.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt13.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt14.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt15.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt16.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cqrt17.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\crqt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\crqt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\crqt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\crzt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\crzt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\csbmv.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cspt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cspt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\cspt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\csyt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\csyt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\csyt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctbt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctbt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctbt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctbt06.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctpt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctpt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctpt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctpt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctpt06.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctrt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctrt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctrt03.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctrt05.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctrt06.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctzt01.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ctzt02.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\icopy.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\sget06.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\slaord.c">
+      <Filter>Source Files\clintst</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

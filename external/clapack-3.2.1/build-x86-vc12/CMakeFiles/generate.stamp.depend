@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/CMakeLists.txt
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/CMakeFiles/3.0.0/CMakeSystem.cmake
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/CMakeFiles/3.0.0/CMakeCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-MSVC.cmake
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/CMakeFiles/3.0.0/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CTest.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CTestUseLaunchers.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CPack.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CPackComponent.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.0/Templates/CPackConfig.cmake.in
+C:/Program Files (x86)/CMake/share/cmake-3.0/Templates/CPackConfig.cmake.in
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/clapack-config-version.cmake.in
+C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/clapack-config.cmake.in

@@ -1,0 +1,37 @@
+﻿Build started 12/5/2014 12:31:18 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\xblat2c.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/TESTING/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xblat2c.dir\Debug\\" /Fd"xblat2c.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\BLAS\TESTING\cblat2.c
+         cblat2.c
+     1>..\..\..\BLAS\TESTING\cblat2.c(1271): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(1851): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(2495): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(2965): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(3418): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(3946): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4891): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4892): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4892): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4910): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4911): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4911): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4930): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4931): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4931): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4946): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4948): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4949): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4949): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4962): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\cblat2.c(4966): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\Debug\xblat2c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/BLAS/TESTING/Debug/xblat2c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/BLAS/TESTING/Debug/xblat2c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xblat2c.dir\Debug\cblat2.obj
+         xblat2c.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\Debug\xblat2c.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\xblat2c.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.18

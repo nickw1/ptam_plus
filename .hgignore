@@ -1,0 +1,3 @@
+syntax: glob
+build-x86-vc12/
+.lib

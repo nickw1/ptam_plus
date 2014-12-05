@@ -40,9 +40,7 @@
 // glMultMatrix(Camera.MakeUFBLinearFrustumMatrix(near,far));
 // To render un-distorted geometry with full frame coverage.
 //
-
-#ifndef PATAM_MATH_ATAN_CAMERA_H_
-#define PATAM_MATH_ATAN_CAMERA_H_
+#pragma once
 
 #include <cmath>
 #include <TooN/TooN.h>
@@ -196,5 +194,3 @@ inline TooN::Vector<2> ATANCamera::UFBLinearUnProject(
   return v2Res;
 }
 }  // namespace ptam
-#endif
-

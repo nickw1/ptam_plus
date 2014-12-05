@@ -1,0 +1,55 @@
+﻿Build started 12/5/2014 12:32:50 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfd.vcxproj" on node 8 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintstrfd.dir\Debug\\" /Fd"xlintstrfd.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\dchkrfp.c ..\..\..\TESTING\LIN\ddrvrfp.c ..\..\..\TESTING\LIN\ddrvrf1.c ..\..\..\TESTING\LIN\ddrvrf2.c ..\..\..\TESTING\LIN\ddrvrf3.c ..\..\..\TESTING\LIN\ddrvrf4.c ..\..\..\TESTING\LIN\derrrfp.c ..\..\..\TESTING\LIN\dlatb4.c ..\..\..\TESTING\LIN\dlarhs.c ..\..\..\TESTING\LIN\dget04.c ..\..\..\TESTING\LIN\dpot01.c ..\..\..\TESTING\LIN\dpot03.c ..\..\..\TESTING\LIN\dpot02.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\alasvm.c ..\..\..\INSTALL\windsecnd.c
+         dchkrfp.c
+         ddrvrfp.c
+         ddrvrf1.c
+         ddrvrf2.c
+         ddrvrf3.c
+         ddrvrf4.c
+         derrrfp.c
+         dlatb4.c
+         dlarhs.c
+         dget04.c
+         dpot01.c
+         dpot03.c
+         dpot02.c
+         chkxer.c
+         xerbla.c
+         alaerh.c
+         aladhd.c
+         alahd.c
+         alasvm.c
+         windsecnd.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintstrfd.dir\Debug\dchkrfp.obj
+         xlintstrfd.dir\Debug\ddrvrfp.obj
+         xlintstrfd.dir\Debug\ddrvrf1.obj
+         xlintstrfd.dir\Debug\ddrvrf2.obj
+         xlintstrfd.dir\Debug\ddrvrf3.obj
+         xlintstrfd.dir\Debug\ddrvrf4.obj
+         xlintstrfd.dir\Debug\derrrfp.obj
+         xlintstrfd.dir\Debug\dlatb4.obj
+         xlintstrfd.dir\Debug\dlarhs.obj
+         xlintstrfd.dir\Debug\dget04.obj
+         xlintstrfd.dir\Debug\dpot01.obj
+         xlintstrfd.dir\Debug\dpot03.obj
+         xlintstrfd.dir\Debug\dpot02.obj
+         xlintstrfd.dir\Debug\chkxer.obj
+         xlintstrfd.dir\Debug\xerbla.obj
+         xlintstrfd.dir\Debug\alaerh.obj
+         xlintstrfd.dir\Debug\aladhd.obj
+         xlintstrfd.dir\Debug\alahd.obj
+         xlintstrfd.dir\Debug\alasvm.obj
+         xlintstrfd.dir\Debug\windsecnd.obj
+         xlintstrfd.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfd.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfd.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.11

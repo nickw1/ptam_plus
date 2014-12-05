@@ -8,26 +8,25 @@
 // This defines a simple map viewer widget, which can draw the
 // current map and the camera/keyframe poses within it.
 //
-#ifndef PTAM_UI_MAP_VIEWER_H_
-#define PTAM_UI_MAP_VIEWER_H_
+#pragma once
 
-#include "construct/map.h"
+#include "ptam/construct/map.h"
 #include <TooN/TooN.h>
 using namespace TooN;
 #include <TooN/se3.h>
 #include <sstream>
-#include "ui/gl_window2.h"
+#include "ptam/ui/gl_window.h"
 
 namespace ptam {
 class MapViewer {
  public:
-  MapViewer(Map &map, GLWindow2 &glw);
+  MapViewer(Map &map, GLWindow &glw);
   void DrawMap(TooN::SE3<> se3CamFromWorld);
   std::string GetMessageForUser();
 
  protected:
   Map &mMap;
-  GLWindow2 &mGLWindow;
+  GLWindow &mGLWindow;
 
   void DrawGrid();
   void DrawMapDots();
@@ -41,4 +40,3 @@ class MapViewer {
   std::ostringstream mMessageForUser;
 };
 }  // namespace ptam
-#endif

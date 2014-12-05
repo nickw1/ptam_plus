@@ -7,10 +7,10 @@
 // Draws a bunch of 3d eyeballs remniscient of the
 // AVL logo
 //
-#ifndef PTAM_UI_EYEGAME_H_
-#define PTAM_UI_EYEGAME_H_
+#pragma once
 #include <TooN/TooN.h>
-#include "ui/open_gl.h"
+#include <TooN/se3.h>
+#include "ptam/ui/opengl.h"
 
 namespace ptam {
 class EyeGame {
@@ -35,4 +35,3 @@ class EyeGame {
   int mnFrameCounter;
 };
 }  // namespace ptam
-#endif

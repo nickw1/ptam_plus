@@ -10,9 +10,7 @@
 // MapMaker runs in its own thread, although some functions
 // (notably stereo init) are called by the tracker and run in the
 // tracker's thread.
-
-#ifndef PTAM_CONSTRUCT_MAPMAKER_H_
-#define PTAM_CONSTRUCT_MAPMAKER_H_
+#pragma once
 #include <queue>
 #include <memory>
 #include <thread>
@@ -20,9 +18,9 @@
 #include <cvd/image.h>
 #include <cvd/byte.h>
 
-#include "construct/map.h"
-#include "construct/keyframe.h"
-#include "math/atan_camera.h"
+#include "ptam/construct/map.h"
+#include "ptam/construct/keyframe.h"
+#include "ptam/math/atan_camera.h"
 
 namespace ptam {
 
@@ -129,5 +127,3 @@ protected:
   bool mbBundleRunningIsRecent;     //    ... and it's a local bundle adjustment.
 };
 }  // namespace ptam
-#endif
-

@@ -17,18 +17,16 @@
 // with every new input video frame. This then calls either
 // TrackForInitialMap() or TrackMap() as appropriate.
 //
-
-#ifndef PTAM_TRACK_TRACKER_H_
-#define PTAM_TRACK_TRACKER_H_
+#pragma once
 
 #include <sstream>
 #include <vector>
 #include <list>
 
-#include "construct/map_maker.h"
-#include "math/atan_camera.h"
-#include "track/mini_patch.h"
-#include "track/relocaliser.h"
+#include "ptam/construct/map_maker.h"
+#include "ptam/math/atan_camera.h"
+#include "ptam/track/mini_patch.h"
+#include "ptam/track/relocaliser.h"
 
 namespace ptam {
 class TrackerData;
@@ -130,10 +128,3 @@ public:
   std::ostringstream mMessageForUser;
 };
 }  // namespace ptam
-#endif
-
-
-
-
-
-

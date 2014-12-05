@@ -1,0 +1,31 @@
+﻿Build started 12/5/2014 12:31:20 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\xblat3s.vcxproj" on node 7 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/TESTING/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xblat3s.dir\Debug\\" /Fd"xblat3s.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\BLAS\TESTING\sblat3.c
+         sblat3.c
+     1>..\..\..\BLAS\TESTING\sblat3.c(1065): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(1489): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(1988): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(2407): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(2844): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\BLAS\TESTING\sblat3.c(2846): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\BLAS\TESTING\sblat3.c(2887): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3699): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3877): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3889): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3901): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3913): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3923): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3933): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\TESTING\sblat3.c(3937): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\Debug\xblat3s.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/BLAS/TESTING/Debug/xblat3s.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/BLAS/TESTING/Debug/xblat3s.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xblat3s.dir\Debug\sblat3.obj
+         xblat3s.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\Debug\xblat3s.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\TESTING\xblat3s.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.45

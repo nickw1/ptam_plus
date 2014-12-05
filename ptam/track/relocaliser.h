@@ -7,13 +7,11 @@
 // Just compare a small, blurred version of the input frame to all the KFs,
 // choose the closest match, and then estimate a camera rotation by direct image
 // minimisation.
-
-#ifndef PTAM_TRACK_RELOCALISER_H_
-#define PTAM_TRACK_RELOCALISER_H_
+#pragma once
 #include <TooN/se2.h>
-#include "math/atan_camera.h"
-#include "construct/small_blurry_image.h"
-#include "construct/map.h"
+#include "ptam/math/atan_camera.h"
+#include "ptam/construct/small_blurry_image.h"
+#include "ptam/construct/map.h"
 
 namespace ptam {
 class Relocaliser {
@@ -33,13 +31,3 @@ class Relocaliser {
 
 };
 }  // namespace ptam
-#endif
-
-
-
-
-
-
-
-
-

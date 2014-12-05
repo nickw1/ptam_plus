@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "track/mini_patch.h"
+#include "ptam/track/mini_patch.h"
 using namespace CVD;
 using namespace std;
 

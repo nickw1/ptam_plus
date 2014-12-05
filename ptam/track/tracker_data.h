@@ -1,10 +1,7 @@
-// -*- c++ -*-
-// Copyright 2008 Isis Innovation Limited
-#ifndef PTAM_TRACK_TRACKERDATA_H_
-#define PTAM_TRACK_TRACKERDATA_H_
+#pragma once
 
-#include "track/patch_finder.h"
-#include "math/atan_camera.h"
+#include "ptam/track/patch_finder.h"
+#include "ptam/math/atan_camera.h"
 
 namespace ptam {
 // This class contains all the intermediate results associated with
@@ -100,8 +97,3 @@ struct TrackerData {
   static CVD::ImageRef irImageSize;
 };
 }  // namespace ptam
-#endif
-
-
-
-

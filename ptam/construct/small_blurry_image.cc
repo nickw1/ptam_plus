@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/small_blurry_image.h"
+#include "ptam/construct/small_blurry_image.h"
 #include <cvd/utility.h>
 #include <cvd/convolution.h>
 #include <cvd/vision.h>
@@ -249,11 +249,3 @@ TooN::SE3<> SmallBlurryImage::SE3fromSE2(TooN::SE2<> se2, ATANCamera camera) {
   return se3Result;
 }
 }  // namespace ptam
-
-
-
-
-
-
-
-

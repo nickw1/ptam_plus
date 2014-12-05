@@ -1,18 +1,18 @@
-#include "ui/map_viewer.h"
+#include "ptam/ui/map_viewer.h"
 
 #include <iomanip>
 #include <cvd/gl_helpers.h>
 
-#include "construct/map_point.h"
-#include "construct/keyframe.h"
-#include "track/level_helpers.h"
-#include "ui/draw_helpers.h"
+#include "ptam/construct/map_point.h"
+#include "ptam/construct/keyframe.h"
+#include "ptam/track/level_helpers.h"
+#include "ptam/ui/gl_helpers.h"
 
 using namespace CVD;
 using namespace std;
 
 namespace ptam {
-MapViewer::MapViewer(Map &map, GLWindow2 &glw): mMap(map), mGLWindow(glw) {
+MapViewer::MapViewer(Map &map, GLWindow &glw): mMap(map), mGLWindow(glw) {
   mse3ViewerFromWorld =
       SE3<>::exp(makeVector(0, 0, 2, 0, 0, 0)) *
       SE3<>::exp(makeVector(0, 0, 0, 0.8 * M_PI, 0, 0));

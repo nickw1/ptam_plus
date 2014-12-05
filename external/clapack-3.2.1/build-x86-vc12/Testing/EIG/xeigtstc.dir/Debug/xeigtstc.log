@@ -1,0 +1,1046 @@
+﻿Build started 12/5/2014 12:32:37 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\xeigtstc.vcxproj" on node 6 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/EIG/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xeigtstc.dir\Debug\\" /Fd"xeigtstc.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\EIG\cchkee.c ..\..\..\TESTING\EIG\cbdt01.c ..\..\..\TESTING\EIG\cbdt02.c ..\..\..\TESTING\EIG\cbdt03.c ..\..\..\TESTING\EIG\cchkbb.c ..\..\..\TESTING\EIG\cchkbd.c ..\..\..\TESTING\EIG\cchkbk.c ..\..\..\TESTING\EIG\cchkbl.c ..\..\..\TESTING\EIG\cchkec.c ..\..\..\TESTING\EIG\cchkgg.c ..\..\..\TESTING\EIG\cchkgk.c ..\..\..\TESTING\EIG\cchkgl.c ..\..\..\TESTING\EIG\cchkhb.c ..\..\..\TESTING\EIG\cchkhs.c ..\..\..\TESTING\EIG\cchkst.c ..\..\..\TESTING\EIG\cckglm.c ..\..\..\TESTING\EIG\cckgqr.c ..\..\..\TESTING\EIG\cckgsv.c ..\..\..\TESTING\EIG\ccklse.c ..\..\..\TESTING\EIG\cdrges.c ..\..\..\TESTING\EIG\cdrgev.c ..\..\..\TESTING\EIG\cdrgsx.c ..\..\..\TESTING\EIG\cdrgvx.c ..\..\..\TESTING\EIG\cdrvbd.c ..\..\..\TESTING\EIG\cdrves.c ..\..\..\TESTING\EIG\cdrvev.c ..\..\..\TESTING\EIG\cdrvgg.c ..\..\..\TESTING\EIG\cdrvsg.c ..\..\..\TESTING\EIG\cdrvst.c ..\..\..\TESTING\EIG\cdrvsx.c ..\..\..\TESTING\EIG\cdrvvx.c ..\..\..\TESTING\EIG\cerrbd.c ..\..\..\TESTING\EIG\cerrec.c ..\..\..\TESTING\EIG\cerred.c ..\..\..\TESTING\EIG\cerrgg.c ..\..\..\TESTING\EIG\cerrhs.c ..\..\..\TESTING\EIG\cerrst.c ..\..\..\TESTING\EIG\cget02.c ..\..\..\TESTING\EIG\cget10.c ..\..\..\TESTING\EIG\cget22.c ..\..\..\TESTING\EIG\cget23.c ..\..\..\TESTING\EIG\cget24.c ..\..\..\TESTING\EIG\cget35.c ..\..\..\TESTING\EIG\cget36.c ..\..\..\TESTING\EIG\cget37.c ..\..\..\TESTING\EIG\cget38.c ..\..\..\TESTING\EIG\cget51.c ..\..\..\TESTING\EIG\cget52.c ..\..\..\TESTING\EIG\cget54.c ..\..\..\TESTING\EIG\cglmts.c ..\..\..\TESTING\EIG\cgqrts.c ..\..\..\TESTING\EIG\cgrqts.c ..\..\..\TESTING\EIG\cgsvts.c ..\..\..\TESTING\EIG\chbt21.c ..\..\..\TESTING\EIG\chet21.c ..\..\..\TESTING\EIG\chet22.c ..\..\..\TESTING\EIG\chpt21.c ..\..\..\TESTING\EIG\chst01.c ..\..\..\TESTING\EIG\clarfy.c ..\..\..\TESTING\EIG\clarhs.c ..\..\..\TESTING\EIG\clatm4.c ..\..\..\TESTING\EIG\clctes.c ..\..\..\TESTING\EIG\clctsx.c ..\..\..\TESTING\EIG\clsets.c ..\..\..\TESTING\EIG\csbmv.c ..\..\..\TESTING\EIG\csgt01.c ..\..\..\TESTING\EIG\cslect.c ..\..\..\TESTING\EIG\cstt21.c ..\..\..\TESTING\EIG\cstt22.c ..\..\..\TESTING\EIG\cunt01.c ..\..\..\TESTING\EIG\cunt03.c ..\..\..\TESTING\EIG\slafts.c ..\..\..\TESTING\EIG\slahd2.c ..\..\..\TESTING\EIG\slasum.c ..\..\..\TESTING\EIG\slatb9.c ..\..\..\TESTING\EIG\sstech.c ..\..\..\TESTING\EIG\sstect.c ..\..\..\TESTING\EIG\ssvdch.c ..\..\..\TESTING\EIG\ssvdct.c ..\..\..\TESTING\EIG\ssxt1.c ..\..\..\TESTING\EIG\alahdg.c ..\..\..\TESTING\EIG\alasum.c ..\..\..\TESTING\EIG\alasvm.c ..\..\..\TESTING\EIG\alareq.c ..\..\..\TESTING\EIG\ilaenv.c ..\..\..\TESTING\EIG\xerbla.c ..\..\..\TESTING\EIG\xlaenv.c ..\..\..\TESTING\EIG\chkxer.c ..\..\..\INSTALL\winsecond.c
+         cchkee.c
+     1>..\..\..\TESTING\EIG\cchkee.c(1494): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkee.c(2550): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkee.c(2555): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkee.c(2560): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkee.c(3467): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cbdt01.c
+     1>..\..\..\TESTING\EIG\cbdt01.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(229): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(261): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(262): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(287): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(288): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(308): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(309): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(317): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(318): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(331): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt01.c(335): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cbdt02.c
+     1>..\..\..\TESTING\EIG\cbdt02.c(134): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt02.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt02.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt02.c(151): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt02.c(164): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt02.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cbdt03.c
+     1>..\..\..\TESTING\EIG\cbdt03.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(188): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(189): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(232): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(235): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(236): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(263): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(264): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(268): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(273): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(286): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cbdt03.c(290): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkbb.c
+     1>..\..\..\TESTING\EIG\cchkbb.c(484): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbb.c(486): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbb.c(488): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbb.c(489): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cchkbd.c
+     1>..\..\..\TESTING\EIG\cchkbd.c(572): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(573): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(575): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(578): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(579): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(742): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(745): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(747): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1020): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1021): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1022): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1023): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1024): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbd.c(1025): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkbk.c
+     1>..\..\..\TESTING\EIG\cchkbk.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(129): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(194): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(198): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(201): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(201): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbk.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkbl.c
+     1>..\..\..\TESTING\EIG\cchkbl.c(131): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(132): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(181): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(203): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(204): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(206): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(207): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(215): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(230): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkbl.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkec.c
+     1>..\..\..\TESTING\EIG\cchkec.c(127): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkec.c(128): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkgg.c
+     1>..\..\..\TESTING\EIG\cchkgg.c(684): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(685): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(836): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(846): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(859): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(869): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(960): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(961): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1417): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1418): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1424): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1425): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1430): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1431): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1433): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1434): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgg.c(1435): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkgk.c
+     1>..\..\..\TESTING\EIG\cchkgk.c(154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(220): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(221): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(274): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(274): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(275): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(280): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(309): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(309): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(310): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgk.c(315): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkgl.c
+     1>..\..\..\TESTING\EIG\cchkgl.c(134): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(216): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(217): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(244): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(245): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(251): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(252): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(262): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(263): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(266): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(267): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkgl.c(271): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkhb.c
+     1>..\..\..\TESTING\EIG\cchkhb.c(437): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhb.c(439): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhb.c(441): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhb.c(442): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhb.c(619): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhb.c(627): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cchkhs.c
+     1>..\..\..\TESTING\EIG\cchkhs.c(642): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(643): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(645): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(647): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(648): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(649): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1017): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1018): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1019): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1025): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1026): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1031): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkhs.c(1032): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cchkst.c
+     1>..\..\..\TESTING\EIG\cchkst.c(755): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(758): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(761): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(762): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(943): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(949): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1343): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1344): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1345): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1347): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1348): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1350): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1351): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1352): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1354): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1355): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1360): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1361): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1363): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1364): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1464): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1465): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1466): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1468): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1469): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1474): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1475): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1525): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1526): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1567): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1568): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1569): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1571): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1572): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1577): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1578): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1626): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1631): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1637): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1642): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1678): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1680): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1683): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1684): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1691): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1866): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1867): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1868): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1870): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1871): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1876): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1877): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1933): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1934): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1990): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(1991): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2100): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2102): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2103): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2106): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2107): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2112): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2113): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2148): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2154): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2240): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2242): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2243): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2246): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2247): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2252): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2253): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2350): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2351): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2352): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2354): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2355): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2360): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cchkst.c(2361): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cckglm.c
+         cckgqr.c
+         cckgsv.c
+         ccklse.c
+         cdrges.c
+     1>..\..\..\TESTING\EIG\cdrges.c(579): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(580): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(732): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(742): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(755): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(765): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(963): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(963): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(965): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(966): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(971): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(971): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(973): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(974): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(976): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(978): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(978): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrges.c(994): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         cdrgev.c
+     1>..\..\..\TESTING\EIG\cdrgev.c(573): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgev.c(574): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgev.c(716): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgev.c(726): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgev.c(739): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgev.c(749): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cdrgsx.c
+     1>..\..\..\TESTING\EIG\cdrgsx.c(535): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(537): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(558): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(639): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(682): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(683): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(685): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(685): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(690): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(691): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(693): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(693): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(695): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(697): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(698): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(713): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(774): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(987): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1028): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1028): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1030): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1030): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1035): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1035): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1037): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1037): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1038): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1040): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1041): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1056): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgsx.c(1092): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrgvx.c
+     1>..\..\..\TESTING\EIG\cdrgvx.c(420): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(433): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(502): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(574): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(575): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(576): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(579): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(605): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(607): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(608): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(610): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(612): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(613): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(614): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(806): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(853): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(854): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(855): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(858): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(884): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(885): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(886): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(888): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(889): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(890): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrgvx.c(891): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvbd.c
+     1>..\..\..\TESTING\EIG\cdrvbd.c(489): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(491): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(700): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(723): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(730): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(731): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(742): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(743): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(746): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(849): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(873): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(880): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(881): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(892): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(893): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvbd.c(896): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrves.c
+     1>..\..\..\TESTING\EIG\cdrves.c(563): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrves.c(566): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrves.c(568): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cdrvev.c
+     1>..\..\..\TESTING\EIG\cdrvev.c(551): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(554): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(556): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(830): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(834): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(835): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(836): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(841): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(849): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(863): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(867): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(868): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(869): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(874): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvev.c(882): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvgg.c
+     1>..\..\..\TESTING\EIG\cdrvgg.c(616): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(617): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(767): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(777): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(790): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(800): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(968): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(968): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(970): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(970): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(975): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(975): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(977): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(977): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(979): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(980): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(981): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvgg.c(982): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvsg.c
+     1>..\..\..\TESTING\EIG\cdrvsg.c(598): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(599): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(601): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(603): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(604): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(818): warning C4244: '=' : conversion from 'doublereal' to 'integer', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsg.c(819): warning C4244: '=' : conversion from 'doublereal' to 'integer', possible loss of data
+         cdrvst.c
+     1>..\..\..\TESTING\EIG\cdrvst.c(582): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(583): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(585): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(587): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(588): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(896): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(897): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(898): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(900): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(901): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(905): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(906): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(915): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(916): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(922): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(928): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(935): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(941): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1023): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1025): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1026): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1028): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1029): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1033): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1034): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1110): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1112): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1115): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1116): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1122): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1363): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1364): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1365): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1367): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1368): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1372): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1373): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1415): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1416): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1422): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1428): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1435): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1441): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1553): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1555): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1556): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1558): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1559): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1563): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1564): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1701): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1703): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1706): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1707): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1713): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1855): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1857): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1860): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1861): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(1867): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2019): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2020): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2021): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2023): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2024): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2028): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2029): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2173): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2174): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2181): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2182): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2319): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2321): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2324): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2325): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2331): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2472): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2474): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2477): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2478): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2484): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2563): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2564): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2565): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2567): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2568): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2572): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2573): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2721): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2722): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2723): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2725): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2726): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2730): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2731): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2883): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2884): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2885): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2887): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2888): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2892): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2893): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2973): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2975): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2976): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2978): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2979): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2983): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(2984): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3063): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3065): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3068): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3151): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3157): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvst.c(3163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvsx.c
+     1>..\..\..\TESTING\EIG\cdrvsx.c(637): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsx.c(640): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvsx.c(642): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cdrvvx.c
+     1>..\..\..\TESTING\EIG\cdrvvx.c(622): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvvx.c(625): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cdrvvx.c(627): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cerrbd.c
+         cerrec.c
+         cerred.c
+         cerrgg.c
+         cerrhs.c
+         cerrst.c
+         cget02.c
+     1>..\..\..\TESTING\EIG\cget02.c(152): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget02.c(153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget02.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget02.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget02.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget10.c
+     1>..\..\..\TESTING\EIG\cget10.c(115): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(116): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(124): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(130): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(131): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(139): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget10.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget22.c
+     1>..\..\..\TESTING\EIG\cget22.c(171): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(208): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(209): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(212): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(230): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(230): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(231): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(241): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(244): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(252): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(253): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(258): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(259): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(317): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(325): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(329): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(336): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(337): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget22.c(338): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         cget23.c
+     1>..\..\..\TESTING\EIG\cget23.c(418): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(419): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(476): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(479): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(480): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(481): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(486): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(494): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(508): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(511): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(512): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(513): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(518): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(526): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(842): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(850): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(878): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(881): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(899): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(902): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(914): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(936): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(939): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget23.c(951): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget24.c
+     1>..\..\..\TESTING\EIG\cget24.c(410): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(411): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(494): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(495): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(496): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(504): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(508): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1025): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1032): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1042): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1050): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1099): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1102): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1118): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1121): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1149): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget24.c(1152): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget35.c
+     1>..\..\..\TESTING\EIG\cget35.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(136): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(142): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(235): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(236): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(247): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(248): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(265): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(266): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(301): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(305): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(323): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(327): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget35.c(328): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget36.c
+     1>..\..\..\TESTING\EIG\cget36.c(123): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget37.c
+     1>..\..\..\TESTING\EIG\cget37.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(180): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(182): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(220): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(307): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(350): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(368): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(371): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(409): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget37.c(412): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget38.c
+     1>..\..\..\TESTING\EIG\cget38.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(179): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(181): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(223): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(295): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(342): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(355): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(371): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(374): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(408): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget38.c(411): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget51.c
+     1>..\..\..\TESTING\EIG\cget51.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(184): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(234): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(238): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(261): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget51.c(263): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget52.c
+     1>..\..\..\TESTING\EIG\cget52.c(189): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(204): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(207): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(208): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(210): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(211): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(212): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(225): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(226): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(227): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(229): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(231): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(232): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(239): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(240): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(241): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(241): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(242): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(261): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(278): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(278): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(279): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget52.c(284): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cget54.c
+     1>..\..\..\TESTING\EIG\cget54.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(170): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(180): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cget54.c(217): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cglmts.c
+     1>..\..\..\TESTING\EIG\cglmts.c(155): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(159): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(189): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cglmts.c(190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cgqrts.c
+     1>..\..\..\TESTING\EIG\cgqrts.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(206): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(274): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(293): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(310): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgqrts.c(321): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cgrqts.c
+     1>..\..\..\TESTING\EIG\cgrqts.c(193): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(205): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(206): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(277): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(296): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(313): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgrqts.c(324): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cgsvts.c
+     1>..\..\..\TESTING\EIG\cgsvts.c(211): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(221): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(222): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(224): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(225): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(308): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(344): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(361): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(372): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cgsvts.c(383): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chbt21.c
+     1>..\..\..\TESTING\EIG\chbt21.c(186): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(187): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(196): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(197): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(264): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(272): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(276): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(297): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chbt21.c(299): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chet21.c
+     1>..\..\..\TESTING\EIG\chet21.c(249): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(250): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(267): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(268): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(298): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(423): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(462): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(471): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(475): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(497): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet21.c(499): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chet22.c
+     1>..\..\..\TESTING\EIG\chet22.c(213): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(214): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(221): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(222): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(262): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(270): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chet22.c(274): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chpt21.c
+     1>..\..\..\TESTING\EIG\chpt21.c(268): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(269): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(287): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(288): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(318): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(460): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(488): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(497): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(501): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(523): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chpt21.c(525): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chst01.c
+     1>..\..\..\TESTING\EIG\chst01.c(152): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chst01.c(153): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chst01.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chst01.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chst01.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\chst01.c(185): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clarfy.c
+         clarhs.c
+         Generating Code...
+         Compiling...
+         clatm4.c
+     1>..\..\..\TESTING\EIG\clatm4.c(310): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clatm4.c(316): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clatm4.c(345): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clatm4.c(349): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clatm4.c(397): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clatm4.c(414): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clctes.c
+     1>..\..\..\TESTING\EIG\clctes.c(74): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clctes.c(75): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clctes.c(83): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clctes.c(83): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clctes.c(84): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\clctes.c(85): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clctsx.c
+         clsets.c
+         csbmv.c
+         csgt01.c
+     1>..\..\..\TESTING\EIG\csgt01.c(158): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\csgt01.c(162): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\csgt01.c(183): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\csgt01.c(200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\csgt01.c(217): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cslect.c
+     1>..\..\..\TESTING\EIG\cslect.c(89): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cslect.c(97): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cstt21.c
+     1>..\..\..\TESTING\EIG\cstt21.c(155): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(175): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(178): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(189): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(191): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(215): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(223): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(248): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt21.c(249): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cstt22.c
+     1>..\..\..\TESTING\EIG\cstt22.c(155): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(163): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(168): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(169): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(174): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(175): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(179): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(247): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(255): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(259): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(281): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cstt22.c(282): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cunt01.c
+     1>..\..\..\TESTING\EIG\cunt01.c(156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(181): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(202): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(227): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt01.c(228): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cunt03.c
+     1>..\..\..\TESTING\EIG\cunt03.c(203): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(217): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(226): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(241): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(242): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(266): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(275): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(290): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(291): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(305): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\cunt03.c(306): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slafts.c
+         slahd2.c
+         slasum.c
+         slatb9.c
+     1>..\..\..\TESTING\EIG\slatb9.c(120): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\slatb9.c(122): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\slatb9.c(123): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sstech.c
+     1>..\..\..\TESTING\EIG\sstech.c(124): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstech.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstech.c(130): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstech.c(134): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstech.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstech.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sstect.c
+     1>..\..\..\TESTING\EIG\sstect.c(91): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(92): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(96): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(100): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(101): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(102): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(120): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(121): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\sstect.c(122): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         ssvdch.c
+     1>..\..\..\TESTING\EIG\ssvdch.c(114): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdch.c(115): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdch.c(116): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdch.c(122): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         ssvdct.c
+     1>..\..\..\TESTING\EIG\ssvdct.c(96): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(101): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(105): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(106): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(107): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(122): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(123): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssvdct.c(124): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         ssxt1.c
+     1>..\..\..\TESTING\EIG\ssxt1.c(106): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(110): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(111): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(115): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(116): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(117): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(121): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(122): warning C4244: '/=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\EIG\ssxt1.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         alahdg.c
+         alasum.c
+         alasvm.c
+         alareq.c
+         ilaenv.c
+     1>..\..\..\TESTING\EIG\ilaenv.c(244): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         xerbla.c
+         xlaenv.c
+         chkxer.c
+         winsecond.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\Debug\xeigtstc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/EIG/Debug/xeigtstc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/EIG/Debug/xeigtstc.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xeigtstc.dir\Debug\cchkee.obj
+         xeigtstc.dir\Debug\cbdt01.obj
+         xeigtstc.dir\Debug\cbdt02.obj
+         xeigtstc.dir\Debug\cbdt03.obj
+         xeigtstc.dir\Debug\cchkbb.obj
+         xeigtstc.dir\Debug\cchkbd.obj
+         xeigtstc.dir\Debug\cchkbk.obj
+         xeigtstc.dir\Debug\cchkbl.obj
+         xeigtstc.dir\Debug\cchkec.obj
+         xeigtstc.dir\Debug\cchkgg.obj
+         xeigtstc.dir\Debug\cchkgk.obj
+         xeigtstc.dir\Debug\cchkgl.obj
+         xeigtstc.dir\Debug\cchkhb.obj
+         xeigtstc.dir\Debug\cchkhs.obj
+         xeigtstc.dir\Debug\cchkst.obj
+         xeigtstc.dir\Debug\cckglm.obj
+         xeigtstc.dir\Debug\cckgqr.obj
+         xeigtstc.dir\Debug\cckgsv.obj
+         xeigtstc.dir\Debug\ccklse.obj
+         xeigtstc.dir\Debug\cdrges.obj
+         xeigtstc.dir\Debug\cdrgev.obj
+         xeigtstc.dir\Debug\cdrgsx.obj
+         xeigtstc.dir\Debug\cdrgvx.obj
+         xeigtstc.dir\Debug\cdrvbd.obj
+         xeigtstc.dir\Debug\cdrves.obj
+         xeigtstc.dir\Debug\cdrvev.obj
+         xeigtstc.dir\Debug\cdrvgg.obj
+         xeigtstc.dir\Debug\cdrvsg.obj
+         xeigtstc.dir\Debug\cdrvst.obj
+         xeigtstc.dir\Debug\cdrvsx.obj
+         xeigtstc.dir\Debug\cdrvvx.obj
+         xeigtstc.dir\Debug\cerrbd.obj
+         xeigtstc.dir\Debug\cerrec.obj
+         xeigtstc.dir\Debug\cerred.obj
+         xeigtstc.dir\Debug\cerrgg.obj
+         xeigtstc.dir\Debug\cerrhs.obj
+         xeigtstc.dir\Debug\cerrst.obj
+         xeigtstc.dir\Debug\cget02.obj
+         xeigtstc.dir\Debug\cget10.obj
+         xeigtstc.dir\Debug\cget22.obj
+         xeigtstc.dir\Debug\cget23.obj
+         xeigtstc.dir\Debug\cget24.obj
+         xeigtstc.dir\Debug\cget35.obj
+         xeigtstc.dir\Debug\cget36.obj
+         xeigtstc.dir\Debug\cget37.obj
+         xeigtstc.dir\Debug\cget38.obj
+         xeigtstc.dir\Debug\cget51.obj
+         xeigtstc.dir\Debug\cget52.obj
+         xeigtstc.dir\Debug\cget54.obj
+         xeigtstc.dir\Debug\cglmts.obj
+         xeigtstc.dir\Debug\cgqrts.obj
+         xeigtstc.dir\Debug\cgrqts.obj
+         xeigtstc.dir\Debug\cgsvts.obj
+         xeigtstc.dir\Debug\chbt21.obj
+         xeigtstc.dir\Debug\chet21.obj
+         xeigtstc.dir\Debug\chet22.obj
+         xeigtstc.dir\Debug\chpt21.obj
+         xeigtstc.dir\Debug\chst01.obj
+         xeigtstc.dir\Debug\clarfy.obj
+         xeigtstc.dir\Debug\clarhs.obj
+         xeigtstc.dir\Debug\clatm4.obj
+         xeigtstc.dir\Debug\clctes.obj
+         xeigtstc.dir\Debug\clctsx.obj
+         xeigtstc.dir\Debug\clsets.obj
+         xeigtstc.dir\Debug\csbmv.obj
+         xeigtstc.dir\Debug\csgt01.obj
+         xeigtstc.dir\Debug\cslect.obj
+         xeigtstc.dir\Debug\cstt21.obj
+         xeigtstc.dir\Debug\cstt22.obj
+         xeigtstc.dir\Debug\cunt01.obj
+         xeigtstc.dir\Debug\cunt03.obj
+         xeigtstc.dir\Debug\slafts.obj
+         xeigtstc.dir\Debug\slahd2.obj
+         xeigtstc.dir\Debug\slasum.obj
+         xeigtstc.dir\Debug\slatb9.obj
+         xeigtstc.dir\Debug\sstech.obj
+         xeigtstc.dir\Debug\sstect.obj
+         xeigtstc.dir\Debug\ssvdch.obj
+         xeigtstc.dir\Debug\ssvdct.obj
+         xeigtstc.dir\Debug\ssxt1.obj
+         xeigtstc.dir\Debug\alahdg.obj
+         xeigtstc.dir\Debug\alasum.obj
+         xeigtstc.dir\Debug\alasvm.obj
+         xeigtstc.dir\Debug\alareq.obj
+         xeigtstc.dir\Debug\ilaenv.obj
+         xeigtstc.dir\Debug\xerbla.obj
+         xeigtstc.dir\Debug\xlaenv.obj
+         xeigtstc.dir\Debug\chkxer.obj
+         xeigtstc.dir\Debug\winsecond.obj
+         xeigtstc.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\Debug\xeigtstc.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\xeigtstc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.60

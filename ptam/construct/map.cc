@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/map.h"
-#include "construct/map_point.h"
+#include "ptam/construct/map.h"
+#include "ptam/construct/map_point.h"
 
 namespace ptam {
 Map::Map() {
@@ -32,6 +32,3 @@ void Map::EmptyTrash() {
   trashed_points.clear();
 }
 }  // namespace ptam
-
-
-

@@ -12,8 +12,7 @@
 // old pointers which other threads are using are not
 // invalidated!
 
-#ifndef PATAM_CONSTRUCT_MAP_H_
-#define PATAM_CONSTRUCT_MAP_H_
+#pragma once
 #include <vector>
 #include <TooN/se3.h>
 #include <cvd/image.h>
@@ -37,5 +36,3 @@ struct Map {
   bool good;
 };
 }  // namespace ptam
-#endif
-

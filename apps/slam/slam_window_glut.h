@@ -1,22 +1,18 @@
-#ifndef APPS_SLAM_SLAM_WINDOW_GLUT_H_
-#define APPS_SLAM_SLAM_WINDOW_GLUT_H_
+#pragma once
 #include <iostream>
 #include <time.h>
-#include <sys/time.h>
-
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/ini_parser.hpp>
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-#include "construct/map.h"
-#include "construct/map_maker.h"
-#include "track/tracker.h"
-#include "ui/ar_render.h"
-#include "ui/gl_window.h"
-#include "util/opencv.h"
+#include "ptam/construct/map.h"
+#include "ptam/construct/map_maker.h"
+#include "ptam/track/tracker.h"
+#include "ptam/ui/ar_render.h"
+#include "ptam/ui/map_viewer.h"
+#include "ptam/ui/gl_window.h"
+#include "ptam/util/opencv.h"
 
 namespace ptam {
 
@@ -27,7 +23,7 @@ public:
 
     if (!capture.open(0)) {
       printf("ERROR: Cannot open cv::VideoCapture\n");
-      return exit(1);
+      exit(1);
     }
     capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
     capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
@@ -38,32 +34,45 @@ public:
 
     vTest = GVars3::GV3::get<TooN::Vector<NUMTRACKERCAMPARAMETERS> >(
           "Camera.Parameters", ATANCamera::mvDefaultParams, GVars3::HIDDEN);
-    mpCamera = new ATANCamera("Camera");
+    camera_.reset(new ATANCamera("Camera"));
     if (vTest == ATANCamera::mvDefaultParams) {
       printf("! Camera.Parameters is not set, need to run the CameraCalibrator tool\n");
       printf("  and/or put the Camera.Parameters= line into the appropriate .cfg file.\n");
       exit(1);
     }
 
-    TooN::Vector<2> v2 = mpCamera->GetImageSize();
+    TooN::Vector<2> v2 = camera_->GetImageSize();
     CVD::ImageRef img_size(v2[0], v2[1]);
     mimFrameBW.resize(img_size);
     mimFrameRGB.resize(img_size);
 
-    mpMap = new Map;
-    mpMapMaker = new MapMaker(*mpMap, *mpCamera);
-    mpTracker = new Tracker(img_size, *mpCamera, *mpMap, *mpMapMaker);
+    map_.reset(new Map);
+    map_maker_.reset(new MapMaker(*map_, *camera_));
+    tracker_.reset(new Tracker(img_size, *camera_, *map_, *map_maker_));
+
+    map_viewer_.reset(new MapViewer(*map_, *gl_window_));
+
+    // setup menus
+    GVars3::GUI.ParseLine("GLWindow.AddMenu Menu Menu");
+    GVars3::GUI.ParseLine("Menu.ShowMenu Root");
+    GVars3::GUI.ParseLine("Menu.AddMenuButton Root Reset Reset Root");
+    GVars3::GUI.ParseLine("Menu.AddMenuButton Root Spacebar PokeTracker Root");
+    GVars3::GUI.ParseLine("DrawAR=0");
+    GVars3::GUI.ParseLine("DrawMap=0");
+    GVars3::GUI.ParseLine("Menu.AddMenuToggle Root \"View Map\" DrawMap Root");
+    GVars3::GUI.ParseLine("Menu.AddMenuToggle Root \"Draw AR\" DrawAR Root");
+
   }
 
   cv::VideoCapture capture;
 
 protected:
-  virtual void get_video_frame(std::vector<unsigned char>& v_rgb_pixels) {
+  virtual void on_display() {
     static cv::Mat clone_rgb;
     try {
-      timeval tim;
+      /*timeval tim;
       gettimeofday(&tim, NULL);
-      double start = tim.tv_sec + (tim.tv_usec / 1000000.0);
+      double start = tim.tv_sec + (tim.tv_usec / 1000000.0);*/
 
       // We use two versions of each video frame:
       // One black and white (for processing by the tracker etc)
@@ -88,40 +97,60 @@ protected:
             CVD::ImageRef(gray_frame.cols, gray_frame.rows), rgb_frame.cols);
       mimFrameBW.copy_from(cvd_gray_frame);
 
-      mpTracker->TrackFrame(mimFrameBW);
-
+      tracker_->TrackFrame(mimFrameBW);
+      static std::vector<unsigned char> v_rgb_pixels;
       if (v_rgb_pixels.size() != 3*clone_rgb.cols*clone_rgb.rows)
         v_rgb_pixels.resize(3*clone_rgb.cols*clone_rgb.rows);
-      SafeCopyImage(v_rgb_pixels, clone_rgb);
+      SafeCopyRGBImage(v_rgb_pixels, clone_rgb);
 
       static int frame_count=0;
       frame_count++;
       if (frame_count == 30) {
         frame_count = 0;
       }
-      boost::this_thread::sleep(boost::posix_time::millisec(30));
+
+    static GVars3::gvar3<int> gvnDrawMap("DrawMap", 0, GVars3::HIDDEN | GVars3::SILENT);
+    static GVars3::gvar3<int> gvnDrawAR("DrawAR", 0, GVars3::HIDDEN | GVars3::SILENT);
+
+    bool draw_map = map_->IsGood() && *gvnDrawMap;
+    bool draw_ar = map_->IsGood() && *gvnDrawAR;
+
+    if (draw_map) {
+      map_viewer_->DrawMap(tracker_->GetCurrentPose());
+    } else {
+      render_->set_video_frame(&v_rgb_pixels);
+      render_->Render();
+    }
+
+    //      gl_window_->GetMousePoseUpdate();
+    std::string caption;
+    if (draw_map)
+      caption = map_viewer_->GetMessageForUser();
+    else
+      caption = tracker_->GetMessageForUser();
+    gl_window_->DrawCaption(caption);
+    gl_window_->DrawMenus();
+    //gl_window_->swap_buffers();
+    //gl_window_->HandlePendingEvents();
+    
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
     } catch (std::exception &e) {
       printf("SlamWindowCallback:: Oops: %s\n", e.what());
     }
   }
 
-  virtual void get_camera_pose(std::vector<double>& v_matrix4x3_camerapose) {
-
-  }
-
-  virtual void on_display(){}
-
   virtual void keyboard(unsigned char c_key, int x, int y) {
     c_pressed_key = c_key;
     switch (c_key) {
     case 'r':
-      mpTracker->Reset();
+      tracker_->Reset();
       break;
     case 27: //escape
       exit(0);
       break;
     case ' ':
-      mpTracker->AskInitialTrack();
+      tracker_->AskInitialTrack();
       break;
     default: ;
 
@@ -135,10 +164,10 @@ protected:
   CVD::Image<CVD::Rgb<CVD::byte> > mimFrameRGB;
   CVD::Image<CVD::byte> mimFrameBW;
 
-  Map *mpMap;
-  MapMaker *mpMapMaker;
-  Tracker *mpTracker;
-  ATANCamera *mpCamera;
+  std::shared_ptr<Map> map_;
+  std::shared_ptr<MapMaker> map_maker_;
+  std::shared_ptr<Tracker> tracker_;
+  std::shared_ptr<ATANCamera> camera_;
+  std::shared_ptr<MapViewer> map_viewer_;
 };
 }  // namespace ptam
-#endif  // APPS_SLAM_SLAM_WINDOW_GLUT_H_

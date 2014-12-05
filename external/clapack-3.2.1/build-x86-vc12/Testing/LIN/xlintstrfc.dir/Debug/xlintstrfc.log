@@ -1,0 +1,107 @@
+﻿Build started 12/5/2014 12:32:49 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfc.vcxproj" on node 6 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintstrfc.dir\Debug\\" /Fd"xlintstrfc.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\cchkrfp.c ..\..\..\TESTING\LIN\cdrvrfp.c ..\..\..\TESTING\LIN\cdrvrf1.c ..\..\..\TESTING\LIN\cdrvrf2.c ..\..\..\TESTING\LIN\cdrvrf3.c ..\..\..\TESTING\LIN\cdrvrf4.c ..\..\..\TESTING\LIN\cerrrfp.c ..\..\..\TESTING\LIN\claipd.c ..\..\..\TESTING\LIN\clatb4.c ..\..\..\TESTING\LIN\clarhs.c ..\..\..\TESTING\LIN\csbmv.c ..\..\..\TESTING\LIN\cget04.c ..\..\..\TESTING\LIN\cpot01.c ..\..\..\TESTING\LIN\cpot03.c ..\..\..\TESTING\LIN\cpot02.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\alasvm.c ..\..\..\INSTALL\winsecond.c
+         cchkrfp.c
+     1>..\..\..\TESTING\LIN\cchkrfp.c(187): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cchkrfp.c(406): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cchkrfp.c(411): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cchkrfp.c(416): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cchkrfp.c(464): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvrfp.c
+     1>..\..\..\TESTING\LIN\cdrvrfp.c(412): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrfp.c(425): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvrf1.c
+     1>..\..\..\TESTING\LIN\cdrvrf1.c(180): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf1.c(181): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf1.c(281): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf1.c(283): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cdrvrf2.c
+         cdrvrf3.c
+     1>..\..\..\TESTING\LIN\cdrvrf3.c(206): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf3.c(397): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf3.c(402): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         cdrvrf4.c
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(195): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(234): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(260): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(278): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(306): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(355): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(358): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cdrvrf4.c(360): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cerrrfp.c
+         claipd.c
+     1>..\..\..\TESTING\LIN\claipd.c(88): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clatb4.c
+     1>..\..\..\TESTING\LIN\clatb4.c(122): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\clatb4.c(124): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\clatb4.c(125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clarhs.c
+         csbmv.c
+         cget04.c
+     1>..\..\..\TESTING\LIN\cget04.c(123): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(139): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(139): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(150): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(150): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(151): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cget04.c(161): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cpot01.c
+     1>..\..\..\TESTING\LIN\cpot01.c(135): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot01.c(136): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot01.c(249): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cpot03.c
+     1>..\..\..\TESTING\LIN\cpot03.c(143): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot03.c(144): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot03.c(145): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot03.c(198): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         cpot02.c
+     1>..\..\..\TESTING\LIN\cpot02.c(140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot02.c(141): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot02.c(159): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot02.c(160): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\cpot02.c(166): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         chkxer.c
+         xerbla.c
+         alaerh.c
+         aladhd.c
+         alahd.c
+         Generating Code...
+         Compiling...
+         alasvm.c
+         winsecond.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstrfc.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintstrfc.dir\Debug\cchkrfp.obj
+         xlintstrfc.dir\Debug\cdrvrfp.obj
+         xlintstrfc.dir\Debug\cdrvrf1.obj
+         xlintstrfc.dir\Debug\cdrvrf2.obj
+         xlintstrfc.dir\Debug\cdrvrf3.obj
+         xlintstrfc.dir\Debug\cdrvrf4.obj
+         xlintstrfc.dir\Debug\cerrrfp.obj
+         xlintstrfc.dir\Debug\claipd.obj
+         xlintstrfc.dir\Debug\clatb4.obj
+         xlintstrfc.dir\Debug\clarhs.obj
+         xlintstrfc.dir\Debug\csbmv.obj
+         xlintstrfc.dir\Debug\cget04.obj
+         xlintstrfc.dir\Debug\cpot01.obj
+         xlintstrfc.dir\Debug\cpot03.obj
+         xlintstrfc.dir\Debug\cpot02.obj
+         xlintstrfc.dir\Debug\chkxer.obj
+         xlintstrfc.dir\Debug\xerbla.obj
+         xlintstrfc.dir\Debug\alaerh.obj
+         xlintstrfc.dir\Debug\aladhd.obj
+         xlintstrfc.dir\Debug\alahd.obj
+         xlintstrfc.dir\Debug\alasvm.obj
+         xlintstrfc.dir\Debug\winsecond.obj
+         xlintstrfc.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstrfc.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstrfc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.54

@@ -1,0 +1,413 @@
+﻿Build started 12/5/2014 12:30:58 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\tmglib.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/MATGEN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tmglib.dir\Debug\\" /Fd"tmglib.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\MATGEN\slatms.c ..\..\..\TESTING\MATGEN\slatme.c ..\..\..\TESTING\MATGEN\slatmr.c ..\..\..\TESTING\MATGEN\slatmt.c ..\..\..\TESTING\MATGEN\slagge.c ..\..\..\TESTING\MATGEN\slagsy.c ..\..\..\TESTING\MATGEN\slakf2.c ..\..\..\TESTING\MATGEN\slarge.c ..\..\..\TESTING\MATGEN\slaror.c ..\..\..\TESTING\MATGEN\slarot.c ..\..\..\TESTING\MATGEN\slatm2.c ..\..\..\TESTING\MATGEN\slatm3.c ..\..\..\TESTING\MATGEN\slatm5.c ..\..\..\TESTING\MATGEN\slatm6.c ..\..\..\TESTING\MATGEN\slatm7.c ..\..\..\TESTING\MATGEN\slahilb.c ..\..\..\TESTING\MATGEN\clatms.c ..\..\..\TESTING\MATGEN\clatme.c ..\..\..\TESTING\MATGEN\clatmr.c ..\..\..\TESTING\MATGEN\clatmt.c ..\..\..\TESTING\MATGEN\clagge.c ..\..\..\TESTING\MATGEN\claghe.c ..\..\..\TESTING\MATGEN\clagsy.c ..\..\..\TESTING\MATGEN\clakf2.c ..\..\..\TESTING\MATGEN\clarge.c ..\..\..\TESTING\MATGEN\claror.c ..\..\..\TESTING\MATGEN\clarot.c ..\..\..\TESTING\MATGEN\clatm1.c ..\..\..\TESTING\MATGEN\clarnd.c ..\..\..\TESTING\MATGEN\clatm2.c ..\..\..\TESTING\MATGEN\clatm3.c ..\..\..\TESTING\MATGEN\clatm5.c ..\..\..\TESTING\MATGEN\clatm6.c ..\..\..\TESTING\MATGEN\clahilb.c ..\..\..\TESTING\MATGEN\slatm1.c ..\..\..\TESTING\MATGEN\slaran.c ..\..\..\TESTING\MATGEN\slarnd.c ..\..\..\TESTING\MATGEN\dlatms.c ..\..\..\TESTING\MATGEN\dlatme.c ..\..\..\TESTING\MATGEN\dlatmr.c ..\..\..\TESTING\MATGEN\dlatmt.c ..\..\..\TESTING\MATGEN\dlagge.c ..\..\..\TESTING\MATGEN\dlagsy.c ..\..\..\TESTING\MATGEN\dlakf2.c ..\..\..\TESTING\MATGEN\dlarge.c ..\..\..\TESTING\MATGEN\dlaror.c ..\..\..\TESTING\MATGEN\dlarot.c ..\..\..\TESTING\MATGEN\dlatm2.c ..\..\..\TESTING\MATGEN\dlatm3.c ..\..\..\TESTING\MATGEN\dlatm5.c ..\..\..\TESTING\MATGEN\dlatm6.c ..\..\..\TESTING\MATGEN\dlatm7.c ..\..\..\TESTING\MATGEN\dlahilb.c ..\..\..\TESTING\MATGEN\zlatms.c ..\..\..\TESTING\MATGEN\zlatme.c ..\..\..\TESTING\MATGEN\zlatmr.c ..\..\..\TESTING\MATGEN\zlatmt.c ..\..\..\TESTING\MATGEN\zlagge.c ..\..\..\TESTING\MATGEN\zlaghe.c ..\..\..\TESTING\MATGEN\zlagsy.c ..\..\..\TESTING\MATGEN\zlakf2.c ..\..\..\TESTING\MATGEN\zlarge.c ..\..\..\TESTING\MATGEN\zlaror.c ..\..\..\TESTING\MATGEN\zlarot.c ..\..\..\TESTING\MATGEN\zlatm1.c ..\..\..\TESTING\MATGEN\zlarnd.c ..\..\..\TESTING\MATGEN\zlatm2.c ..\..\..\TESTING\MATGEN\zlatm3.c ..\..\..\TESTING\MATGEN\zlatm5.c ..\..\..\TESTING\MATGEN\zlatm6.c ..\..\..\TESTING\MATGEN\zlahilb.c ..\..\..\TESTING\MATGEN\dlatm1.c ..\..\..\TESTING\MATGEN\dlaran.c ..\..\..\TESTING\MATGEN\dlarnd.c
+         slatms.c
+     1>..\..\..\TESTING\MATGEN\slatms.c(518): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(522): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(523): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(614): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(615): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(616): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(689): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(690): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(691): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(774): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(775): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(776): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(850): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(851): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(852): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(944): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(945): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(946): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(1053): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(1054): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatms.c(1055): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slatme.c
+     1>..\..\..\TESTING\MATGEN\slatme.c(480): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatme.c(484): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatme.c(485): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatme.c(673): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slatmr.c
+     1>..\..\..\TESTING\MATGEN\slatmr.c(684): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(688): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(689): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(775): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(789): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(805): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(825): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(845): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(873): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(908): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(926): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(944): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(966): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(988): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1001): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1016): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1033): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1057): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1087): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1106): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1125): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1140): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1156): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1176): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1190): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1194): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1196): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1198): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1200): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1202): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmr.c(1204): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slatmt.c
+     1>..\..\..\TESTING\MATGEN\slatmt.c(526): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(530): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(531): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(622): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(623): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(624): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(697): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(698): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(699): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(782): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(783): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(784): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(858): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(859): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(860): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(952): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(953): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(954): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(1061): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(1062): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatmt.c(1063): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slagge.c
+     1>..\..\..\TESTING\MATGEN\slagge.c(172): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(173): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(204): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(205): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(251): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(252): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(288): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(289): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(329): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(330): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(366): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagge.c(367): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slagsy.c
+     1>..\..\..\TESTING\MATGEN\slagsy.c(166): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagsy.c(167): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagsy.c(192): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagsy.c(212): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagsy.c(213): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slagsy.c(250): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slakf2.c
+         slarge.c
+     1>..\..\..\TESTING\MATGEN\slarge.c(132): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slarge.c(133): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slaror.c
+     1>..\..\..\TESTING\MATGEN\slaror.c(227): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slaror.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slaror.c(234): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slaror.c(236): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slaror.c(275): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slaror.c(276): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slarot.c
+         slatm2.c
+     1>..\..\..\TESTING\MATGEN\slatm2.c(233): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slatm3.c
+     1>..\..\..\TESTING\MATGEN\slatm3.c(243): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slatm5.c
+     1>..\..\..\TESTING\MATGEN\slatm5.c(291): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(304): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(306): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(321): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(322): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(336): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(337): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(351): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(362): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(372): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(373): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(383): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(384): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(394): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(395): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(409): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm5.c(411): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slatm6.c
+     1>..\..\..\TESTING\MATGEN\slatm6.c(260): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(262): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(264): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(266): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(268): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(284): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(286): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm6.c(288): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         slatm7.c
+     1>..\..\..\TESTING\MATGEN\slatm7.c(227): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm7.c(231): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm7.c(260): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm7.c(263): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm7.c(281): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slahilb.c
+         clatms.c
+     1>..\..\..\TESTING\MATGEN\clatms.c(543): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(547): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(548): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(651): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(652): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(656): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(755): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(756): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(760): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(868): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(869): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(873): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(970): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(971): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(975): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1097): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1098): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1102): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1267): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1268): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatms.c(1272): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clatme.c
+     1>..\..\..\TESTING\MATGEN\clatme.c(437): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatme.c(441): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatme.c(442): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatme.c(620): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clatmr.c
+     1>..\..\..\TESTING\MATGEN\clatmr.c(715): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(719): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(720): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1406): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1408): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1410): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1412): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1414): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1416): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1418): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmr.c(1420): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clatmt.c
+     1>..\..\..\TESTING\MATGEN\clatmt.c(549): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(553): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(554): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(657): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(658): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(662): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(761): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(762): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(766): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(874): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(875): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(879): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(976): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(977): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(981): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1103): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1104): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1108): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1273): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1274): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatmt.c(1278): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         clagge.c
+     1>..\..\..\TESTING\MATGEN\clagge.c(180): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(181): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(218): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(219): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(269): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(270): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(316): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(317): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(369): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(370): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(418): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagge.c(419): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         claghe.c
+     1>..\..\..\TESTING\MATGEN\claghe.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\claghe.c(178): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\claghe.c(234): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\claghe.c(235): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clagsy.c
+     1>..\..\..\TESTING\MATGEN\clagsy.c(177): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagsy.c(178): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagsy.c(260): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clagsy.c(261): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clakf2.c
+         clarge.c
+     1>..\..\..\TESTING\MATGEN\clarge.c(136): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clarge.c(137): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         claror.c
+     1>..\..\..\TESTING\MATGEN\claror.c(259): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\claror.c(260): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\claror.c(323): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clarot.c
+         clatm1.c
+     1>..\..\..\TESTING\MATGEN\clatm1.c(225): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm1.c(230): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm1.c(257): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm1.c(261): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm1.c(284): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clarnd.c
+     1>..\..\..\TESTING\MATGEN\clarnd.c(89): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clarnd.c(90): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clarnd.c(110): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clarnd.c(120): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clatm2.c
+         clatm3.c
+         clatm5.c
+     1>..\..\..\TESTING\MATGEN\clatm5.c(603): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm5.c(609): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm5.c(663): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm5.c(669): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         clatm6.c
+     1>..\..\..\TESTING\MATGEN\clatm6.c(350): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm6.c(352): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm6.c(354): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm6.c(356): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\clatm6.c(358): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         clahilb.c
+         slatm1.c
+     1>..\..\..\TESTING\MATGEN\slatm1.c(209): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm1.c(213): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm1.c(237): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm1.c(240): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slatm1.c(258): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         slaran.c
+         slarnd.c
+     1>..\..\..\TESTING\MATGEN\slarnd.c(84): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slarnd.c(100): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\MATGEN\slarnd.c(102): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         dlatms.c
+         dlatme.c
+         dlatmr.c
+         Generating Code...
+         Compiling...
+         dlatmt.c
+         dlagge.c
+         dlagsy.c
+         dlakf2.c
+         dlarge.c
+         dlaror.c
+         dlarot.c
+         dlatm2.c
+         dlatm3.c
+         dlatm5.c
+         dlatm6.c
+         dlatm7.c
+         dlahilb.c
+         zlatms.c
+         zlatme.c
+         zlatmr.c
+         zlatmt.c
+         zlagge.c
+         zlaghe.c
+         zlagsy.c
+         Generating Code...
+         Compiling...
+         zlakf2.c
+         zlarge.c
+         zlaror.c
+         zlarot.c
+         zlatm1.c
+         zlarnd.c
+         zlatm2.c
+         zlatm3.c
+         zlatm5.c
+         zlatm6.c
+         zlahilb.c
+         dlatm1.c
+         dlaran.c
+         dlarnd.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\Debug\tmglib.lib" /NOLOGO tmglib.dir\Debug\slatms.obj
+         tmglib.dir\Debug\slatme.obj
+         tmglib.dir\Debug\slatmr.obj
+         tmglib.dir\Debug\slatmt.obj
+         tmglib.dir\Debug\slagge.obj
+         tmglib.dir\Debug\slagsy.obj
+         tmglib.dir\Debug\slakf2.obj
+         tmglib.dir\Debug\slarge.obj
+         tmglib.dir\Debug\slaror.obj
+         tmglib.dir\Debug\slarot.obj
+         tmglib.dir\Debug\slatm2.obj
+         tmglib.dir\Debug\slatm3.obj
+         tmglib.dir\Debug\slatm5.obj
+         tmglib.dir\Debug\slatm6.obj
+         tmglib.dir\Debug\slatm7.obj
+         tmglib.dir\Debug\slahilb.obj
+         tmglib.dir\Debug\clatms.obj
+         tmglib.dir\Debug\clatme.obj
+         tmglib.dir\Debug\clatmr.obj
+         tmglib.dir\Debug\clatmt.obj
+         tmglib.dir\Debug\clagge.obj
+         tmglib.dir\Debug\claghe.obj
+         tmglib.dir\Debug\clagsy.obj
+         tmglib.dir\Debug\clakf2.obj
+         tmglib.dir\Debug\clarge.obj
+         tmglib.dir\Debug\claror.obj
+         tmglib.dir\Debug\clarot.obj
+         tmglib.dir\Debug\clatm1.obj
+         tmglib.dir\Debug\clarnd.obj
+         tmglib.dir\Debug\clatm2.obj
+         tmglib.dir\Debug\clatm3.obj
+         tmglib.dir\Debug\clatm5.obj
+         tmglib.dir\Debug\clatm6.obj
+         tmglib.dir\Debug\clahilb.obj
+         tmglib.dir\Debug\slatm1.obj
+         tmglib.dir\Debug\slaran.obj
+         tmglib.dir\Debug\slarnd.obj
+         tmglib.dir\Debug\dlatms.obj
+         tmglib.dir\Debug\dlatme.obj
+         tmglib.dir\Debug\dlatmr.obj
+         tmglib.dir\Debug\dlatmt.obj
+         tmglib.dir\Debug\dlagge.obj
+         tmglib.dir\Debug\dlagsy.obj
+         tmglib.dir\Debug\dlakf2.obj
+         tmglib.dir\Debug\dlarge.obj
+         tmglib.dir\Debug\dlaror.obj
+         tmglib.dir\Debug\dlarot.obj
+         tmglib.dir\Debug\dlatm2.obj
+         tmglib.dir\Debug\dlatm3.obj
+         tmglib.dir\Debug\dlatm5.obj
+         tmglib.dir\Debug\dlatm6.obj
+         tmglib.dir\Debug\dlatm7.obj
+         tmglib.dir\Debug\dlahilb.obj
+         tmglib.dir\Debug\zlatms.obj
+         tmglib.dir\Debug\zlatme.obj
+         tmglib.dir\Debug\zlatmr.obj
+         tmglib.dir\Debug\zlatmt.obj
+         tmglib.dir\Debug\zlagge.obj
+         tmglib.dir\Debug\zlaghe.obj
+         tmglib.dir\Debug\zlagsy.obj
+         tmglib.dir\Debug\zlakf2.obj
+         tmglib.dir\Debug\zlarge.obj
+         tmglib.dir\Debug\zlaror.obj
+         tmglib.dir\Debug\zlarot.obj
+         tmglib.dir\Debug\zlatm1.obj
+         tmglib.dir\Debug\zlarnd.obj
+         tmglib.dir\Debug\zlatm2.obj
+         tmglib.dir\Debug\zlatm3.obj
+         tmglib.dir\Debug\zlatm5.obj
+         tmglib.dir\Debug\zlatm6.obj
+         tmglib.dir\Debug\zlahilb.obj
+         tmglib.dir\Debug\dlatm1.obj
+         tmglib.dir\Debug\dlaran.obj
+         tmglib.dir\Debug\dlarnd.obj
+         tmglib.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\Debug\tmglib.lib
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\MATGEN\tmglib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.83

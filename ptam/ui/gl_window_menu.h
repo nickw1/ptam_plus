@@ -1,8 +1,6 @@
 // -*- c++ -*-
 // Copyright 2008 Isis Innovation Limited
-
-#ifndef PTAM_UI_GL_WINDOW_MENU_H_
-#define PTAM_UI_GL_WINDOW_MENU_H_
+#pragma once
 
 // A simple gvars-driven menu system for GLWindow2
 // N.b. each GLWindowMenu class internally contains sub-menus
@@ -10,14 +8,14 @@
 #include <vector>
 #include <map>
 #include <gvars3/gvars3.h>
-#include "ui/gl_window2.h"
+#include "ptam/ui/gl_window.h"
 
 namespace ptam {
 class GLWindowMenu {
  public:
   GLWindowMenu(std::string sName, std::string sTitle);
   ~GLWindowMenu();
-  void Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw);
+  void Render(int nTop, int nHeight, int nWidth);
   void FillBox(int l, int r, int t, int b);
   void LineBox(int l, int r, int t, int b);
 
@@ -60,14 +58,3 @@ class GLWindowMenu {
   int mnLeftMostCoord;
 };
 }  // namespace ptam
-#endif
-
-
-
-
-
-
-
-
-
-

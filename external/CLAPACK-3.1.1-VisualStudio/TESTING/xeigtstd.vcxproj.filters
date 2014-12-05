@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4d5a22af-7de6-4058-8ef9-82dc8336594a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\aeigtst">
+      <UniqueIdentifier>{b8e90087-8c59-46b7-9f41-d7c59d9e3e43}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\deigtst">
+      <UniqueIdentifier>{0e6782f1-7b26-49a7-989c-12904be5fb70}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dzigtst">
+      <UniqueIdentifier>{dda382b2-418f-47dc-8077-3b113e9e03e2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EIG\ddrges.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\ddrgev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\ddrgsx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\ddrgvx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\dlctes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\dlctsx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\alahdg.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\alareq.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\alasum.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\alasvm.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\chkxer.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ilaenv.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\xerbla.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\xlaenv.c">
+      <Filter>Source Files\aeigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dbdt01.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dbdt02.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dbdt03.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkbb.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkbd.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkbk.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkbl.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkec.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkee.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkgg.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkgk.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkgl.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkhs.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchksb.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dchkst.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dckglm.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dckgqr.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dckgsv.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dcklse.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvbd.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrves.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvev.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvgg.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvsg.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvst.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvsx.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\ddrvvx.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derrbd.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derrec.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derred.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derrgg.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derrhs.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\derrst.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget02.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget10.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget22.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget23.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget24.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget31.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget32.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget33.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget34.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget35.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget36.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget37.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget38.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget39.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget51.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget52.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dget53.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="EIG\dget54.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dglmts.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dgqrts.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dgrqts.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dgsvts.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dhst01.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="MATGEN\dlakf2.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlarfy.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlarhs.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlatm4.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="MATGEN\dlatm5.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="MATGEN\dlatm6.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlsets.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dort01.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dort03.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsbt21.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsgt01.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dslect.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dspt21.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dstt21.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dstt22.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsyt21.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsyt22.c">
+      <Filter>Source Files\deigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlafts.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlahd2.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlasum.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dlatb9.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dstech.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dstect.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsvdch.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsvdct.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+    <ClCompile Include="Eig\dsxt1.c">
+      <Filter>Source Files\dzigtst</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -3,8 +3,7 @@
 //
 // Inverse of 2-matrix
 // Must be invertible!
-#ifndef PTAM_TRACK_SMALL_MATRIX_OPTS_H_
-#define PTAM_TRACK_SMALL_MATRIX_OPTS_H_
+#pragma once
 #include <cassert>
 #include <TooN/TooN.h>
 
@@ -34,4 +33,3 @@ inline double M3Det(TooN::Matrix<3> m ) {
     m[0][2] * (m[1][0] * m[2][1]  - m[1][1] * m[2][0]);
 }
 }  // namespace ptam
-#endif

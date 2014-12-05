@@ -89,7 +89,7 @@ file(GLOB cvd_headers   ${CMAKE_CURRENT_SOURCE_DIR}/cvd/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/io/*.h)
 
-set(sub_dirs fast)
+set(sub_dirs fast i686)
 if(WIN32)
   list(APPEND sub_dirs SSE2 Win32)
 elseif(ANDROID)
@@ -114,7 +114,13 @@ set(remove_items "cvd/eventobject.h" "cvd_src/eventobject.cpp"
                  "cvd/glwindow.h"    "cvd_src/glwindow.cc"
                  "cvd/thread.h" "cvd_src/thread.cpp"
                  "cvd/synchronized.h" "cvd_src/synchronized.cpp"
-                 "cvd/video*" "cvd_src/video*")
+                 "cvd/video*" "cvd_src/video*"
+                 "cvd_src/fast/fast_7*"
+                 "cvd_src/fast/fast_8*"
+                 "cvd_src/fast/fast_9*"
+                 "cvd_src/fast/fast_11*"
+                 "cvd_src/fast/fast_12*"
+                 "cvd_src/i686/*MMX*")
 foreach(item ${remove_items})
   file(GLOB temp_src ${CMAKE_CURRENT_SOURCE_DIR}/${item})
   foreach(temp_item ${temp_src})

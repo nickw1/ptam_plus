@@ -3,12 +3,11 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <gvars3/instances.h>
 #include <TooN/SVD.h>
-#include "ui/open_gl.h"
+#include "ptam/ui/opengl.h"
 #include "camera_calibrator.h"
 #include "config.h"
 
 using namespace std;
-using namespace i3d;
 using namespace ptam;
 
 int main(int argc, char **argv) {
@@ -24,8 +23,8 @@ int main(int argc, char **argv) {
         "Camera.Parameters", ATANCamera::mvDefaultParams, GVars3::SILENT);
 
   try {
+
     CameraCalibrator c;
-    c.Run();
   } catch(CVD::Exceptions::All e) {
     printf("Oops! camera_calibrator.cc main()::%s\n", e.what.c_str());
   }
@@ -37,7 +36,7 @@ CameraCalibrator::CameraCalibrator()
 
   if (!capture.open(0)) {
     printf("ERROR: Cannot open cv::VideoCapture\n");
-    return exit(1);
+    exit(1);
   }
   capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
   capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
@@ -47,7 +46,7 @@ CameraCalibrator::CameraCalibrator()
   TooN::Vector<2> v2 = mCamera.GetImageSize();
   CVD::ImageRef img_size(v2[0], v2[1]);
 
-  mGLWindow = cv::Ptr<GLWindow2>(new GLWindow2(img_size, "Camera Calibrator"));
+  mGLWindow.reset(new GLWindow(v2, this, "Camera Calibrator"));
 
   GVars3::GUI.RegisterCommand("CameraCalibrator.GrabNextFrame", GUICommandCallBack, this);
   GVars3::GUI.RegisterCommand("CameraCalibrator.Reset", GUICommandCallBack, this);
@@ -71,93 +70,6 @@ CameraCalibrator::CameraCalibrator()
   GVars3::GUI.ParseLine("CalibMenu.AddMenuButton Opti Save CameraCalibrator.SaveCalib");
 
   Reset();
-}
-
-void CameraCalibrator::Run() {
-  cv::Mat rgb_frame, gray_frame;
-  while (!mbDone) {
-    // We use two versions of each video frame:
-    // One black and white (for processing by the tracker etc)
-    // and one RGB, for drawing.
-
-    TooN::Vector<2> v2 = mCamera.GetImageSize();
-    CVD::ImageRef img_size(v2[0], v2[1]);
-    CVD::Image<CVD::Rgb<CVD::byte> > imFrameRGB(img_size);
-    CVD::Image<CVD::byte>  imFrameBW(img_size);
-
-    // Grab new video frame...
-    capture.read(rgb_frame);
-    cv::cvtColor(rgb_frame, rgb_frame, CV_BGR2RGB);
-    
-    cv::resize(rgb_frame, rgb_frame, cv::Size(v2[0], v2[1]));
-    CVD::SubImage<CVD::Rgb<CVD::byte> > cvd_rgb_frame(
-          (CVD::Rgb<CVD::byte>*)rgb_frame.data,
-          CVD::ImageRef(rgb_frame.cols, rgb_frame.rows), rgb_frame.cols*3);
-    cv::cvtColor(rgb_frame, gray_frame, CV_RGB2GRAY);
-    imFrameRGB.copy_from(cvd_rgb_frame);
-    CVD::SubImage<CVD::byte> cvd_gray_frame(gray_frame.data,
-          CVD::ImageRef(gray_frame.cols, gray_frame.rows), rgb_frame.cols);
-    imFrameBW.copy_from(cvd_gray_frame);
-
-    // Set up openGL
-    mGLWindow->SetupViewport();
-    mGLWindow->SetupVideoOrtho();
-    mGLWindow->SetupVideoRasterPosAndZoom();
-
-    if (mvCalibImgs.size() < 1)
-      *mgvnOptimizing = 0;
-
-    if (!*mgvnOptimizing) {
-      GVars3::GUI.ParseLine("CalibMenu.ShowMenu Live");
-      CVD::glDrawPixels(imFrameBW);
-
-      CalibImage c;
-      if (c.MakeFromImage(imFrameBW)) {
-        if (mbGrabNextFrame) {
-          mvCalibImgs.push_back(c);
-          mvCalibImgs.back().GuessInitialPose(mCamera);
-          mvCalibImgs.back().Draw3DGrid(mCamera, false);
-          mbGrabNextFrame = false;
-        };
-      }
-    } else {
-      OptimizeOneStep();
-
-      GVars3::GUI.ParseLine("CalibMenu.ShowMenu Opti");
-      int nToShow = *mgvnShowImage - 1;
-      if(nToShow < 0)
-        nToShow = 0;
-      if(nToShow >= (int) mvCalibImgs.size())
-        nToShow = mvCalibImgs.size()-1;
-      *mgvnShowImage = nToShow + 1;
-
-      CVD::glDrawPixels(mvCalibImgs[nToShow].mim);
-      mvCalibImgs[nToShow].Draw3DGrid(mCamera,true);
-    }
-
-    ostringstream ost;
-    ost << "Camera Calibration: Grabbed " << mvCalibImgs.size() << " images." << endl;
-    if (!*mgvnOptimizing) {
-      ost << "Take snapshots of the calib grid with the \"GrabFrame\" button," << endl;
-      ost << "and then press \"Optimize\"." << endl;
-      ost << "Take enough shots (4+) at different angles to get points " << endl;
-      ost << "into all parts of the image (corners too.) The whole grid " << endl;
-      ost << "doesn't need to be visible so feel free to zoom in." << endl;
-    } else {
-      ost << "Current RMS pixel error is " << mdMeanPixelError << endl;
-      ost << "Current camera params are  " << GVars3::GV3::get_var("Camera.Parameters") << endl;
-      ost << "(That would be a pixel aspect ratio of "
-          <<  mCamera.PixelAspectRatio() << ")" << endl;
-      ost << "Check fit by looking through the grabbed images." << endl;
-      ost << "RMS should go below 0.5, typically below 0.3 for a wide lens." << endl;
-      ost << "Press \"save\" to save calibration to camera.cfg file and exit." << endl;
-    }
-
-    mGLWindow->DrawCaption(ost.str());
-    mGLWindow->DrawMenus();
-    mGLWindow->HandlePendingEvents();
-    mGLWindow->swap_buffers();
-  }
 }
 
 void CameraCalibrator::Reset() {
@@ -259,6 +171,101 @@ void CameraCalibrator::OptimizeOneStep() {
   for(int n=0; n<nViews; n++)
     mvCalibImgs[n].mse3CamFromWorld = TooN::SE3<>::exp(vUpdate.slice(n * 6, 6)) * mvCalibImgs[n].mse3CamFromWorld;
   mCamera.UpdateParams(vUpdate.slice(nCamParamBase, NUMTRACKERCAMPARAMETERS));
+}
+
+void CameraCalibrator::on_display() {
+  cv::Mat rgb_frame, gray_frame;
+  {
+    // We use two versions of each video frame:
+    // One black and white (for processing by the tracker etc)
+    // and one RGB, for drawing.
+
+    TooN::Vector<2> v2 = mCamera.GetImageSize();
+    CVD::ImageRef img_size(v2[0], v2[1]);
+    CVD::Image<CVD::Rgb<CVD::byte> > imFrameRGB(img_size);
+    CVD::Image<CVD::byte>  imFrameBW(img_size);
+
+    // Grab new video frame...
+    capture.read(rgb_frame);
+    cv::cvtColor(rgb_frame, rgb_frame, CV_BGR2RGB);
+    
+    cv::resize(rgb_frame, rgb_frame, cv::Size(v2[0], v2[1]));
+    CVD::SubImage<CVD::Rgb<CVD::byte> > cvd_rgb_frame(
+          (CVD::Rgb<CVD::byte>*)rgb_frame.data,
+          CVD::ImageRef(rgb_frame.cols, rgb_frame.rows), rgb_frame.cols*3);
+    cv::cvtColor(rgb_frame, gray_frame, CV_RGB2GRAY);
+    imFrameRGB.copy_from(cvd_rgb_frame);
+    CVD::SubImage<CVD::byte> cvd_gray_frame(gray_frame.data,
+          CVD::ImageRef(gray_frame.cols, gray_frame.rows), rgb_frame.cols);
+    imFrameBW.copy_from(cvd_gray_frame);
+
+    // Set up openGL
+    gl_window_->SetupViewport();
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(-0.5,(double)rgb_frame.cols - 0.5,
+            (double) rgb_frame.rows - 0.5, -0.5, -1.0, 1.0);
+
+    glRasterPos2d(-0.5,-0.5);
+    double adZoom[2];
+    adZoom[0] = (double) gl_window_->width() / (double) rgb_frame.cols;
+    adZoom[1] = (double) gl_window_->height() / (double) rgb_frame.rows;
+    glPixelZoom(adZoom[0], -adZoom[1]);
+
+    if (mvCalibImgs.size() < 1)
+      *mgvnOptimizing = 0;
+
+    if (!*mgvnOptimizing) {
+      GVars3::GUI.ParseLine("CalibMenu.ShowMenu Live");
+      CVD::glDrawPixels(imFrameBW);
+
+      CalibImage c;
+      if (c.MakeFromImage(imFrameBW)) {
+        if (mbGrabNextFrame) {
+          mvCalibImgs.push_back(c);
+          mvCalibImgs.back().GuessInitialPose(mCamera);
+          mvCalibImgs.back().Draw3DGrid(mCamera, false);
+          mbGrabNextFrame = false;
+        };
+      }
+    } else {
+      OptimizeOneStep();
+
+      GVars3::GUI.ParseLine("CalibMenu.ShowMenu Opti");
+      int nToShow = *mgvnShowImage - 1;
+      if(nToShow < 0)
+        nToShow = 0;
+      if(nToShow >= (int) mvCalibImgs.size())
+        nToShow = mvCalibImgs.size()-1;
+      *mgvnShowImage = nToShow + 1;
+
+      CVD::glDrawPixels(mvCalibImgs[nToShow].mim);
+      mvCalibImgs[nToShow].Draw3DGrid(mCamera,true);
+    }
+
+    ostringstream ost;
+    ost << "Camera Calibration: Grabbed " << mvCalibImgs.size() << " images." << endl;
+    if (!*mgvnOptimizing) {
+      ost << "Take snapshots of the calib grid with the \"GrabFrame\" button," << endl;
+      ost << "and then press \"Optimize\"." << endl;
+      ost << "Take enough shots (4+) at different angles to get points " << endl;
+      ost << "into all parts of the image (corners too.) The whole grid " << endl;
+      ost << "doesn't need to be visible so feel free to zoom in." << endl;
+    } else {
+      ost << "Current RMS pixel error is " << mdMeanPixelError << endl;
+      ost << "Current camera params are  " << GVars3::GV3::get_var("Camera.Parameters") << endl;
+      ost << "(That would be a pixel aspect ratio of "
+          <<  mCamera.PixelAspectRatio() << ")" << endl;
+      ost << "Check fit by looking through the grabbed images." << endl;
+      ost << "RMS should go below 0.5, typically below 0.3 for a wide lens." << endl;
+      ost << "Press \"save\" to save calibration to camera.cfg file and exit." << endl;
+    }
+
+    mGLWindow->DrawCaption(ost.str());
+    mGLWindow->DrawMenus();
+    //mGLWindow->HandlePendingEvents();
+    //mGLWindow->swap_buffers();
+  }
 }
 }  // namespace ptam
 

@@ -1,0 +1,228 @@
+﻿Build started 12/5/2014 12:32:37 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\xeigtstd.vcxproj" on node 7 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/EIG/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xeigtstd.dir\Debug\\" /Fd"xeigtstd.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\EIG\dchkee.c ..\..\..\TESTING\EIG\dbdt01.c ..\..\..\TESTING\EIG\dbdt02.c ..\..\..\TESTING\EIG\dbdt03.c ..\..\..\TESTING\EIG\dchkbb.c ..\..\..\TESTING\EIG\dchkbd.c ..\..\..\TESTING\EIG\dchkbk.c ..\..\..\TESTING\EIG\dchkbl.c ..\..\..\TESTING\EIG\dchkec.c ..\..\..\TESTING\EIG\dchkgg.c ..\..\..\TESTING\EIG\dchkgk.c ..\..\..\TESTING\EIG\dchkgl.c ..\..\..\TESTING\EIG\dchkhs.c ..\..\..\TESTING\EIG\dchksb.c ..\..\..\TESTING\EIG\dchkst.c ..\..\..\TESTING\EIG\dckglm.c ..\..\..\TESTING\EIG\dckgqr.c ..\..\..\TESTING\EIG\dckgsv.c ..\..\..\TESTING\EIG\dcklse.c ..\..\..\TESTING\EIG\ddrges.c ..\..\..\TESTING\EIG\ddrgev.c ..\..\..\TESTING\EIG\ddrgsx.c ..\..\..\TESTING\EIG\ddrgvx.c ..\..\..\TESTING\EIG\ddrvbd.c ..\..\..\TESTING\EIG\ddrves.c ..\..\..\TESTING\EIG\ddrvev.c ..\..\..\TESTING\EIG\ddrvgg.c ..\..\..\TESTING\EIG\ddrvsg.c ..\..\..\TESTING\EIG\ddrvst.c ..\..\..\TESTING\EIG\ddrvsx.c ..\..\..\TESTING\EIG\ddrvvx.c ..\..\..\TESTING\EIG\derrbd.c ..\..\..\TESTING\EIG\derrec.c ..\..\..\TESTING\EIG\derred.c ..\..\..\TESTING\EIG\derrgg.c ..\..\..\TESTING\EIG\derrhs.c ..\..\..\TESTING\EIG\derrst.c ..\..\..\TESTING\EIG\dget02.c ..\..\..\TESTING\EIG\dget10.c ..\..\..\TESTING\EIG\dget22.c ..\..\..\TESTING\EIG\dget23.c ..\..\..\TESTING\EIG\dget24.c ..\..\..\TESTING\EIG\dget31.c ..\..\..\TESTING\EIG\dget32.c ..\..\..\TESTING\EIG\dget33.c ..\..\..\TESTING\EIG\dget34.c ..\..\..\TESTING\EIG\dget35.c ..\..\..\TESTING\EIG\dget36.c ..\..\..\TESTING\EIG\dget37.c ..\..\..\TESTING\EIG\dget38.c ..\..\..\TESTING\EIG\dget39.c ..\..\..\TESTING\EIG\dget51.c ..\..\..\TESTING\EIG\dget52.c ..\..\..\TESTING\EIG\dget53.c ..\..\..\TESTING\EIG\dget54.c ..\..\..\TESTING\EIG\dglmts.c ..\..\..\TESTING\EIG\dgqrts.c ..\..\..\TESTING\EIG\dgrqts.c ..\..\..\TESTING\EIG\dgsvts.c ..\..\..\TESTING\EIG\dhst01.c ..\..\..\TESTING\EIG\dlarfy.c ..\..\..\TESTING\EIG\dlarhs.c ..\..\..\TESTING\EIG\dlatm4.c ..\..\..\TESTING\EIG\dlctes.c ..\..\..\TESTING\EIG\dlctsx.c ..\..\..\TESTING\EIG\dlsets.c ..\..\..\TESTING\EIG\dort01.c ..\..\..\TESTING\EIG\dort03.c ..\..\..\TESTING\EIG\dsbt21.c ..\..\..\TESTING\EIG\dsgt01.c ..\..\..\TESTING\EIG\dslect.c ..\..\..\TESTING\EIG\dspt21.c ..\..\..\TESTING\EIG\dstt21.c ..\..\..\TESTING\EIG\dstt22.c ..\..\..\TESTING\EIG\dsyt21.c ..\..\..\TESTING\EIG\dsyt22.c ..\..\..\TESTING\EIG\dlafts.c ..\..\..\TESTING\EIG\dlahd2.c ..\..\..\TESTING\EIG\dlasum.c ..\..\..\TESTING\EIG\dlatb9.c ..\..\..\TESTING\EIG\dstech.c ..\..\..\TESTING\EIG\dstect.c ..\..\..\TESTING\EIG\dsvdch.c ..\..\..\TESTING\EIG\dsvdct.c ..\..\..\TESTING\EIG\dsxt1.c ..\..\..\TESTING\EIG\alahdg.c ..\..\..\TESTING\EIG\alasum.c ..\..\..\TESTING\EIG\alasvm.c ..\..\..\TESTING\EIG\alareq.c ..\..\..\TESTING\EIG\ilaenv.c ..\..\..\TESTING\EIG\xerbla.c ..\..\..\TESTING\EIG\xlaenv.c ..\..\..\TESTING\EIG\chkxer.c ..\..\..\INSTALL\windsecnd.c
+         dchkee.c
+         dbdt01.c
+         dbdt02.c
+         dbdt03.c
+         dchkbb.c
+         dchkbd.c
+         dchkbk.c
+         dchkbl.c
+         dchkec.c
+         dchkgg.c
+         dchkgk.c
+         dchkgl.c
+         dchkhs.c
+         dchksb.c
+         dchkst.c
+         dckglm.c
+         dckgqr.c
+         dckgsv.c
+         dcklse.c
+         ddrges.c
+         Generating Code...
+         Compiling...
+         ddrgev.c
+         ddrgsx.c
+         ddrgvx.c
+         ddrvbd.c
+         ddrves.c
+         ddrvev.c
+         ddrvgg.c
+         ddrvsg.c
+         ddrvst.c
+         ddrvsx.c
+         ddrvvx.c
+         derrbd.c
+         derrec.c
+         derred.c
+         derrgg.c
+         derrhs.c
+         derrst.c
+         dget02.c
+         dget10.c
+         dget22.c
+         Generating Code...
+         Compiling...
+         dget23.c
+         dget24.c
+         dget31.c
+         dget32.c
+     1>..\..\..\TESTING\EIG\dget32.c(204): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(206): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(208): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(210): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(271): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(273): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(275): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(277): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(346): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(348): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(350): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(352): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(354): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(356): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(358): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\TESTING\EIG\dget32.c(360): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         dget33.c
+         dget34.c
+         dget35.c
+         dget36.c
+         dget37.c
+         dget38.c
+         dget39.c
+         dget51.c
+         dget52.c
+         dget53.c
+         dget54.c
+         dglmts.c
+         dgqrts.c
+         dgrqts.c
+         dgsvts.c
+         dhst01.c
+         Generating Code...
+         Compiling...
+         dlarfy.c
+         dlarhs.c
+         dlatm4.c
+         dlctes.c
+         dlctsx.c
+         dlsets.c
+         dort01.c
+         dort03.c
+         dsbt21.c
+         dsgt01.c
+         dslect.c
+         dspt21.c
+         dstt21.c
+         dstt22.c
+         dsyt21.c
+         dsyt22.c
+         dlafts.c
+         dlahd2.c
+         dlasum.c
+         dlatb9.c
+         Generating Code...
+         Compiling...
+         dstech.c
+         dstect.c
+         dsvdch.c
+         dsvdct.c
+         dsxt1.c
+         alahdg.c
+         alasum.c
+         alasvm.c
+         alareq.c
+         ilaenv.c
+     1>..\..\..\TESTING\EIG\ilaenv.c(244): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         xerbla.c
+         xlaenv.c
+         chkxer.c
+         windsecnd.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\Debug\xeigtstd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/EIG/Debug/xeigtstd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/EIG/Debug/xeigtstd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xeigtstd.dir\Debug\dchkee.obj
+         xeigtstd.dir\Debug\dbdt01.obj
+         xeigtstd.dir\Debug\dbdt02.obj
+         xeigtstd.dir\Debug\dbdt03.obj
+         xeigtstd.dir\Debug\dchkbb.obj
+         xeigtstd.dir\Debug\dchkbd.obj
+         xeigtstd.dir\Debug\dchkbk.obj
+         xeigtstd.dir\Debug\dchkbl.obj
+         xeigtstd.dir\Debug\dchkec.obj
+         xeigtstd.dir\Debug\dchkgg.obj
+         xeigtstd.dir\Debug\dchkgk.obj
+         xeigtstd.dir\Debug\dchkgl.obj
+         xeigtstd.dir\Debug\dchkhs.obj
+         xeigtstd.dir\Debug\dchksb.obj
+         xeigtstd.dir\Debug\dchkst.obj
+         xeigtstd.dir\Debug\dckglm.obj
+         xeigtstd.dir\Debug\dckgqr.obj
+         xeigtstd.dir\Debug\dckgsv.obj
+         xeigtstd.dir\Debug\dcklse.obj
+         xeigtstd.dir\Debug\ddrges.obj
+         xeigtstd.dir\Debug\ddrgev.obj
+         xeigtstd.dir\Debug\ddrgsx.obj
+         xeigtstd.dir\Debug\ddrgvx.obj
+         xeigtstd.dir\Debug\ddrvbd.obj
+         xeigtstd.dir\Debug\ddrves.obj
+         xeigtstd.dir\Debug\ddrvev.obj
+         xeigtstd.dir\Debug\ddrvgg.obj
+         xeigtstd.dir\Debug\ddrvsg.obj
+         xeigtstd.dir\Debug\ddrvst.obj
+         xeigtstd.dir\Debug\ddrvsx.obj
+         xeigtstd.dir\Debug\ddrvvx.obj
+         xeigtstd.dir\Debug\derrbd.obj
+         xeigtstd.dir\Debug\derrec.obj
+         xeigtstd.dir\Debug\derred.obj
+         xeigtstd.dir\Debug\derrgg.obj
+         xeigtstd.dir\Debug\derrhs.obj
+         xeigtstd.dir\Debug\derrst.obj
+         xeigtstd.dir\Debug\dget02.obj
+         xeigtstd.dir\Debug\dget10.obj
+         xeigtstd.dir\Debug\dget22.obj
+         xeigtstd.dir\Debug\dget23.obj
+         xeigtstd.dir\Debug\dget24.obj
+         xeigtstd.dir\Debug\dget31.obj
+         xeigtstd.dir\Debug\dget32.obj
+         xeigtstd.dir\Debug\dget33.obj
+         xeigtstd.dir\Debug\dget34.obj
+         xeigtstd.dir\Debug\dget35.obj
+         xeigtstd.dir\Debug\dget36.obj
+         xeigtstd.dir\Debug\dget37.obj
+         xeigtstd.dir\Debug\dget38.obj
+         xeigtstd.dir\Debug\dget39.obj
+         xeigtstd.dir\Debug\dget51.obj
+         xeigtstd.dir\Debug\dget52.obj
+         xeigtstd.dir\Debug\dget53.obj
+         xeigtstd.dir\Debug\dget54.obj
+         xeigtstd.dir\Debug\dglmts.obj
+         xeigtstd.dir\Debug\dgqrts.obj
+         xeigtstd.dir\Debug\dgrqts.obj
+         xeigtstd.dir\Debug\dgsvts.obj
+         xeigtstd.dir\Debug\dhst01.obj
+         xeigtstd.dir\Debug\dlarfy.obj
+         xeigtstd.dir\Debug\dlarhs.obj
+         xeigtstd.dir\Debug\dlatm4.obj
+         xeigtstd.dir\Debug\dlctes.obj
+         xeigtstd.dir\Debug\dlctsx.obj
+         xeigtstd.dir\Debug\dlsets.obj
+         xeigtstd.dir\Debug\dort01.obj
+         xeigtstd.dir\Debug\dort03.obj
+         xeigtstd.dir\Debug\dsbt21.obj
+         xeigtstd.dir\Debug\dsgt01.obj
+         xeigtstd.dir\Debug\dslect.obj
+         xeigtstd.dir\Debug\dspt21.obj
+         xeigtstd.dir\Debug\dstt21.obj
+         xeigtstd.dir\Debug\dstt22.obj
+         xeigtstd.dir\Debug\dsyt21.obj
+         xeigtstd.dir\Debug\dsyt22.obj
+         xeigtstd.dir\Debug\dlafts.obj
+         xeigtstd.dir\Debug\dlahd2.obj
+         xeigtstd.dir\Debug\dlasum.obj
+         xeigtstd.dir\Debug\dlatb9.obj
+         xeigtstd.dir\Debug\dstech.obj
+         xeigtstd.dir\Debug\dstect.obj
+         xeigtstd.dir\Debug\dsvdch.obj
+         xeigtstd.dir\Debug\dsvdct.obj
+         xeigtstd.dir\Debug\dsxt1.obj
+         xeigtstd.dir\Debug\alahdg.obj
+         xeigtstd.dir\Debug\alasum.obj
+         xeigtstd.dir\Debug\alasvm.obj
+         xeigtstd.dir\Debug\alareq.obj
+         xeigtstd.dir\Debug\ilaenv.obj
+         xeigtstd.dir\Debug\xerbla.obj
+         xeigtstd.dir\Debug\xlaenv.obj
+         xeigtstd.dir\Debug\chkxer.obj
+         xeigtstd.dir\Debug\windsecnd.obj
+         xeigtstd.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\Debug\xeigtstd.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\EIG\xeigtstd.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.47

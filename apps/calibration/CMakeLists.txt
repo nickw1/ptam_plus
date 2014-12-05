@@ -11,5 +11,7 @@ configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_SOURC
 
 ##==============================================================================
 set(ALL_LIBRARIES ${PTAM_LIBS} ${PTAM_EXTERNAL_LIBS})
-ptam_add_executable(calibrator camera_calibrator.cc)
+ptam_add_executable(calibrator camera_calibrator.h camera_calibrator.cc
+                               calib_image.h calib_image.cc
+                               calib_corner_patch.h calib_corner_patch.cc)
 set_property(TARGET calibrator PROPERTY FOLDER "ptam/apps")

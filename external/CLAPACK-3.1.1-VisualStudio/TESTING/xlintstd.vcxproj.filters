@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{212a1650-97c5-4669-bd5b-e576ab33ee3f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\alintst">
+      <UniqueIdentifier>{10ebb69b-8c7a-4cdf-818b-e881de466166}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dlintst">
+      <UniqueIdentifier>{cf160998-a183-48a2-9c99-a291b4e53af4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lin\aladhd.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alaerh.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alaesm.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alahd.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alareq.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alasum.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\alasvm.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\chkxer.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\icopy.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ilaenv.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\xerbla.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\xlaenv.c">
+      <Filter>Source Files\alintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkaa.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkeq.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkgb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkge.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkgt.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchklq.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkpb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkpo.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkpp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkpt.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\dchkq3.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkql.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkqp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkqr.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchkrq.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchksp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchksy.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchktb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchktp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchktr.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dchktz.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvgb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvge.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvgt.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvls.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvpb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvpo.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvpp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvpt.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvsp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\ddrvsy.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrge.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrgt.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrlq.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrls.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrpo.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrql.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrqp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrqr.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrrq.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrsy.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrtr.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrtz.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\derrvx.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgbt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgbt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgbt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgelqs.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgeqls.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgeqrs.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgerqs.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget04.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget06.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dget07.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgtt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgtt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dgtt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlaord.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlaptm.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlarhs.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlatb4.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlattb.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlattp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlattr.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlavsp.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlavsy.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlqt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlqt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dlqt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpbt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpbt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpbt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpot01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpot02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpot03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dpot05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dppt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dppt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dppt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dppt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dptt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dptt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dptt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqlt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqlt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqlt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqpt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt11.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt12.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt13.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt14.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt15.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt16.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dqrt17.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\drqt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\drqt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\drqt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\drzt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="LIN\drzt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dspt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dsyt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtbt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtbt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtbt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtbt06.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtpt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtpt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtpt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtpt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtpt06.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtrt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtrt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtrt03.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtrt05.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtrt06.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtzt01.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+    <ClCompile Include="Lin\dtzt02.c">
+      <Filter>Source Files\dlintst</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

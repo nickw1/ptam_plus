@@ -1,0 +1,16 @@
+﻿Build started 12/5/2014 12:30:57 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\arithchk.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/F2CLIBS/libf2c/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\F2CLIBS\libf2c" /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_FPINIT /D NO_LONG_LONG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D _COMPLEX_DEFINED /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"arithchk.dir\Debug\\" /Fd"arithchk.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\F2CLIBS\libf2c\arithchk.c
+         arithchk.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\Debug\arithchk.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/F2CLIBS/libf2c/Debug/arithchk.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/F2CLIBS/libf2c/Debug/arithchk.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug arithchk.dir\Debug\arithchk.obj
+         arithchk.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\Debug\arithchk.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\arithchk.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.58

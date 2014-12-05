@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug without wrap|Win32">
+      <Configuration>Debug without wrap</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug without wrap|x64">
+      <Configuration>Debug without wrap</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release without wrap|Win32">
+      <Configuration>Release without wrap</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release without wrap|x64">
+      <Configuration>Release without wrap</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B9CBBDF-5A91-4E88-98AE-0DB39F908FB9}</ProjectGuid>
+    <RootNamespace>xeigtsts</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Eig_Debug\</OutDir>
+    <IntDir>.\Eig_Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Message>Performing Testing for EIG - SINGLE</Message>
+      <Command>"xeigtsts.exe" &lt; "sbal.in" &gt;  "sbal.out"
+"xeigtsts.exe" &lt; "sbak.in" &gt;  "sbak.out"
+"xeigtsts.exe" &lt; "sbb.in" &gt;  "sbb.out"
+"xeigtsts.exe" &lt; "sec.in" &gt;  "sec.out"
+"xeigtsts.exe" &lt; "sed.in" &gt;  "sed.out"
+"xeigtsts.exe" &lt; "sep.in" &gt;  "ssep.out"
+"xeigtsts.exe" &lt; "sgbak.in" &gt;  "sgbak.out"
+"xeigtsts.exe" &lt; "sgbal.in" &gt;  "sgbal.out"
+"xeigtsts.exe" &lt; "sgd.in" &gt;  "sgd.out"
+"xeigtsts.exe" &lt; "sgg.in" &gt;  "sgg.out"
+"xeigtsts.exe" &lt; "ssb.in" &gt;  "ssb.out"
+"xeigtsts.exe" &lt; "ssg.in" &gt;  "ssg.out"
+"xeigtsts.exe" &lt; "svd.in" &gt;  "ssvd.out"
+"xeigtsts.exe" &lt; "glm.in" &gt;  "sglm.out"
+"xeigtsts.exe" &lt; "gqr.in" &gt;  "sgqr.out"
+"xeigtsts.exe" &lt; "gsv.in" &gt;  "sgsv.out"
+</Command>
+      <Outputs>$(ProjectDir)$(OutDir)seig.out;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <TypeLibraryName>.\xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Ot1 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile />
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CustomBuildStep>
+      <Message>Performing Testing for EIG - SINGLE</Message>
+      <Command>"xeigtsts.exe" &lt; "sbal.in" &gt;  "sbal.out"
+"xeigtsts.exe" &lt; "sbak.in" &gt;  "sbak.out"
+"xeigtsts.exe" &lt; "sbb.in" &gt;  "sbb.out"
+"xeigtsts.exe" &lt; "sec.in" &gt;  "sec.out"
+"xeigtsts.exe" &lt; "sed.in" &gt;  "sed.out"
+"xeigtsts.exe" &lt; "sep.in" &gt;  "ssep.out"
+"xeigtsts.exe" &lt; "sgbak.in" &gt;  "sgbak.out"
+"xeigtsts.exe" &lt; "sgbal.in" &gt;  "sgbal.out"
+"xeigtsts.exe" &lt; "sgd.in" &gt;  "sgd.out"
+"xeigtsts.exe" &lt; "sgg.in" &gt;  "sgg.out"
+"xeigtsts.exe" &lt; "ssb.in" &gt;  "ssb.out"
+"xeigtsts.exe" &lt; "ssg.in" &gt;  "ssg.out"
+"xeigtsts.exe" &lt; "svd.in" &gt;  "ssvd.out"
+"xeigtsts.exe" &lt; "glm.in" &gt;  "sglm.out"
+"xeigtsts.exe" &lt; "gqr.in" &gt;  "sgqr.out"
+"xeigtsts.exe" &lt; "gsv.in" &gt;  "sgsv.out"
+</Command>
+      <Outputs>$(ProjectDir)$(OutDir)seig.out;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Ot1 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile />
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Eig_Debug/xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Eig_Debug/xeigtsts.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Eig_Debug/xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Eig_Debug/xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Eig_Debug/xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Eig_Debug/xeigtsts.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Eig_Debug/xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|Win32'">
+    <CustomBuildStep>
+      <Message>Performing Testing for EIG - SINGLE</Message>
+      <Command>"xeigtsts.exe" &lt; "sbal.in" &gt;  "sbal.out"
+"xeigtsts.exe" &lt; "sbak.in" &gt;  "sbak.out"
+"xeigtsts.exe" &lt; "sbb.in" &gt;  "sbb.out"
+"xeigtsts.exe" &lt; "sec.in" &gt;  "sec.out"
+"xeigtsts.exe" &lt; "sed.in" &gt;  "sed.out"
+"xeigtsts.exe" &lt; "sep.in" &gt;  "ssep.out"
+"xeigtsts.exe" &lt; "sgbak.in" &gt;  "sgbak.out"
+"xeigtsts.exe" &lt; "sgbal.in" &gt;  "sgbal.out"
+"xeigtsts.exe" &lt; "sgd.in" &gt;  "sgd.out"
+"xeigtsts.exe" &lt; "sgg.in" &gt;  "sgg.out"
+"xeigtsts.exe" &lt; "ssb.in" &gt;  "ssb.out"
+"xeigtsts.exe" &lt; "ssg.in" &gt;  "ssg.out"
+"xeigtsts.exe" &lt; "svd.in" &gt;  "ssvd.out"
+"xeigtsts.exe" &lt; "glm.in" &gt;  "sglm.out"
+"xeigtsts.exe" &lt; "gqr.in" &gt;  "sgqr.out"
+"xeigtsts.exe" &lt; "gsv.in" &gt;  "sgsv.out"
+</Command>
+      <Outputs>$(ProjectDir)$(OutDir)seig.out;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <TypeLibraryName>.\xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Ot1 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;NO_BLAS_WRAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile />
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release without wrap|x64'">
+    <CustomBuildStep>
+      <Message>Performing Testing for EIG - SINGLE</Message>
+      <Command>"xeigtsts.exe" &lt; "sbal.in" &gt;  "sbal.out"
+"xeigtsts.exe" &lt; "sbak.in" &gt;  "sbak.out"
+"xeigtsts.exe" &lt; "sbb.in" &gt;  "sbb.out"
+"xeigtsts.exe" &lt; "sec.in" &gt;  "sec.out"
+"xeigtsts.exe" &lt; "sed.in" &gt;  "sed.out"
+"xeigtsts.exe" &lt; "sep.in" &gt;  "ssep.out"
+"xeigtsts.exe" &lt; "sgbak.in" &gt;  "sgbak.out"
+"xeigtsts.exe" &lt; "sgbal.in" &gt;  "sgbal.out"
+"xeigtsts.exe" &lt; "sgd.in" &gt;  "sgd.out"
+"xeigtsts.exe" &lt; "sgg.in" &gt;  "sgg.out"
+"xeigtsts.exe" &lt; "ssb.in" &gt;  "ssb.out"
+"xeigtsts.exe" &lt; "ssg.in" &gt;  "ssg.out"
+"xeigtsts.exe" &lt; "svd.in" &gt;  "ssvd.out"
+"xeigtsts.exe" &lt; "glm.in" &gt;  "sglm.out"
+"xeigtsts.exe" &lt; "gqr.in" &gt;  "sgqr.out"
+"xeigtsts.exe" &lt; "gsv.in" &gt;  "sgsv.out"
+</Command>
+      <Outputs>$(ProjectDir)$(OutDir)seig.out;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Ot1 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;NO_BLAS_WRAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile />
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Eig_Debug/xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;NO_BLAS_WRAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Eig_Debug/xeigtsts.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Eig_Debug/xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Eig_Debug/xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug without wrap|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Eig_Debug/xeigtsts.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MSDOS;USE_CLOCK;NO_ONEXIT;NO_BLAS_WRAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Eig_Debug/xeigtsts.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>xeigtsts.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)xeigtsts.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Eig_Debug/xeigtsts.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Eig\alahdg.c" />
+    <ClCompile Include="Eig\alareq.c" />
+    <ClCompile Include="Eig\alasum.c" />
+    <ClCompile Include="Eig\alasvm.c" />
+    <ClCompile Include="Eig\chkxer.c" />
+    <ClCompile Include="Eig\ilaenv.c" />
+    <ClCompile Include="Eig\sbdt01.c" />
+    <ClCompile Include="Eig\sbdt02.c" />
+    <ClCompile Include="Eig\sbdt03.c" />
+    <ClCompile Include="Eig\schkbb.c" />
+    <ClCompile Include="Eig\schkbd.c" />
+    <ClCompile Include="Eig\schkbk.c" />
+    <ClCompile Include="Eig\schkbl.c" />
+    <ClCompile Include="Eig\schkec.c" />
+    <ClCompile Include="Eig\schkee.c" />
+    <ClCompile Include="Eig\schkgg.c" />
+    <ClCompile Include="Eig\schkgk.c" />
+    <ClCompile Include="Eig\schkgl.c" />
+    <ClCompile Include="Eig\schkhs.c" />
+    <ClCompile Include="Eig\schksb.c" />
+    <ClCompile Include="Eig\schkst.c" />
+    <ClCompile Include="Eig\sckglm.c" />
+    <ClCompile Include="Eig\sckgqr.c" />
+    <ClCompile Include="Eig\sckgsv.c" />
+    <ClCompile Include="Eig\scklse.c" />
+    <ClCompile Include="EIG\sdrges.c" />
+    <ClCompile Include="EIG\sdrgev.c" />
+    <ClCompile Include="EIG\sdrgsx.c" />
+    <ClCompile Include="EIG\sdrgvx.c" />
+    <ClCompile Include="Eig\sdrvbd.c" />
+    <ClCompile Include="Eig\sdrves.c" />
+    <ClCompile Include="Eig\sdrvev.c" />
+    <ClCompile Include="Eig\sdrvgg.c" />
+    <ClCompile Include="Eig\sdrvsg.c" />
+    <ClCompile Include="Eig\sdrvst.c" />
+    <ClCompile Include="Eig\sdrvsx.c" />
+    <ClCompile Include="Eig\sdrvvx.c" />
+    <ClCompile Include="Eig\serrbd.c" />
+    <ClCompile Include="Eig\serrec.c" />
+    <ClCompile Include="Eig\serred.c" />
+    <ClCompile Include="Eig\serrgg.c" />
+    <ClCompile Include="Eig\serrhs.c" />
+    <ClCompile Include="Eig\serrst.c" />
+    <ClCompile Include="Eig\sget02.c" />
+    <ClCompile Include="Eig\sget10.c" />
+    <ClCompile Include="Eig\sget22.c" />
+    <ClCompile Include="Eig\sget23.c" />
+    <ClCompile Include="Eig\sget24.c" />
+    <ClCompile Include="Eig\sget31.c" />
+    <ClCompile Include="Eig\sget32.c" />
+    <ClCompile Include="Eig\sget33.c" />
+    <ClCompile Include="Eig\sget34.c" />
+    <ClCompile Include="Eig\sget35.c" />
+    <ClCompile Include="Eig\sget36.c" />
+    <ClCompile Include="Eig\sget37.c" />
+    <ClCompile Include="Eig\sget38.c" />
+    <ClCompile Include="Eig\sget39.c" />
+    <ClCompile Include="Eig\sget51.c" />
+    <ClCompile Include="Eig\sget52.c" />
+    <ClCompile Include="Eig\sget53.c" />
+    <ClCompile Include="EIG\sget54.c" />
+    <ClCompile Include="Eig\sglmts.c" />
+    <ClCompile Include="Eig\sgqrts.c" />
+    <ClCompile Include="Eig\sgrqts.c" />
+    <ClCompile Include="Eig\sgsvts.c" />
+    <ClCompile Include="Eig\shst01.c" />
+    <ClCompile Include="Eig\slafts.c" />
+    <ClCompile Include="Eig\slahd2.c" />
+    <ClCompile Include="Eig\slarfy.c" />
+    <ClCompile Include="Eig\slarhs.c" />
+    <ClCompile Include="Eig\slasum.c" />
+    <ClCompile Include="Eig\slatb9.c" />
+    <ClCompile Include="Eig\slatm4.c" />
+    <ClCompile Include="EIG\slctes.c" />
+    <ClCompile Include="EIG\slctsx.c" />
+    <ClCompile Include="Eig\slsets.c" />
+    <ClCompile Include="Eig\sort01.c" />
+    <ClCompile Include="Eig\sort03.c" />
+    <ClCompile Include="Eig\ssbt21.c" />
+    <ClCompile Include="Eig\ssgt01.c" />
+    <ClCompile Include="Eig\sslect.c" />
+    <ClCompile Include="Eig\sspt21.c" />
+    <ClCompile Include="Eig\sstech.c" />
+    <ClCompile Include="Eig\sstect.c" />
+    <ClCompile Include="Eig\sstt21.c" />
+    <ClCompile Include="Eig\sstt22.c" />
+    <ClCompile Include="Eig\ssvdch.c" />
+    <ClCompile Include="Eig\ssvdct.c" />
+    <ClCompile Include="Eig\ssxt1.c" />
+    <ClCompile Include="Eig\ssyt21.c" />
+    <ClCompile Include="Eig\ssyt22.c" />
+    <ClCompile Include="Eig\xerbla.c" />
+    <ClCompile Include="Eig\xlaenv.c" />
+    <ClCompile Include="MATGEN\slakf2.c" />
+    <ClCompile Include="MATGEN\slatm5.c" />
+    <ClCompile Include="MATGEN\slatm6.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLAS\blas.vcxproj">
+      <Project>{b9f83b5f-9e91-428d-a623-86ce195db698}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clapack.vcxproj">
+      <Project>{c94ae37a-b3be-4fbc-9288-6740c4ecc432}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\F2CLIBS\libf2c.vcxproj">
+      <Project>{2a338f34-fa2f-4d65-8037-e92e25a4c222}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tmglib.vcxproj">
+      <Project>{dd6016a9-8075-41fe-846d-58f771cdd175}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/shi_tomasi.h"
+#include "ptam/construct/shi_tomasi.h"
 #include <math.h>
 
 namespace ptam {
@@ -34,4 +34,3 @@ double FindShiTomasiScoreAtPoint(CVD::BasicImage<CVD::byte> &image,
                                  4 * (dXX * dYY - dXY * dXY) ));
 }
 }  // namespace ptam
-

@@ -1,8 +1,9 @@
-#ifndef PTAM_UTIL_OPENCV_H_
-#define PTAM_UTIL_OPENCV_H_
+#pragma once
 namespace ptam {
 // copy image data to vector of pixels
-inline void SafeCopyImage(std::vector<uchar>& v_pixels, cv::Mat const& image) {
+inline void SafeCopyRGBImage(std::vector<uchar>& v_pixels,
+                             cv::Mat const& image) {
+  v_pixels.resize(image.cols * image.rows * 3);
   if(image.isContinuous()){
     memcpy(&v_pixels.front(), (uchar*)image.data, image.cols*image.rows*3);
   }else{
@@ -17,4 +18,3 @@ inline void SafeCopyImage(std::vector<uchar>& v_pixels, cv::Mat const& image) {
   }
 }
 }  // namespace ptam
-#endif  // PTAM_UTIL_OPENCV_H_

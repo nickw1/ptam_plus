@@ -1,0 +1,54 @@
+﻿Build started 12/5/2014 12:32:49 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstds.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintstds.dir\Debug\\" /Fd"xlintstds.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\dchkab.c ..\..\..\TESTING\LIN\ddrvab.c ..\..\..\TESTING\LIN\ddrvac.c ..\..\..\TESTING\LIN\derrab.c ..\..\..\TESTING\LIN\derrac.c ..\..\..\TESTING\LIN\dget08.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alareq.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\dlarhs.c ..\..\..\TESTING\LIN\dlatb4.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\dget02.c ..\..\..\TESTING\LIN\dpot06.c ..\..\..\INSTALL\winsecond.c ..\..\..\INSTALL\windsecnd.c
+         dchkab.c
+     1>..\..\..\TESTING\LIN\dchkab.c(393): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\dchkab.c(398): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\dchkab.c(403): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         ddrvab.c
+         ddrvac.c
+         derrab.c
+         derrac.c
+         dget08.c
+         alaerh.c
+         alahd.c
+         aladhd.c
+         alareq.c
+         chkxer.c
+         dlarhs.c
+         dlatb4.c
+         xerbla.c
+         dget02.c
+         dpot06.c
+         winsecond.c
+         windsecnd.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstds.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstds.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstds.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintstds.dir\Debug\dchkab.obj
+         xlintstds.dir\Debug\ddrvab.obj
+         xlintstds.dir\Debug\ddrvac.obj
+         xlintstds.dir\Debug\derrab.obj
+         xlintstds.dir\Debug\derrac.obj
+         xlintstds.dir\Debug\dget08.obj
+         xlintstds.dir\Debug\alaerh.obj
+         xlintstds.dir\Debug\alahd.obj
+         xlintstds.dir\Debug\aladhd.obj
+         xlintstds.dir\Debug\alareq.obj
+         xlintstds.dir\Debug\chkxer.obj
+         xlintstds.dir\Debug\dlarhs.obj
+         xlintstds.dir\Debug\dlatb4.obj
+         xlintstds.dir\Debug\xerbla.obj
+         xlintstds.dir\Debug\dget02.obj
+         xlintstds.dir\Debug\dpot06.obj
+         xlintstds.dir\Debug\winsecond.obj
+         xlintstds.dir\Debug\windsecnd.obj
+         xlintstds.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstds.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstds.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.75

@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/map_maker.h"
+#include "ptam/construct/map_maker.h"
 
 #ifdef WIN32
 #define WIN32_LEAN_AND_MEAN
@@ -16,11 +16,11 @@
 #include <TooN/SVD.h>
 #include <TooN/SymEigen.h>
 
-#include "construct/map_point.h"
-#include "construct/bundle.h"
-#include "track/patch_finder.h"
-#include "track/small_matrix_opts.h"
-#include "track/homography_init.h"
+#include "ptam/construct/map_point.h"
+#include "ptam/construct/bundle.h"
+#include "ptam/track/patch_finder.h"
+#include "ptam/track/small_matrix_opts.h"
+#include "ptam/track/homography_init.h"
 
 using namespace std;
 

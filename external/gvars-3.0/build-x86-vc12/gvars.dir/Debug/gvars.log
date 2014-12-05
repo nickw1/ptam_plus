@@ -1,0 +1,29 @@
+﻿Build started 12/4/2014 3:11:17 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\gvars-3.0\build-x86-vc12\gvars.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Thanh\dev\thirdparty /I"C:\Users\Thanh\dev\ptam_plus\external\gvars-3.0" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "GVars_ROOT=\"C:/Users/Thanh/dev/ptam_plus/external/gvars-3.0\"" /D GVARS3_HAVE_TOON /D TOON_TYPEOF_DECLTYPE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"gvars.dir\Debug\\" /Fd"gvars.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\GStringUtil.cc ..\src\GUI.cc ..\src\GUI_impl_headless.cc ..\src\GUI_none.cc ..\src\gvars2.cc ..\src\gvars3.cc ..\src\inst.cc ..\src\serialize.cc
+         GStringUtil.cc
+         GUI.cc
+         GUI_impl_headless.cc
+         GUI_none.cc
+         gvars2.cc
+         gvars3.cc
+         inst.cc
+         serialize.cc
+     1>..\src\serialize.cc(111): warning C4244: 'return' : conversion from 'std::streamoff' to 'int', possible loss of data
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Thanh\dev\ptam_plus\external\gvars-3.0\lib\gvars_d.lib" /NOLOGO gvars.dir\Debug\GStringUtil.obj
+         gvars.dir\Debug\GUI.obj
+         gvars.dir\Debug\GUI_impl_headless.obj
+         gvars.dir\Debug\GUI_none.obj
+         gvars.dir\Debug\gvars2.obj
+         gvars.dir\Debug\gvars3.obj
+         gvars.dir\Debug\inst.obj
+         gvars.dir\Debug\serialize.obj
+         gvars.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\gvars-3.0\lib\gvars_d.lib
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\gvars-3.0\build-x86-vc12\gvars.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.97

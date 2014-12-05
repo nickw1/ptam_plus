@@ -6,9 +6,7 @@
 // Defines various MEstimators which can be used by the Tracker and
 // the Bundle adjuster. Not that some of the inputs are square
 // quantities!
-
-#ifndef PTAM_TRACK_MESTIMATOR_H_
-#define PTAM_TRACK_MESTIMATOR_H_
+#pragma once
 #include <TooN/TooN.h>
 #include <vector>
 #include <algorithm>
@@ -161,15 +159,3 @@ inline double LeastSquares::FindSigmaSquared(std::vector<double> &vdErrorSquared
   return dSum / vdErrorSquared.size();
 }
 }  // namespace ptam
-#endif
-
-
-
-
-
-
-
-
-
-
-

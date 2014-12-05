@@ -1,0 +1,369 @@
+﻿Build started 12/5/2014 12:31:08 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\blas.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"blas.dir\Debug\\" /Fd"blas.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\BLAS\SRC\isamax.c ..\..\..\BLAS\SRC\sasum.c ..\..\..\BLAS\SRC\saxpy.c ..\..\..\BLAS\SRC\scopy.c ..\..\..\BLAS\SRC\sdot.c ..\..\..\BLAS\SRC\snrm2.c ..\..\..\BLAS\SRC\srot.c ..\..\..\BLAS\SRC\srotg.c ..\..\..\BLAS\SRC\sscal.c ..\..\..\BLAS\SRC\sswap.c ..\..\..\BLAS\SRC\sdsdot.c ..\..\..\BLAS\SRC\srotmg.c ..\..\..\BLAS\SRC\srotm.c ..\..\..\BLAS\SRC\sgemv.c ..\..\..\BLAS\SRC\sgbmv.c ..\..\..\BLAS\SRC\ssymv.c ..\..\..\BLAS\SRC\ssbmv.c ..\..\..\BLAS\SRC\sspmv.c ..\..\..\BLAS\SRC\strmv.c ..\..\..\BLAS\SRC\stbmv.c ..\..\..\BLAS\SRC\stpmv.c ..\..\..\BLAS\SRC\strsv.c ..\..\..\BLAS\SRC\stbsv.c ..\..\..\BLAS\SRC\stpsv.c ..\..\..\BLAS\SRC\sger.c ..\..\..\BLAS\SRC\ssyr.c ..\..\..\BLAS\SRC\sspr.c ..\..\..\BLAS\SRC\ssyr2.c ..\..\..\BLAS\SRC\sspr2.c ..\..\..\BLAS\SRC\sgemm.c ..\..\..\BLAS\SRC\ssymm.c ..\..\..\BLAS\SRC\ssyrk.c ..\..\..\BLAS\SRC\ssyr2k.c ..\..\..\BLAS\SRC\strmm.c ..\..\..\BLAS\SRC\strsm.c ..\..\..\BLAS\SRC\idamax.c ..\..\..\BLAS\SRC\dasum.c ..\..\..\BLAS\SRC\daxpy.c ..\..\..\BLAS\SRC\dcopy.c ..\..\..\BLAS\SRC\ddot.c ..\..\..\BLAS\SRC\dnrm2.c ..\..\..\BLAS\SRC\drot.c ..\..\..\BLAS\SRC\drotg.c ..\..\..\BLAS\SRC\dscal.c ..\..\..\BLAS\SRC\dsdot.c ..\..\..\BLAS\SRC\dswap.c ..\..\..\BLAS\SRC\drotmg.c ..\..\..\BLAS\SRC\drotm.c ..\..\..\BLAS\SRC\dgemv.c ..\..\..\BLAS\SRC\dgbmv.c ..\..\..\BLAS\SRC\dsymv.c ..\..\..\BLAS\SRC\dsbmv.c ..\..\..\BLAS\SRC\dspmv.c ..\..\..\BLAS\SRC\dtrmv.c ..\..\..\BLAS\SRC\dtbmv.c ..\..\..\BLAS\SRC\dtpmv.c ..\..\..\BLAS\SRC\dtrsv.c ..\..\..\BLAS\SRC\dtbsv.c ..\..\..\BLAS\SRC\dtpsv.c ..\..\..\BLAS\SRC\dger.c ..\..\..\BLAS\SRC\dsyr.c ..\..\..\BLAS\SRC\dspr.c ..\..\..\BLAS\SRC\dsyr2.c ..\..\..\BLAS\SRC\dspr2.c ..\..\..\BLAS\SRC\dgemm.c ..\..\..\BLAS\SRC\dsymm.c ..\..\..\BLAS\SRC\dsyrk.c ..\..\..\BLAS\SRC\dsyr2k.c ..\..\..\BLAS\SRC\dtrmm.c ..\..\..\BLAS\SRC\dtrsm.c ..\..\..\BLAS\SRC\scabs1.c ..\..\..\BLAS\SRC\scasum.c ..\..\..\BLAS\SRC\scnrm2.c ..\..\..\BLAS\SRC\icamax.c ..\..\..\BLAS\SRC\caxpy.c ..\..\..\BLAS\SRC\ccopy.c ..\..\..\BLAS\SRC\cdotc.c ..\..\..\BLAS\SRC\cdotu.c ..\..\..\BLAS\SRC\csscal.c ..\..\..\BLAS\SRC\crotg.c ..\..\..\BLAS\SRC\cscal.c ..\..\..\BLAS\SRC\cswap.c ..\..\..\BLAS\SRC\csrot.c ..\..\..\BLAS\SRC\cgemv.c ..\..\..\BLAS\SRC\cgbmv.c ..\..\..\BLAS\SRC\chemv.c ..\..\..\BLAS\SRC\chbmv.c ..\..\..\BLAS\SRC\chpmv.c ..\..\..\BLAS\SRC\ctrmv.c ..\..\..\BLAS\SRC\ctbmv.c ..\..\..\BLAS\SRC\ctpmv.c ..\..\..\BLAS\SRC\ctrsv.c ..\..\..\BLAS\SRC\ctbsv.c ..\..\..\BLAS\SRC\ctpsv.c ..\..\..\BLAS\SRC\cgerc.c ..\..\..\BLAS\SRC\cgeru.c ..\..\..\BLAS\SRC\cher.c ..\..\..\BLAS\SRC\chpr.c ..\..\..\BLAS\SRC\cher2.c ..\..\..\BLAS\SRC\chpr2.c ..\..\..\BLAS\SRC\cgemm.c ..\..\..\BLAS\SRC\csymm.c ..\..\..\BLAS\SRC\csyrk.c ..\..\..\BLAS\SRC\csyr2k.c ..\..\..\BLAS\SRC\ctrmm.c ..\..\..\BLAS\SRC\ctrsm.c ..\..\..\BLAS\SRC\chemm.c ..\..\..\BLAS\SRC\cherk.c ..\..\..\BLAS\SRC\cher2k.c ..\..\..\BLAS\SRC\dcabs1.c ..\..\..\BLAS\SRC\dzasum.c ..\..\..\BLAS\SRC\dznrm2.c ..\..\..\BLAS\SRC\izamax.c ..\..\..\BLAS\SRC\zaxpy.c ..\..\..\BLAS\SRC\zcopy.c ..\..\..\BLAS\SRC\zdotc.c ..\..\..\BLAS\SRC\zdotu.c ..\..\..\BLAS\SRC\zdscal.c ..\..\..\BLAS\SRC\zrotg.c ..\..\..\BLAS\SRC\zscal.c ..\..\..\BLAS\SRC\zswap.c ..\..\..\BLAS\SRC\zdrot.c ..\..\..\BLAS\SRC\zgemv.c ..\..\..\BLAS\SRC\zgbmv.c ..\..\..\BLAS\SRC\zhemv.c ..\..\..\BLAS\SRC\zhbmv.c ..\..\..\BLAS\SRC\zhpmv.c ..\..\..\BLAS\SRC\ztrmv.c ..\..\..\BLAS\SRC\ztbmv.c ..\..\..\BLAS\SRC\ztpmv.c ..\..\..\BLAS\SRC\ztrsv.c ..\..\..\BLAS\SRC\ztbsv.c ..\..\..\BLAS\SRC\ztpsv.c ..\..\..\BLAS\SRC\zgerc.c ..\..\..\BLAS\SRC\zgeru.c ..\..\..\BLAS\SRC\zher.c ..\..\..\BLAS\SRC\zhpr.c ..\..\..\BLAS\SRC\zher2.c ..\..\..\BLAS\SRC\zhpr2.c ..\..\..\BLAS\SRC\zgemm.c ..\..\..\BLAS\SRC\zsymm.c ..\..\..\BLAS\SRC\zsyrk.c ..\..\..\BLAS\SRC\zsyr2k.c ..\..\..\BLAS\SRC\ztrmm.c ..\..\..\BLAS\SRC\ztrsm.c ..\..\..\BLAS\SRC\zhemm.c ..\..\..\BLAS\SRC\zherk.c ..\..\..\BLAS\SRC\zher2k.c ..\..\..\BLAS\SRC\lsame.c ..\..\..\BLAS\SRC\xerbla.c ..\..\..\BLAS\SRC\xerbla_array.c
+         isamax.c
+     1>..\..\..\BLAS\SRC\isamax.c(63): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\isamax.c(71): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\isamax.c(81): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\isamax.c(88): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         sasum.c
+     1>..\..\..\BLAS\SRC\sasum.c(64): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\sasum.c(82): warning C4244: '+=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\sasum.c(95): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         saxpy.c
+         scopy.c
+         sdot.c
+         snrm2.c
+     1>..\..\..\BLAS\SRC\snrm2.c(63): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\snrm2.c(75): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\snrm2.c(89): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         srot.c
+         srotg.c
+     1>..\..\..\BLAS\SRC\srotg.c(49): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\srotg.c(63): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\srotg.c(64): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         sscal.c
+         sswap.c
+         sdsdot.c
+     1>..\..\..\BLAS\SRC\sdsdot.c(129): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\sdsdot.c(142): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         srotmg.c
+         srotm.c
+         sgemv.c
+         sgbmv.c
+         ssymv.c
+         ssbmv.c
+         sspmv.c
+         strmv.c
+         stbmv.c
+         Generating Code...
+         Compiling...
+         stpmv.c
+         strsv.c
+         stbsv.c
+         stpsv.c
+         sger.c
+         ssyr.c
+         sspr.c
+         ssyr2.c
+         sspr2.c
+         sgemm.c
+         ssymm.c
+         ssyrk.c
+         ssyr2k.c
+         strmm.c
+         strsm.c
+         idamax.c
+         dasum.c
+         daxpy.c
+         dcopy.c
+         ddot.c
+         Generating Code...
+         Compiling...
+         dnrm2.c
+         drot.c
+         drotg.c
+         dscal.c
+         dsdot.c
+         dswap.c
+         drotmg.c
+         drotm.c
+         dgemv.c
+         dgbmv.c
+         dsymv.c
+         dsbmv.c
+         dspmv.c
+         dtrmv.c
+         dtbmv.c
+         dtpmv.c
+         dtrsv.c
+         dtbsv.c
+         dtpsv.c
+         dger.c
+         Generating Code...
+         Compiling...
+         dsyr.c
+         dspr.c
+         dsyr2.c
+         dspr2.c
+         dgemm.c
+         dsymm.c
+         dsyrk.c
+         dsyr2k.c
+         dtrmm.c
+         dtrsm.c
+         scabs1.c
+     1>..\..\..\BLAS\SRC\scabs1.c(34): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scabs1.c(34): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         scasum.c
+     1>..\..\..\BLAS\SRC\scasum.c(69): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scasum.c(69): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scasum.c(82): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scasum.c(82): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         scnrm2.c
+     1>..\..\..\BLAS\SRC\scnrm2.c(74): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scnrm2.c(87): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scnrm2.c(87): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\scnrm2.c(101): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         icamax.c
+     1>..\..\..\BLAS\SRC\icamax.c(63): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\icamax.c(71): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\icamax.c(81): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\icamax.c(88): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         caxpy.c
+         ccopy.c
+         cdotc.c
+         cdotu.c
+         csscal.c
+     1>..\..\..\BLAS\SRC\csscal.c(67): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\csscal.c(82): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         crotg.c
+     1>..\..\..\BLAS\SRC\crotg.c(51): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\crotg.c(54): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\crotg.c(57): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\crotg.c(58): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\crotg.c(59): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\BLAS\SRC\crotg.c(62): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         Generating Code...
+         Compiling...
+         cscal.c
+         cswap.c
+         csrot.c
+         cgemv.c
+         cgbmv.c
+         chemv.c
+         chbmv.c
+         chpmv.c
+         ctrmv.c
+         ctbmv.c
+         ctpmv.c
+         ctrsv.c
+         ctbsv.c
+         ctpsv.c
+         cgerc.c
+         cgeru.c
+         cher.c
+         chpr.c
+         cher2.c
+         chpr2.c
+         Generating Code...
+         Compiling...
+         cgemm.c
+         csymm.c
+         csyrk.c
+         csyr2k.c
+         ctrmm.c
+         ctrsm.c
+         chemm.c
+         cherk.c
+         cher2k.c
+         dcabs1.c
+         dzasum.c
+         dznrm2.c
+         izamax.c
+         zaxpy.c
+         zcopy.c
+         zdotc.c
+         zdotu.c
+         zdscal.c
+         zrotg.c
+         zscal.c
+         Generating Code...
+         Compiling...
+         zswap.c
+         zdrot.c
+         zgemv.c
+         zgbmv.c
+         zhemv.c
+         zhbmv.c
+         zhpmv.c
+         ztrmv.c
+         ztbmv.c
+         ztpmv.c
+         ztrsv.c
+         ztbsv.c
+         ztpsv.c
+         zgerc.c
+         zgeru.c
+         zher.c
+         zhpr.c
+         zher2.c
+         zhpr2.c
+         zgemm.c
+         Generating Code...
+         Compiling...
+         zsymm.c
+         zsyrk.c
+         zsyr2k.c
+         ztrmm.c
+         ztrsm.c
+         zhemm.c
+         zherk.c
+         zher2k.c
+         lsame.c
+         xerbla.c
+     1>..\..\..\BLAS\SRC\xerbla.c(69): warning C4013: 'printf' undefined; assuming extern returning int
+         xerbla_array.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\Debug\blas.lib" /NOLOGO blas.dir\Debug\isamax.obj
+         blas.dir\Debug\sasum.obj
+         blas.dir\Debug\saxpy.obj
+         blas.dir\Debug\scopy.obj
+         blas.dir\Debug\sdot.obj
+         blas.dir\Debug\snrm2.obj
+         blas.dir\Debug\srot.obj
+         blas.dir\Debug\srotg.obj
+         blas.dir\Debug\sscal.obj
+         blas.dir\Debug\sswap.obj
+         blas.dir\Debug\sdsdot.obj
+         blas.dir\Debug\srotmg.obj
+         blas.dir\Debug\srotm.obj
+         blas.dir\Debug\sgemv.obj
+         blas.dir\Debug\sgbmv.obj
+         blas.dir\Debug\ssymv.obj
+         blas.dir\Debug\ssbmv.obj
+         blas.dir\Debug\sspmv.obj
+         blas.dir\Debug\strmv.obj
+         blas.dir\Debug\stbmv.obj
+         blas.dir\Debug\stpmv.obj
+         blas.dir\Debug\strsv.obj
+         blas.dir\Debug\stbsv.obj
+         blas.dir\Debug\stpsv.obj
+         blas.dir\Debug\sger.obj
+         blas.dir\Debug\ssyr.obj
+         blas.dir\Debug\sspr.obj
+         blas.dir\Debug\ssyr2.obj
+         blas.dir\Debug\sspr2.obj
+         blas.dir\Debug\sgemm.obj
+         blas.dir\Debug\ssymm.obj
+         blas.dir\Debug\ssyrk.obj
+         blas.dir\Debug\ssyr2k.obj
+         blas.dir\Debug\strmm.obj
+         blas.dir\Debug\strsm.obj
+         blas.dir\Debug\idamax.obj
+         blas.dir\Debug\dasum.obj
+         blas.dir\Debug\daxpy.obj
+         blas.dir\Debug\dcopy.obj
+         blas.dir\Debug\ddot.obj
+         blas.dir\Debug\dnrm2.obj
+         blas.dir\Debug\drot.obj
+         blas.dir\Debug\drotg.obj
+         blas.dir\Debug\dscal.obj
+         blas.dir\Debug\dsdot.obj
+         blas.dir\Debug\dswap.obj
+         blas.dir\Debug\drotmg.obj
+         blas.dir\Debug\drotm.obj
+         blas.dir\Debug\dgemv.obj
+         blas.dir\Debug\dgbmv.obj
+         blas.dir\Debug\dsymv.obj
+         blas.dir\Debug\dsbmv.obj
+         blas.dir\Debug\dspmv.obj
+         blas.dir\Debug\dtrmv.obj
+         blas.dir\Debug\dtbmv.obj
+         blas.dir\Debug\dtpmv.obj
+         blas.dir\Debug\dtrsv.obj
+         blas.dir\Debug\dtbsv.obj
+         blas.dir\Debug\dtpsv.obj
+         blas.dir\Debug\dger.obj
+         blas.dir\Debug\dsyr.obj
+         blas.dir\Debug\dspr.obj
+         blas.dir\Debug\dsyr2.obj
+         blas.dir\Debug\dspr2.obj
+         blas.dir\Debug\dgemm.obj
+         blas.dir\Debug\dsymm.obj
+         blas.dir\Debug\dsyrk.obj
+         blas.dir\Debug\dsyr2k.obj
+         blas.dir\Debug\dtrmm.obj
+         blas.dir\Debug\dtrsm.obj
+         blas.dir\Debug\scabs1.obj
+         blas.dir\Debug\scasum.obj
+         blas.dir\Debug\scnrm2.obj
+         blas.dir\Debug\icamax.obj
+         blas.dir\Debug\caxpy.obj
+         blas.dir\Debug\ccopy.obj
+         blas.dir\Debug\cdotc.obj
+         blas.dir\Debug\cdotu.obj
+         blas.dir\Debug\csscal.obj
+         blas.dir\Debug\crotg.obj
+         blas.dir\Debug\cscal.obj
+         blas.dir\Debug\cswap.obj
+         blas.dir\Debug\csrot.obj
+         blas.dir\Debug\cgemv.obj
+         blas.dir\Debug\cgbmv.obj
+         blas.dir\Debug\chemv.obj
+         blas.dir\Debug\chbmv.obj
+         blas.dir\Debug\chpmv.obj
+         blas.dir\Debug\ctrmv.obj
+         blas.dir\Debug\ctbmv.obj
+         blas.dir\Debug\ctpmv.obj
+         blas.dir\Debug\ctrsv.obj
+         blas.dir\Debug\ctbsv.obj
+         blas.dir\Debug\ctpsv.obj
+         blas.dir\Debug\cgerc.obj
+         blas.dir\Debug\cgeru.obj
+         blas.dir\Debug\cher.obj
+         blas.dir\Debug\chpr.obj
+         blas.dir\Debug\cher2.obj
+         blas.dir\Debug\chpr2.obj
+         blas.dir\Debug\cgemm.obj
+         blas.dir\Debug\csymm.obj
+         blas.dir\Debug\csyrk.obj
+         blas.dir\Debug\csyr2k.obj
+         blas.dir\Debug\ctrmm.obj
+         blas.dir\Debug\ctrsm.obj
+         blas.dir\Debug\chemm.obj
+         blas.dir\Debug\cherk.obj
+         blas.dir\Debug\cher2k.obj
+         blas.dir\Debug\dcabs1.obj
+         blas.dir\Debug\dzasum.obj
+         blas.dir\Debug\dznrm2.obj
+         blas.dir\Debug\izamax.obj
+         blas.dir\Debug\zaxpy.obj
+         blas.dir\Debug\zcopy.obj
+         blas.dir\Debug\zdotc.obj
+         blas.dir\Debug\zdotu.obj
+         blas.dir\Debug\zdscal.obj
+         blas.dir\Debug\zrotg.obj
+         blas.dir\Debug\zscal.obj
+         blas.dir\Debug\zswap.obj
+         blas.dir\Debug\zdrot.obj
+         blas.dir\Debug\zgemv.obj
+         blas.dir\Debug\zgbmv.obj
+         blas.dir\Debug\zhemv.obj
+         blas.dir\Debug\zhbmv.obj
+         blas.dir\Debug\zhpmv.obj
+         blas.dir\Debug\ztrmv.obj
+         blas.dir\Debug\ztbmv.obj
+         blas.dir\Debug\ztpmv.obj
+         blas.dir\Debug\ztrsv.obj
+         blas.dir\Debug\ztbsv.obj
+         blas.dir\Debug\ztpsv.obj
+         blas.dir\Debug\zgerc.obj
+         blas.dir\Debug\zgeru.obj
+         blas.dir\Debug\zher.obj
+         blas.dir\Debug\zhpr.obj
+         blas.dir\Debug\zher2.obj
+         blas.dir\Debug\zhpr2.obj
+         blas.dir\Debug\zgemm.obj
+         blas.dir\Debug\zsymm.obj
+         blas.dir\Debug\zsyrk.obj
+         blas.dir\Debug\zsyr2k.obj
+         blas.dir\Debug\ztrmm.obj
+         blas.dir\Debug\ztrsm.obj
+         blas.dir\Debug\zhemm.obj
+         blas.dir\Debug\zherk.obj
+         blas.dir\Debug\zher2k.obj
+         blas.dir\Debug\lsame.obj
+         blas.dir\Debug\xerbla.obj
+         blas.dir\Debug\xerbla_array.obj
+         blas.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\Debug\blas.lib
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\blas.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.48

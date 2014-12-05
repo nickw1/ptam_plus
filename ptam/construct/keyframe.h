@@ -14,8 +14,7 @@
 // However, the tracker also stores its current frame as a half-populated
 // KeyFrame struct.
 
-#ifndef PTAM_CONSTRUCT_KEYFRAME_H_
-#define PTAM_CONSTRUCT_KEYFRAME_H_
+#pragma once
 
 #include <vector>
 #include <set>
@@ -96,5 +95,3 @@ struct KeyFrame {
 typedef std::map<MapPoint*, Measurement>::iterator meas_it;
 
 }  // namespace ptam
-#endif  // PTAM_CONSTRUCT_KEYFRAME_H_
-

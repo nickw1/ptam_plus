@@ -1,0 +1,449 @@
+﻿Build started 12/5/2014 12:30:59 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\f2c.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/F2CLIBS/libf2c/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\CMakeFiles\generate.stamp is up-to-date.
+         Generating arith.h
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\F2CLIBS\libf2c" /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D _COMPLEX_DEFINED /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"f2c.dir\Debug\\" /Fd"f2c.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\F2CLIBS\libf2c\f77vers.c ..\..\..\F2CLIBS\libf2c\i77vers.c ..\..\..\F2CLIBS\libf2c\main.c ..\..\..\F2CLIBS\libf2c\s_rnge.c ..\..\..\F2CLIBS\libf2c\abort_.c ..\..\..\F2CLIBS\libf2c\exit_.c ..\..\..\F2CLIBS\libf2c\getarg_.c ..\..\..\F2CLIBS\libf2c\iargc_.c ..\..\..\F2CLIBS\libf2c\getenv_.c ..\..\..\F2CLIBS\libf2c\signal_.c ..\..\..\F2CLIBS\libf2c\s_stop.c ..\..\..\F2CLIBS\libf2c\s_paus.c ..\..\..\F2CLIBS\libf2c\system_.c ..\..\..\F2CLIBS\libf2c\cabs.c ..\..\..\F2CLIBS\libf2c\ctype.c ..\..\..\F2CLIBS\libf2c\derf_.c ..\..\..\F2CLIBS\libf2c\derfc_.c ..\..\..\F2CLIBS\libf2c\erf_.c ..\..\..\F2CLIBS\libf2c\erfc_.c ..\..\..\F2CLIBS\libf2c\sig_die.c ..\..\..\F2CLIBS\libf2c\uninit.c ..\..\..\F2CLIBS\libf2c\pow_ci.c ..\..\..\F2CLIBS\libf2c\pow_dd.c ..\..\..\F2CLIBS\libf2c\pow_di.c ..\..\..\F2CLIBS\libf2c\pow_hh.c ..\..\..\F2CLIBS\libf2c\pow_ii.c ..\..\..\F2CLIBS\libf2c\pow_ri.c ..\..\..\F2CLIBS\libf2c\pow_zi.c ..\..\..\F2CLIBS\libf2c\pow_zz.c ..\..\..\F2CLIBS\libf2c\c_abs.c ..\..\..\F2CLIBS\libf2c\c_cos.c ..\..\..\F2CLIBS\libf2c\c_div.c ..\..\..\F2CLIBS\libf2c\c_exp.c ..\..\..\F2CLIBS\libf2c\c_log.c ..\..\..\F2CLIBS\libf2c\c_sin.c ..\..\..\F2CLIBS\libf2c\c_sqrt.c ..\..\..\F2CLIBS\libf2c\z_abs.c ..\..\..\F2CLIBS\libf2c\z_cos.c ..\..\..\F2CLIBS\libf2c\z_div.c ..\..\..\F2CLIBS\libf2c\z_exp.c ..\..\..\F2CLIBS\libf2c\z_log.c ..\..\..\F2CLIBS\libf2c\z_sin.c ..\..\..\F2CLIBS\libf2c\z_sqrt.c ..\..\..\F2CLIBS\libf2c\r_abs.c ..\..\..\F2CLIBS\libf2c\r_acos.c ..\..\..\F2CLIBS\libf2c\r_asin.c ..\..\..\F2CLIBS\libf2c\r_atan.c ..\..\..\F2CLIBS\libf2c\r_atn2.c ..\..\..\F2CLIBS\libf2c\r_cnjg.c ..\..\..\F2CLIBS\libf2c\r_cos.c ..\..\..\F2CLIBS\libf2c\r_cosh.c ..\..\..\F2CLIBS\libf2c\r_dim.c ..\..\..\F2CLIBS\libf2c\r_exp.c ..\..\..\F2CLIBS\libf2c\r_imag.c ..\..\..\F2CLIBS\libf2c\r_int.c ..\..\..\F2CLIBS\libf2c\r_lg10.c ..\..\..\F2CLIBS\libf2c\r_log.c ..\..\..\F2CLIBS\libf2c\r_mod.c ..\..\..\F2CLIBS\libf2c\r_nint.c ..\..\..\F2CLIBS\libf2c\r_sign.c ..\..\..\F2CLIBS\libf2c\r_sin.c ..\..\..\F2CLIBS\libf2c\r_sinh.c ..\..\..\F2CLIBS\libf2c\r_sqrt.c ..\..\..\F2CLIBS\libf2c\r_tan.c ..\..\..\F2CLIBS\libf2c\r_tanh.c ..\..\..\F2CLIBS\libf2c\d_abs.c ..\..\..\F2CLIBS\libf2c\d_acos.c ..\..\..\F2CLIBS\libf2c\d_asin.c ..\..\..\F2CLIBS\libf2c\d_atan.c ..\..\..\F2CLIBS\libf2c\d_atn2.c ..\..\..\F2CLIBS\libf2c\d_cnjg.c ..\..\..\F2CLIBS\libf2c\d_cos.c ..\..\..\F2CLIBS\libf2c\d_cosh.c ..\..\..\F2CLIBS\libf2c\d_dim.c ..\..\..\F2CLIBS\libf2c\d_exp.c ..\..\..\F2CLIBS\libf2c\d_imag.c ..\..\..\F2CLIBS\libf2c\d_int.c ..\..\..\F2CLIBS\libf2c\d_lg10.c ..\..\..\F2CLIBS\libf2c\d_log.c ..\..\..\F2CLIBS\libf2c\d_mod.c ..\..\..\F2CLIBS\libf2c\d_nint.c ..\..\..\F2CLIBS\libf2c\d_prod.c ..\..\..\F2CLIBS\libf2c\d_sign.c ..\..\..\F2CLIBS\libf2c\d_sin.c ..\..\..\F2CLIBS\libf2c\d_sinh.c ..\..\..\F2CLIBS\libf2c\d_sqrt.c ..\..\..\F2CLIBS\libf2c\d_tan.c ..\..\..\F2CLIBS\libf2c\d_tanh.c ..\..\..\F2CLIBS\libf2c\i_abs.c ..\..\..\F2CLIBS\libf2c\i_dim.c ..\..\..\F2CLIBS\libf2c\i_dnnt.c ..\..\..\F2CLIBS\libf2c\i_indx.c ..\..\..\F2CLIBS\libf2c\i_len.c ..\..\..\F2CLIBS\libf2c\i_len_trim.c ..\..\..\F2CLIBS\libf2c\i_mod.c ..\..\..\F2CLIBS\libf2c\i_nint.c ..\..\..\F2CLIBS\libf2c\i_sign.c ..\..\..\F2CLIBS\libf2c\lbitbits.c ..\..\..\F2CLIBS\libf2c\lbitshft.c ..\..\..\F2CLIBS\libf2c\i_ceiling.c ..\..\..\F2CLIBS\libf2c\h_abs.c ..\..\..\F2CLIBS\libf2c\h_dim.c ..\..\..\F2CLIBS\libf2c\h_dnnt.c ..\..\..\F2CLIBS\libf2c\h_indx.c ..\..\..\F2CLIBS\libf2c\h_len.c ..\..\..\F2CLIBS\libf2c\h_mod.c ..\..\..\F2CLIBS\libf2c\h_nint.c ..\..\..\F2CLIBS\libf2c\h_sign.c ..\..\..\F2CLIBS\libf2c\l_ge.c ..\..\..\F2CLIBS\libf2c\l_gt.c ..\..\..\F2CLIBS\libf2c\l_le.c ..\..\..\F2CLIBS\libf2c\l_lt.c ..\..\..\F2CLIBS\libf2c\hl_ge.c ..\..\..\F2CLIBS\libf2c\hl_gt.c ..\..\..\F2CLIBS\libf2c\hl_le.c ..\..\..\F2CLIBS\libf2c\hl_lt.c ..\..\..\F2CLIBS\libf2c\ef1asc_.c ..\..\..\F2CLIBS\libf2c\ef1cmc_.c ..\..\..\F2CLIBS\libf2c\f77_aloc.c ..\..\..\F2CLIBS\libf2c\s_cat.c ..\..\..\F2CLIBS\libf2c\s_cmp.c ..\..\..\F2CLIBS\libf2c\s_copy.c ..\..\..\F2CLIBS\libf2c\backspac.c ..\..\..\F2CLIBS\libf2c\close.c ..\..\..\F2CLIBS\libf2c\dfe.c ..\..\..\F2CLIBS\libf2c\dolio.c ..\..\..\F2CLIBS\libf2c\due.c ..\..\..\F2CLIBS\libf2c\endfile.c ..\..\..\F2CLIBS\libf2c\err.c ..\..\..\F2CLIBS\libf2c\fmt.c ..\..\..\F2CLIBS\libf2c\fmtlib.c ..\..\..\F2CLIBS\libf2c\ftell_.c ..\..\..\F2CLIBS\libf2c\iio.c ..\..\..\F2CLIBS\libf2c\ilnw.c ..\..\..\F2CLIBS\libf2c\inquire.c ..\..\..\F2CLIBS\libf2c\lread.c ..\..\..\F2CLIBS\libf2c\lwrite.c ..\..\..\F2CLIBS\libf2c\open.c ..\..\..\F2CLIBS\libf2c\rdfmt.c ..\..\..\F2CLIBS\libf2c\rewind.c ..\..\..\F2CLIBS\libf2c\rsfe.c ..\..\..\F2CLIBS\libf2c\rsli.c ..\..\..\F2CLIBS\libf2c\rsne.c ..\..\..\F2CLIBS\libf2c\sfe.c ..\..\..\F2CLIBS\libf2c\sue.c ..\..\..\F2CLIBS\libf2c\typesize.c ..\..\..\F2CLIBS\libf2c\uio.c ..\..\..\F2CLIBS\libf2c\util.c ..\..\..\F2CLIBS\libf2c\wref.c ..\..\..\F2CLIBS\libf2c\wrtfmt.c ..\..\..\F2CLIBS\libf2c\wsfe.c ..\..\..\F2CLIBS\libf2c\wsle.c ..\..\..\F2CLIBS\libf2c\wsne.c ..\..\..\F2CLIBS\libf2c\xwsne.c ..\..\..\F2CLIBS\libf2c\dtime_.c ..\..\..\F2CLIBS\libf2c\etime_.c
+         f77vers.c
+         i77vers.c
+         main.c
+         s_rnge.c
+         abort_.c
+         exit_.c
+         getarg_.c
+         iargc_.c
+         getenv_.c
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(921): warning C4005: 'max' : macro redefinition
+                 c:\users\thanh\dev\ptam_plus\external\clapack-3.2.1\f2clibs\libf2c\f2c.h(160) : see previous definition of 'max'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(922): warning C4005: 'min' : macro redefinition
+                 c:\users\thanh\dev\ptam_plus\external\clapack-3.2.1\f2clibs\libf2c\f2c.h(159) : see previous definition of 'min'
+     1>..\..\..\F2CLIBS\libf2c\getenv_.c(42): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : see declaration of 'getenv'
+     1>..\..\..\F2CLIBS\libf2c\getenv_.c(48): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>..\..\..\F2CLIBS\libf2c\getenv_.c(50): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : see declaration of 'getenv'
+         signal_.c
+         s_stop.c
+         s_paus.c
+     1>..\..\..\F2CLIBS\libf2c\s_paus.c(65): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(718) : see declaration of 'fileno'
+     1>..\..\..\F2CLIBS\libf2c\s_paus.c(70): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         system_.c
+         cabs.c
+         ctype.c
+         derf_.c
+         derfc_.c
+         erf_.c
+         erfc_.c
+         sig_die.c
+         Generating Code...
+         Compiling...
+         uninit.c
+         pow_ci.c
+     1>..\..\..\F2CLIBS\libf2c\pow_ci.c(21): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\pow_ci.c(22): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         pow_dd.c
+         pow_di.c
+         pow_hh.c
+         pow_ii.c
+         pow_ri.c
+         pow_zi.c
+         pow_zz.c
+         c_abs.c
+         c_cos.c
+     1>..\..\..\F2CLIBS\libf2c\c_cos.c(18): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_cos.c(19): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         c_div.c
+     1>..\..\..\F2CLIBS\libf2c\c_div.c(39): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_div.c(47): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_div.c(49): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         c_exp.c
+     1>..\..\..\F2CLIBS\libf2c\c_exp.c(20): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_exp.c(21): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         c_log.c
+     1>..\..\..\F2CLIBS\libf2c\c_log.c(18): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_log.c(19): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         c_sin.c
+     1>..\..\..\F2CLIBS\libf2c\c_sin.c(18): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_sin.c(19): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         c_sqrt.c
+     1>..\..\..\F2CLIBS\libf2c\c_sqrt.c(25): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_sqrt.c(27): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_sqrt.c(34): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\c_sqrt.c(36): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         z_abs.c
+         z_cos.c
+         z_div.c
+         z_exp.c
+         Generating Code...
+         Compiling...
+         z_log.c
+         z_sin.c
+         z_sqrt.c
+         r_abs.c
+         r_acos.c
+         r_asin.c
+         r_atan.c
+         r_atn2.c
+         r_cnjg.c
+         r_cos.c
+         r_cosh.c
+         r_dim.c
+         r_exp.c
+         r_imag.c
+         r_int.c
+         r_lg10.c
+         r_log.c
+         r_mod.c
+         r_nint.c
+         r_sign.c
+         Generating Code...
+         Compiling...
+         r_sin.c
+         r_sinh.c
+         r_sqrt.c
+         r_tan.c
+         r_tanh.c
+         d_abs.c
+         d_acos.c
+         d_asin.c
+         d_atan.c
+         d_atn2.c
+         d_cnjg.c
+         d_cos.c
+         d_cosh.c
+         d_dim.c
+         d_exp.c
+         d_imag.c
+         d_int.c
+         d_lg10.c
+         d_log.c
+         d_mod.c
+         Generating Code...
+         Compiling...
+         d_nint.c
+         d_prod.c
+         d_sign.c
+         d_sin.c
+         d_sinh.c
+         d_sqrt.c
+         d_tan.c
+         d_tanh.c
+         i_abs.c
+         i_dim.c
+         i_dnnt.c
+         i_indx.c
+         i_len.c
+         i_len_trim.c
+         i_mod.c
+         i_nint.c
+         i_sign.c
+         lbitbits.c
+     1>..\..\..\F2CLIBS\libf2c\lbitbits.c(47): warning C4554: '>>' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\F2CLIBS\libf2c\lbitbits.c(51): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\F2CLIBS\libf2c\lbitbits.c(60): warning C4554: '>>' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\F2CLIBS\libf2c\lbitbits.c(64): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+         lbitshft.c
+         i_ceiling.c
+         Generating Code...
+         Compiling...
+         h_abs.c
+         h_dim.c
+         h_dnnt.c
+         h_indx.c
+         h_len.c
+     1>..\..\..\F2CLIBS\libf2c\h_len.c(12): warning C4244: 'return' : conversion from 'ftnlen' to 'shortint', possible loss of data
+         h_mod.c
+         h_nint.c
+         h_sign.c
+         l_ge.c
+         l_gt.c
+         l_le.c
+         l_lt.c
+         hl_ge.c
+         hl_gt.c
+         hl_le.c
+         hl_lt.c
+         ef1asc_.c
+         ef1cmc_.c
+         f77_aloc.c
+         s_cat.c
+         Generating Code...
+         Compiling...
+         s_cmp.c
+         s_copy.c
+         backspac.c
+         close.c
+         dfe.c
+         dolio.c
+         due.c
+         endfile.c
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(45): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(46): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(104): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(111): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(111): warning C4996: 'tmpfile': This function or variable may be unsafe. Consider using tmpfile_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(317) : see declaration of 'tmpfile'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(123): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(226) : see declaration of 'freopen'
+     1>..\..\..\F2CLIBS\libf2c\endfile.c(133): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         err.c
+     1>..\..\..\F2CLIBS\libf2c\err.c(220): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(226) : see declaration of 'freopen'
+     1>..\..\..\F2CLIBS\libf2c\err.c(222): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(226) : see declaration of 'freopen'
+     1>..\..\..\F2CLIBS\libf2c\err.c(256): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(226) : see declaration of 'freopen'
+     1>..\..\..\F2CLIBS\libf2c\err.c(263): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(226) : see declaration of 'freopen'
+         fmt.c
+         fmtlib.c
+     1>..\..\..\F2CLIBS\libf2c\fmtlib.c(42): warning C4244: '=' : conversion from 'unsigned long' to 'char', possible loss of data
+         ftell_.c
+         iio.c
+         ilnw.c
+         inquire.c
+     1>..\..\..\F2CLIBS\libf2c\inquire.c(35): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(323) : see declaration of 'access'
+         lread.c
+     1>..\..\..\F2CLIBS\libf2c\lread.c(79): warning C4273: 'ungetc' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(324) : see previous definition of 'ungetc'
+     1>..\..\..\F2CLIBS\libf2c\lread.c(220): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\lread.c(751): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\lread.c(758): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>..\..\..\F2CLIBS\libf2c\lread.c(759): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         lwrite.c
+     1>..\..\..\F2CLIBS\libf2c\lwrite.c(137): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         open.c
+     1>..\..\..\F2CLIBS\libf2c\open.c(192): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\open.c(207): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(323) : see declaration of 'access'
+     1>..\..\..\F2CLIBS\libf2c\open.c(219): warning C4996: 'tmpfile': This function or variable may be unsafe. Consider using tmpfile_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(317) : see declaration of 'tmpfile'
+     1>..\..\..\F2CLIBS\libf2c\open.c(237): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(323) : see declaration of 'access'
+     1>..\..\..\F2CLIBS\libf2c\open.c(246): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\open.c(252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>..\..\..\F2CLIBS\libf2c\open.c(255): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\open.c(256): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\open.c(258): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\..\..\F2CLIBS\libf2c\open.c(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         rdfmt.c
+     1>..\..\..\F2CLIBS\libf2c\rdfmt.c(71): warning C4554: '>>' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\F2CLIBS\libf2c\rdfmt.c(93): warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>..\..\..\F2CLIBS\libf2c\rdfmt.c(382): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\rdfmt.c(389): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         rewind.c
+         Generating Code...
+         Compiling...
+         rsfe.c
+         rsli.c
+         rsne.c
+     1>..\..\..\F2CLIBS\libf2c\rsne.c(71): warning C4273: 'ungetc' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(324) : see previous definition of 'ungetc'
+         sfe.c
+         sue.c
+         typesize.c
+         uio.c
+         util.c
+         wref.c
+     1>..\..\..\F2CLIBS\libf2c\wref.c(90): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\wref.c(117): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\..\F2CLIBS\libf2c\wref.c(119): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>..\..\..\F2CLIBS\libf2c\wref.c(246): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         wrtfmt.c
+         wsfe.c
+         wsle.c
+         wsne.c
+         xwsne.c
+         dtime_.c
+     1>..\..\..\F2CLIBS\libf2c\dtime_.c(47): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         etime_.c
+     1>..\..\..\F2CLIBS\libf2c\etime_.c(46): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\Debug\libf2c.lib" /NOLOGO f2c.dir\Debug\f77vers.obj
+         f2c.dir\Debug\i77vers.obj
+         f2c.dir\Debug\main.obj
+         f2c.dir\Debug\s_rnge.obj
+         f2c.dir\Debug\abort_.obj
+         f2c.dir\Debug\exit_.obj
+         f2c.dir\Debug\getarg_.obj
+         f2c.dir\Debug\iargc_.obj
+         f2c.dir\Debug\getenv_.obj
+         f2c.dir\Debug\signal_.obj
+         f2c.dir\Debug\s_stop.obj
+         f2c.dir\Debug\s_paus.obj
+         f2c.dir\Debug\system_.obj
+         f2c.dir\Debug\cabs.obj
+         f2c.dir\Debug\ctype.obj
+         f2c.dir\Debug\derf_.obj
+         f2c.dir\Debug\derfc_.obj
+         f2c.dir\Debug\erf_.obj
+         f2c.dir\Debug\erfc_.obj
+         f2c.dir\Debug\sig_die.obj
+         f2c.dir\Debug\uninit.obj
+         f2c.dir\Debug\pow_ci.obj
+         f2c.dir\Debug\pow_dd.obj
+         f2c.dir\Debug\pow_di.obj
+         f2c.dir\Debug\pow_hh.obj
+         f2c.dir\Debug\pow_ii.obj
+         f2c.dir\Debug\pow_ri.obj
+         f2c.dir\Debug\pow_zi.obj
+         f2c.dir\Debug\pow_zz.obj
+         f2c.dir\Debug\c_abs.obj
+         f2c.dir\Debug\c_cos.obj
+         f2c.dir\Debug\c_div.obj
+         f2c.dir\Debug\c_exp.obj
+         f2c.dir\Debug\c_log.obj
+         f2c.dir\Debug\c_sin.obj
+         f2c.dir\Debug\c_sqrt.obj
+         f2c.dir\Debug\z_abs.obj
+         f2c.dir\Debug\z_cos.obj
+         f2c.dir\Debug\z_div.obj
+         f2c.dir\Debug\z_exp.obj
+         f2c.dir\Debug\z_log.obj
+         f2c.dir\Debug\z_sin.obj
+         f2c.dir\Debug\z_sqrt.obj
+         f2c.dir\Debug\r_abs.obj
+         f2c.dir\Debug\r_acos.obj
+         f2c.dir\Debug\r_asin.obj
+         f2c.dir\Debug\r_atan.obj
+         f2c.dir\Debug\r_atn2.obj
+         f2c.dir\Debug\r_cnjg.obj
+         f2c.dir\Debug\r_cos.obj
+         f2c.dir\Debug\r_cosh.obj
+         f2c.dir\Debug\r_dim.obj
+         f2c.dir\Debug\r_exp.obj
+         f2c.dir\Debug\r_imag.obj
+         f2c.dir\Debug\r_int.obj
+         f2c.dir\Debug\r_lg10.obj
+         f2c.dir\Debug\r_log.obj
+         f2c.dir\Debug\r_mod.obj
+         f2c.dir\Debug\r_nint.obj
+         f2c.dir\Debug\r_sign.obj
+         f2c.dir\Debug\r_sin.obj
+         f2c.dir\Debug\r_sinh.obj
+         f2c.dir\Debug\r_sqrt.obj
+         f2c.dir\Debug\r_tan.obj
+         f2c.dir\Debug\r_tanh.obj
+         f2c.dir\Debug\d_abs.obj
+         f2c.dir\Debug\d_acos.obj
+         f2c.dir\Debug\d_asin.obj
+         f2c.dir\Debug\d_atan.obj
+         f2c.dir\Debug\d_atn2.obj
+         f2c.dir\Debug\d_cnjg.obj
+         f2c.dir\Debug\d_cos.obj
+         f2c.dir\Debug\d_cosh.obj
+         f2c.dir\Debug\d_dim.obj
+         f2c.dir\Debug\d_exp.obj
+         f2c.dir\Debug\d_imag.obj
+         f2c.dir\Debug\d_int.obj
+         f2c.dir\Debug\d_lg10.obj
+         f2c.dir\Debug\d_log.obj
+         f2c.dir\Debug\d_mod.obj
+         f2c.dir\Debug\d_nint.obj
+         f2c.dir\Debug\d_prod.obj
+         f2c.dir\Debug\d_sign.obj
+         f2c.dir\Debug\d_sin.obj
+         f2c.dir\Debug\d_sinh.obj
+         f2c.dir\Debug\d_sqrt.obj
+         f2c.dir\Debug\d_tan.obj
+         f2c.dir\Debug\d_tanh.obj
+         f2c.dir\Debug\i_abs.obj
+         f2c.dir\Debug\i_dim.obj
+         f2c.dir\Debug\i_dnnt.obj
+         f2c.dir\Debug\i_indx.obj
+         f2c.dir\Debug\i_len.obj
+         f2c.dir\Debug\i_len_trim.obj
+         f2c.dir\Debug\i_mod.obj
+         f2c.dir\Debug\i_nint.obj
+         f2c.dir\Debug\i_sign.obj
+         f2c.dir\Debug\lbitbits.obj
+         f2c.dir\Debug\lbitshft.obj
+         f2c.dir\Debug\i_ceiling.obj
+         f2c.dir\Debug\h_abs.obj
+         f2c.dir\Debug\h_dim.obj
+         f2c.dir\Debug\h_dnnt.obj
+         f2c.dir\Debug\h_indx.obj
+         f2c.dir\Debug\h_len.obj
+         f2c.dir\Debug\h_mod.obj
+         f2c.dir\Debug\h_nint.obj
+         f2c.dir\Debug\h_sign.obj
+         f2c.dir\Debug\l_ge.obj
+         f2c.dir\Debug\l_gt.obj
+         f2c.dir\Debug\l_le.obj
+         f2c.dir\Debug\l_lt.obj
+         f2c.dir\Debug\hl_ge.obj
+         f2c.dir\Debug\hl_gt.obj
+         f2c.dir\Debug\hl_le.obj
+         f2c.dir\Debug\hl_lt.obj
+         f2c.dir\Debug\ef1asc_.obj
+         f2c.dir\Debug\ef1cmc_.obj
+         f2c.dir\Debug\f77_aloc.obj
+         f2c.dir\Debug\s_cat.obj
+         f2c.dir\Debug\s_cmp.obj
+         f2c.dir\Debug\s_copy.obj
+         f2c.dir\Debug\backspac.obj
+         f2c.dir\Debug\close.obj
+         f2c.dir\Debug\dfe.obj
+         f2c.dir\Debug\dolio.obj
+         f2c.dir\Debug\due.obj
+         f2c.dir\Debug\endfile.obj
+         f2c.dir\Debug\err.obj
+         f2c.dir\Debug\fmt.obj
+         f2c.dir\Debug\fmtlib.obj
+         f2c.dir\Debug\ftell_.obj
+         f2c.dir\Debug\iio.obj
+         f2c.dir\Debug\ilnw.obj
+         f2c.dir\Debug\inquire.obj
+         f2c.dir\Debug\lread.obj
+         f2c.dir\Debug\lwrite.obj
+         f2c.dir\Debug\open.obj
+         f2c.dir\Debug\rdfmt.obj
+         f2c.dir\Debug\rewind.obj
+         f2c.dir\Debug\rsfe.obj
+         f2c.dir\Debug\rsli.obj
+         f2c.dir\Debug\rsne.obj
+         f2c.dir\Debug\sfe.obj
+         f2c.dir\Debug\sue.obj
+         f2c.dir\Debug\typesize.obj
+         f2c.dir\Debug\uio.obj
+         f2c.dir\Debug\util.obj
+         f2c.dir\Debug\wref.obj
+         f2c.dir\Debug\wrtfmt.obj
+         f2c.dir\Debug\wsfe.obj
+         f2c.dir\Debug\wsle.obj
+         f2c.dir\Debug\wsne.obj
+         f2c.dir\Debug\xwsne.obj
+         f2c.dir\Debug\dtime_.obj
+         f2c.dir\Debug\etime_.obj
+         f2c.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\Debug\libf2c.lib
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\F2CLIBS\libf2c\f2c.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.28

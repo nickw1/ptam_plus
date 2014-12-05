@@ -5,9 +5,7 @@
 // The important thing is the XXXPos functions, which convert
 // image positions from one level to another. Use these whenever
 // transforming positions to ensure consistent operation!!
-
-#ifndef PTAM_TRACK_LEVEL_HELPERS_H_
-#define PTAM_TRACK_LEVEL_HELPERS_H_
+#pragma once
 #include <TooN/TooN.h>
 #include <cvd/image_ref.h>
 
@@ -50,4 +48,3 @@ inline TooN::Vector<2> LevelNPos(TooN::Vector<2> v2RootPos, int nLevel) {
   return v2Ans;
 }
 }  // namespace ptam
-#endif

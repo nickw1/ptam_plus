@@ -33,16 +33,13 @@
 // Although PatchFinder can use arbitrary-sized search templates (it's determined
 // at construction), the use of 8x8 pixel templates (the default) is highly
 // recommended, as the coarse search for this size is SSE-optimised.
-
-#ifndef PTAM_TRACK_PATCHFINDER_H_
-#define PTAM_TRACK_PATCHFINDER_H_
-
+#pragma once
 #include <TooN/TooN.h>
 #include <TooN/se3.h>
 #include <cvd/image.h>
 #include <cvd/byte.h>
-#include "construct/map_point.h"
-#include "track/level_helpers.h"
+#include "ptam/construct/map_point.h"
+#include "ptam/track/level_helpers.h"
 
 
 namespace ptam {
@@ -137,12 +134,3 @@ protected:
   TooN::Matrix<2> mm2LastWarpMatrix;       // What was the last warp matrix this PatchFinder used?
 };
 }  // namespace ptam
-#endif
-
-
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 // Copyright 2008 Isis Innovation Limited
-#include "ui/eye_game.h"
-#include "ui/open_gl.h"
+#include "ptam/ui/opengl.h"
+#include "ptam/ui/eye_game.h"
+#include "ptam/ui/gl_helpers.h"
 #include <cvd/convolution.h>
 #include <stdlib.h>
 #include <typeinfo>
@@ -201,7 +202,7 @@ void EyeGame::LookAt(int nEye, TooN::Vector<3> v3, double dRotLimit) {
 
 void EyeGame::MakeShadowTex(){
   const int nTexSize = 256;cout << "Test here in MakeShadowTex EyeGame 44a" << endl;
-  Image<byte> imShadow(ImageRef(nTexSize, nTexSize));cout << "Test here in MakeShadowTex EyeGame 4b" << endl;
+  Image<CVD::byte> imShadow(ImageRef(nTexSize, nTexSize));cout << "Test here in MakeShadowTex EyeGame 4b" << endl;
   double dFrac = 1.0 - mdEyeRadius / mdShadowHalfSize;cout << "Test here in MakeShadowTex EyeGame 4c" << endl;
   double dCenterPos = dFrac * nTexSize / 2 - 0.5;cout << "Test here in MakeShadowTex EyeGame 4d" << endl;
   cout << "dCenterPos is: " << typeid(dCenterPos).name() << '\n';
@@ -210,21 +211,21 @@ void EyeGame::MakeShadowTex(){
   double a = 20.0;
   cout << "a is: " << typeid(a).name() << '\n';
 
-  ImageRef irCenter; cout << "Test here in MakeShadowTex EyeGame 4e00:" << dCenterPos << endl;
+  CVD::ImageRef irCenter; cout << "Test here in MakeShadowTex EyeGame 4e00:" << dCenterPos << endl;
   irCenter.x =irCenter.y = (int)  dCenterPos;cout << "Test here in MakeShadowTex EyeGame 4f" << endl;
   int nRadius = int ((nTexSize / 2 - irCenter.x) * 1.05);cout << "Test here in MakeShadowTex EyeGame 4g" << endl;
   unsigned int nRadiusSquared = nRadius*nRadius;cout << "Test here in MakeShadowTex EyeGame 5555" << endl;
-  ImageRef ir;
+  CVD::ImageRef ir;
   for(ir.y = 0; 2 * ir.y < nTexSize; ir.y++)
     for(ir.x = 0; 2 * ir.x < nTexSize; ir.x++)
     {
-      byte val = 0;
+    CVD::byte val = 0;
       if((ir - irCenter).mag_squared() < nRadiusSquared)
         val = 255;
       imShadow[ir] = val;
-      imShadow[ImageRef(nTexSize - 1 - ir.x, ir.y)] = val;
-      imShadow[ImageRef(nTexSize - 1 - ir.x, nTexSize - 1 - ir.y)] = val;
-      imShadow[ImageRef(ir.x, nTexSize - 1 - ir.y)] = val;
+      imShadow[CVD::ImageRef(nTexSize - 1 - ir.x, ir.y)] = val;
+      imShadow[CVD::ImageRef(nTexSize - 1 - ir.x, nTexSize - 1 - ir.y)] = val;
+      imShadow[CVD::ImageRef(ir.x, nTexSize - 1 - ir.y)] = val;
     }
   cout << "Test here in MakeShadowTex EyeGame 6666" << endl;
   convolveGaussian(imShadow, 4.0);
@@ -237,7 +238,3 @@ void EyeGame::MakeShadowTex(){
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 }
 }  // namespace ptam
-
-
-
-

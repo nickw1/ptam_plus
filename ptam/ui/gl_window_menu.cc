@@ -1,15 +1,27 @@
 // Copyright 2008 Isis Innovation Limited
-#include "ui/open_gl.h"
-#include "ui/gl_window_menu.h"
+#include "ptam/ui/opengl.h"
+#include "ptam/ui/gl_window_menu.h"
 #include <gvars3/instances.h>
 #include <gvars3/GStringUtil.h>
 #include <sstream>
+#include "ptam/ui/gl_helpers.h"
 
 //using namespace GVars3;
 using namespace CVD;
 using namespace std;
 
 namespace ptam {
+
+inline void PrintString(CVD::ImageRef irPos, std::string s) {
+  glMatrixMode(GL_PROJECTION);
+  glPushMatrix();
+  glTranslatef(irPos.x, irPos.y, 0.0);
+  glScalef(8, -8, 1);
+  //glDrawText(s, NICE, 1.6, 0.1);
+  glDrawText(s);
+  glPopMatrix();
+}
+
 GLWindowMenu::GLWindowMenu(string sName, string sTitle) {
   msName = sName;
   msTitle = sTitle;
@@ -140,7 +152,7 @@ void GLWindowMenu::FillBox(int l, int r, int t, int b) {
   glEnd();
 }
 
-void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
+void GLWindowMenu::Render(int nTop, int nHeight, int nWidth) {
   if(!*mgvnEnabled)
     return;
 
@@ -170,7 +182,7 @@ void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
       FillBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
       glColor4d(0, 1, 0, dAlpha);
       LineBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
-      glw.PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
+      PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
                       i->sName);
       break;
 
@@ -185,7 +197,7 @@ void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
       else
         glColor4d(1,0,0,dAlpha);
       LineBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
-      glw.PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
+      PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
                       i->sName + " " + ((*(i->gvnIntValue))?("On"):("Off")));
       break;
 
@@ -194,7 +206,7 @@ void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
       FillBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
       glColor4d(0,1,1,dAlpha);
       LineBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
-      glw.PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
+      PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
                       i->sName + " " + GVars3::GV2.StringValue(i->sParam, true));
       break;
 
@@ -213,7 +225,7 @@ void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
       LineBox(nBase, nBase + *mgvnMenuItemWidth +1, mnMenuTop, mnMenuTop + mnMenuHeight);
       ostringstream ost;
       ost << i->sName << " " << *(i->gvnIntValue);
-      glw.PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
+      PrintString(ImageRef( nBase + 3, mnMenuTop + *mgvnMenuTextOffset),
                       ost.str());
     }
       break;
@@ -226,9 +238,9 @@ void GLWindowMenu::Render(int nTop, int nHeight, int nWidth, GLWindow2 &glw) {
   LineBox(mnWidth - *mgvnMenuItemWidth, mnWidth-1, mnMenuTop, mnMenuTop + mnMenuHeight);
   ImageRef ir( mnWidth - *mgvnMenuItemWidth + 5, mnMenuTop + *mgvnMenuTextOffset);
   if(msCurrentSubMenu == "Root")
-    glw.PrintString(ir, msTitle+":");
+    PrintString(ir, msTitle+":");
   else
-    glw.PrintString(ir, msCurrentSubMenu+":");
+    PrintString(ir, msCurrentSubMenu+":");
 }
 
 bool GLWindowMenu::HandleClick(int nMouseButton, int state, int x, int y) {
@@ -260,7 +272,7 @@ bool GLWindowMenu::HandleClick(int nMouseButton, int state, int x, int y) {
   };
 
   MenuItem SelectedItem  = mmSubMenus[msCurrentSubMenu].mvItems[nButtonNumber-1];
-  msCurrentSubMenu=SelectedItem.sNextMenu;
+  msCurrentSubMenu = SelectedItem.sNextMenu;
   switch (SelectedItem.type) {
   case Button:
     GVars3::GUI.ParseLine(SelectedItem.sParam);
@@ -296,9 +308,3 @@ bool GLWindowMenu::HandleClick(int nMouseButton, int state, int x, int y) {
   return true;
 }
 }  // namespace ptam
-
-
-
-
-
-

@@ -17,17 +17,6 @@ foreach(sub_dir ${sub_dirs})
   list(APPEND ptam_sources ${${sub_dir}_sources})
 endforeach()
 
-if(NOT PTAM_WITH_UI)
-  set(remove_items "track/calib_corner_patch*"
-                   "track/calib_image*")
-    foreach(item ${remove_items})
-      file(GLOB temp_src ${CMAKE_CURRENT_SOURCE_DIR}/${item})
-      foreach(temp_item ${temp_src})
-        list(REMOVE_ITEM ptam_sources ${temp_item})
-      endforeach()
-    endforeach()
-endif()
-
 add_library(PTAM ${PTAM_LIB_TYPE} ${ptam_sources})
 target_link_libraries(PTAM ${PTAM_EXTERNAL_LIBS})
 set_property(TARGET PTAM PROPERTY FOLDER "ptam/libs")

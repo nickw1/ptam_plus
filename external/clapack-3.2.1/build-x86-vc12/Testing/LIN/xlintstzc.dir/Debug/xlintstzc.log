@@ -1,0 +1,58 @@
+﻿Build started 12/5/2014 12:32:37 AM.
+     1>Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstzc.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/TESTING/LIN/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_ISATTY /D MSDOS /D USE_CLOCK /D NO_BLAS_WRAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"xlintstzc.dir\Debug\\" /Fd"xlintstzc.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\TESTING\LIN\zchkab.c ..\..\..\TESTING\LIN\zdrvab.c ..\..\..\TESTING\LIN\zdrvac.c ..\..\..\TESTING\LIN\zerrab.c ..\..\..\TESTING\LIN\zerrac.c ..\..\..\TESTING\LIN\zget08.c ..\..\..\TESTING\LIN\alaerh.c ..\..\..\TESTING\LIN\alahd.c ..\..\..\TESTING\LIN\aladhd.c ..\..\..\TESTING\LIN\alareq.c ..\..\..\TESTING\LIN\chkxer.c ..\..\..\TESTING\LIN\zget02.c ..\..\..\TESTING\LIN\zlarhs.c ..\..\..\TESTING\LIN\zlatb4.c ..\..\..\TESTING\LIN\zsbmv.c ..\..\..\TESTING\LIN\xerbla.c ..\..\..\TESTING\LIN\zpot06.c ..\..\..\TESTING\LIN\zlaipd.c ..\..\..\INSTALL\winsecond.c ..\..\..\INSTALL\windsecnd.c
+         zchkab.c
+     1>..\..\..\TESTING\LIN\zchkab.c(393): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\zchkab.c(398): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>..\..\..\TESTING\LIN\zchkab.c(403): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+         zdrvab.c
+         zdrvac.c
+         zerrab.c
+         zerrac.c
+         zget08.c
+         alaerh.c
+         alahd.c
+         aladhd.c
+         alareq.c
+         chkxer.c
+         zget02.c
+         zlarhs.c
+         zlatb4.c
+         zsbmv.c
+         xerbla.c
+         zpot06.c
+         zlaipd.c
+         winsecond.c
+         windsecnd.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstzc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\MATGEN\Debug\tmglib.lib ..\..\SRC\Debug\lapack.lib ..\..\BLAS\SRC\Debug\blas.lib ..\..\F2CLIBS\libf2c\Debug\libf2c.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstzc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/Testing/LIN/Debug/xlintstzc.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug xlintstzc.dir\Debug\zchkab.obj
+         xlintstzc.dir\Debug\zdrvab.obj
+         xlintstzc.dir\Debug\zdrvac.obj
+         xlintstzc.dir\Debug\zerrab.obj
+         xlintstzc.dir\Debug\zerrac.obj
+         xlintstzc.dir\Debug\zget08.obj
+         xlintstzc.dir\Debug\alaerh.obj
+         xlintstzc.dir\Debug\alahd.obj
+         xlintstzc.dir\Debug\aladhd.obj
+         xlintstzc.dir\Debug\alareq.obj
+         xlintstzc.dir\Debug\chkxer.obj
+         xlintstzc.dir\Debug\zget02.obj
+         xlintstzc.dir\Debug\zlarhs.obj
+         xlintstzc.dir\Debug\zlatb4.obj
+         xlintstzc.dir\Debug\zsbmv.obj
+         xlintstzc.dir\Debug\xerbla.obj
+         xlintstzc.dir\Debug\zpot06.obj
+         xlintstzc.dir\Debug\zlaipd.obj
+         xlintstzc.dir\Debug\winsecond.obj
+         xlintstzc.dir\Debug\windsecnd.obj
+         xlintstzc.vcxproj -> C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\Debug\xlintstzc.exe
+     1>Done Building Project "C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\Testing\LIN\xlintstzc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.09

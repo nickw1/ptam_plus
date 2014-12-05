@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/map_point.h"
-#include "construct/keyframe.h"
+#include "ptam/construct/map_point.h"
+#include "ptam/construct/keyframe.h"
 namespace ptam {
 void MapPoint::RefreshPixelVectors() {
   KeyFrame &k = *pPatchSourceKF;

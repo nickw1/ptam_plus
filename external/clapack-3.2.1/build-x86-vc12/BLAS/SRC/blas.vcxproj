@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D99D55FB-0A31-4B69-A510-C2B9C5FE4E87}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>blas</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">blas.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">blas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">blas.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">blas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">blas.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">blas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">blas.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">blas</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\BLAS\SRC\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1 -BC:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12 --check-stamp-file C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/BLAS/SRC/CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\BLAS\SRC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Thanh\dev\ptam_plus\external\clapack-3.2.1\build-x86-vc12\BLAS\SRC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\BLAS\SRC\isamax.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sasum.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\saxpy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\scopy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sdot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\snrm2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\srot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\srotg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sswap.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sdsdot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\srotmg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\srotm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sgemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sgbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssymv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sspmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\strmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\stbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\stpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\strsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\stbsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\stpsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sger.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssyr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sspr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssyr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sspr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\sgemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssymm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssyrk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ssyr2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\strmm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\strsm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\idamax.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dasum.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\daxpy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dcopy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ddot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dnrm2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\drot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\drotg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsdot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dswap.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\drotmg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\drotm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dgemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dgbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsymv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dspmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtrmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtrsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtbsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtpsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dger.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsyr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dspr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsyr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dspr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dgemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsymm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsyrk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dsyr2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtrmm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dtrsm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\scabs1.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\scasum.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\scnrm2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\icamax.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\caxpy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ccopy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cdotc.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cdotu.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\csscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\crotg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cswap.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\csrot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cgemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cgbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctrmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctrsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctbsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctpsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cgerc.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cgeru.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cher.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chpr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cher2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chpr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cgemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\csymm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\csyrk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\csyr2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctrmm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ctrsm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\chemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cherk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\cher2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dcabs1.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dzasum.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\dznrm2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\izamax.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zaxpy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zcopy.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zdotc.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zdotu.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zdscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zrotg.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zscal.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zswap.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zdrot.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zgemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zgbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhemv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztrmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztbmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztpmv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztrsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztbsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztpsv.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zgerc.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zgeru.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zher.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhpr.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zher2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhpr2.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zgemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zsymm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zsyrk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zsyr2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztrmm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\ztrsm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zhemm.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zherk.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\zher2k.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\lsame.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\xerbla.c"  />
+    <ClCompile Include="..\..\..\BLAS\SRC\xerbla_array.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/ZERO_CHECK.vcxproj">
+      <Project>8BD7F73F-12E3-4DF2-A4AF-719B4438F3E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Thanh/dev/ptam_plus/external/clapack-3.2.1/build-x86-vc12/F2CLIBS/libf2c/f2c.vcxproj">
+      <Project>1F091C83-5BDA-4C4D-B8EA-5DC7C6B9FD2F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

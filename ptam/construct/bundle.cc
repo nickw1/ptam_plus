@@ -1,11 +1,11 @@
 // Copyright 2008 Isis Innovation Limited
-#include "construct/bundle.h"
+#include "ptam/construct/bundle.h"
 #include <fstream>
 #include <iomanip>
 #include <gvars3/instances.h>
 #include <TooN/helpers.h>
 #include <TooN/Cholesky.h>
-#include "track/m_estimator.h"
+#include "ptam/track/m_estimator.h"
 
 using std::string;
 
@@ -600,10 +600,3 @@ std::vector<std::pair<int, int> > Bundle::GetOutlierMeasurements() {
   return mvOutlierMeasurementIdx;
 }
 }  // namespace ptam
-
-
-
-
-
-
-

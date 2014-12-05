@@ -6,7 +6,7 @@
 
 #include "math/atan_camera.h"
 #include "ui/open_gl.h"
-#include "ui/draw_helpers.h"
+#include "ui/gl_helpers.h"
 #include "ui/ar_render.h"
 #include "ui/gl_window.h"
 #include "util/opencv.h"

@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "track/patch_finder.h"
+#include "ptam/track/patch_finder.h"
 
 // tmmintrin.h contains SSE3<> instrinsics, used for the ZMSSD search at the bottom..
 // If this causes problems, just do #define CVD_HAVE_XMMINTRIN 0
@@ -12,8 +12,8 @@
 #include <cvd/image_interpolate.h>
 #include <TooN/Cholesky.h>
 
-#include "track/small_matrix_opts.h"
-#include "construct/keyframe.h"
+#include "ptam/track/small_matrix_opts.h"
+#include "ptam/construct/keyframe.h"
 
 using namespace CVD;
 using namespace std;

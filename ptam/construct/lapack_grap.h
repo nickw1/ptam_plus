@@ -1,12 +1,4 @@
-/* 
- * File:   lapack_grap.h
- * Author: thanh
- *
- * Created on 3 October 2009, 2:44 PM
- */
-
-#ifndef _LAPACK_GRAP_H
-#define	_LAPACK_GRAP_H
+#pragma once
 
 #ifdef	__cplusplus
 extern "C" {
@@ -29,6 +21,3 @@ extern "C" {
 #ifdef	__cplusplus
 }
 #endif
-
-#endif	/* _LAPACK_GRAP_H */
-

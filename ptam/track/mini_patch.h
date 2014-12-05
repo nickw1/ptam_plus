@@ -7,9 +7,7 @@
 //
 // This is a simple pixel-patch class, used for tracking small patches
 // it's used by the tracker for building the initial map
-
-#ifndef PTAM_TRACK_MINI_PATCH_H_
-#define PTAM_TRACK_MINI_PATCH_H_
+#pragma once
 
 #include <vector>
 #include <cvd/image.h>
@@ -33,4 +31,3 @@ struct MiniPatch {
   CVD::Image<CVD::byte> mimOrigPatch;  // Original pixels
 };
 }  // namespace ptam
-#endif

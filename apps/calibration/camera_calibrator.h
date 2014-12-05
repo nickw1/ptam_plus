@@ -1,20 +1,16 @@
 // -*- c++ -*-
 // Copyright 2008 Isis Innovation Limited
-
-#ifndef APPS_CALIBRATION_CAMERACALIBRATOR_H_
-#define APPS_CALIBRATION_CAMERACALIBRATOR_H_
+#pragma once
 #include <vector>
-#include <opencv2/core/core.hpp>
-#include <icg3d/sensor/videocapture_dispatch.h>
+#include <opencv2/highgui/highgui.hpp>
 #include <gvars3/gvars3.h>
-#include "track/calib_image.h"
-#include "ui/gl_window2.h"
+#include "ptam/ui/gl_window.h"
+#include "calib_image.h"
 
 namespace ptam {
-class CameraCalibrator {
+class CameraCalibrator : public GLWindowCallback {
 public:
   CameraCalibrator();
-  void Run();
 
   void Reset();
   void HandleFrame(CVD::Image<CVD::byte> imFrame);
@@ -23,7 +19,7 @@ public:
   
   cv::VideoCapture capture;
 
-  cv::Ptr<GLWindow2> mGLWindow;
+  std::shared_ptr<GLWindow> mGLWindow;
   ATANCamera mCamera;
   bool mbDone;
 
@@ -38,6 +34,7 @@ public:
 
   void GUICommandHandler(std::string sCommand, std::string sParams);
   static void GUICommandCallBack(void* ptr, std::string sCommand, std::string sParams);
+
+  virtual void on_display();
 };
 }  // namespace ptam
-#endif
