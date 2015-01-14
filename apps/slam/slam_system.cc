@@ -50,7 +50,7 @@ SlamSystem::SlamSystem() {
   mimFrameBW.resize(img_size);
   mimFrameRGB.resize(img_size);
 
-  mGLWindow = boost::shared_ptr<GLWindow2>(new GLWindow2(img_size, "PTAM"));
+  mGLWindow = std::shared_ptr<GLWindow>(new GLWindow(img_size, "PTAM"));
 
   mpMap = new Map;
   mpMapMaker = new MapMaker(*mpMap, *mpCamera);

@@ -2,6 +2,8 @@
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 list(APPEND PTAM_EXTERNAL_LIBS ${OpenCV_LIBRARIES})
+get_filename_component(OpenCV_BINARY_DIR "${OpenCV_LIB_DIR}/../bin" ABSOLUTE)
+list(APPEND THE_DEPEDENCIES_BINARY_PATHS ${OpenCV_BINARY_DIR})
 message("Found OpenCV libs:${OpenCV_LIBRARIES}")
 message("OpenCV INC DIRS: ${OpenCV_INCLUDE_DIRS}")
 
