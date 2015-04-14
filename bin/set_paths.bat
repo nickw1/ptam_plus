@@ -2,7 +2,7 @@
 
 @echo off
 
-set PATH=%PATH%;C:/Users/Thanh/dev/ptam_plus/bin;C:/Users/Thanh/dev/gitlab_structural_modeling/precompiled/x86/vc12/prebuilts/opencv/x86/vc12/lib;C:/Users/Thanh/dev/gitlab_structural_modeling/precompiled/x86/vc12/prebuilts/opencv/x86/vc12/bin;C:/Users/Thanh/deps_msvc_common/freeglut-2.8.1/lib/x86;C:/Users/Thanh/deps_msvc_common/glew-1.10.0/bin/Release/Win32;
+set PATH=%PATH%;C:/Users/Thanh/dev/ptam_plus/bin;C:/Users/Thanh/deps_x86_vc12/opencv/x86/vc12/lib;C:/Users/Thanh/deps_x86_vc12/opencv/x86/vc12/bin;C:/Users/Thanh/deps_x86_vc12/opencv/x86/vc12/lib;C:/Users/Thanh/deps_x86_vc12/opencv/x86/vc12/bin;C:/Users/Thanh/deps_msvc_common/freeglut-2.8.1/lib/x86;C:/Users/Thanh/deps_msvc_common/glew-1.10.0/bin/Release/Win32;
 
 echo PATH:
 echo %PATH%

@@ -9,6 +9,7 @@
 #include <cvd/image_interpolate.h>
 #include <TooN/Cholesky.h>
 #include "ptam/track/small_matrix_opts.h"
+#include "ptam/ui/gl_helpers.h"
 
 using namespace std;
 using namespace CVD;
@@ -84,20 +85,20 @@ void CalibCornerPatch::MakeTemplateWithCurrentParams() {
 }
 
 bool CalibCornerPatch::IterateOnImageWithDrawing(
-    CalibCornerPatch::Params &params, Image<byte> &im) {
+  CalibCornerPatch::Params &params, CVD::Image<CVD::byte> &im) {
   bool bReturn = IterateOnImage(params, im);
   if (!bReturn) {
     glPointSize(3);
     glColor3f(1, 0, 0);
     glBegin(GL_POINTS);
-    glVertex(params.v2Pos);
+    CVD::glVertex(params.v2Pos);
     glEnd();
   }
   return bReturn;
 }
 
 bool CalibCornerPatch::IterateOnImage(CalibCornerPatch::Params &params,
-                                      Image<byte> &im) {
+                                      CVD::Image<CVD::byte> &im) {
   mParams = params;
   double dLastUpdate = 0.0;
   for (int i = 0; i < 20; i++) {
@@ -122,26 +123,26 @@ bool CalibCornerPatch::IterateOnImage(CalibCornerPatch::Params &params,
   return true;
 }
 
-double CalibCornerPatch::Iterate(Image<byte> &im) {
+double CalibCornerPatch::Iterate(CVD::Image<CVD::byte> &im) {
   TooN::Vector<2> v2TL = mParams.v2Pos - CVD::vec(mimTemplate.size() -
-                                                  ImageRef(1,1)) / 2.0;
+                                                  CVD::ImageRef(1, 1)) / 2.0;
   if(v2TL[0] < 0.0 || v2TL[1] < 0.0)
     return -1.0;
   TooN::Vector<2> v2BR = mParams.v2Pos + CVD::vec(mimTemplate.size()) +
-      CVD::vec(mimTemplate.size() - ImageRef(1,1)) / 2.0;
+    CVD::vec(mimTemplate.size() - CVD::ImageRef(1, 1)) / 2.0;
   if(v2BR[0] > (im.size().x - 1.0) || v2BR[1] > (im.size().y - 1.0))
     return -1.0;
 
-  image_interpolate<Interpolate::Bilinear, byte> imInterp(im);
+  image_interpolate<Interpolate::Bilinear, CVD::byte> imInterp(im);
   TooN::Matrix<6> m6JTJ = TooN::Zeros;
   TooN::Vector<6> v6JTD = TooN::Zeros;
 
 
 
-  ImageRef ir;
+  CVD::ImageRef ir;
   double dSum = 0.0;
   do {
-    TooN::Vector<2> v2Pos_Template = vec(ir) - vec(mimTemplate.size() - ImageRef(1,1)) / 2.0;
+    TooN::Vector<2> v2Pos_Template = vec(ir) - vec(mimTemplate.size() - CVD::ImageRef(1, 1)) / 2.0;
     TooN::Vector<2> v2Pos_Image = mParams.v2Pos + v2Pos_Template;
     double dDiff = imInterp[v2Pos_Image] - (mParams.dGain * mimTemplate[ir] + mParams.dMean);
     dSum += fabs(dDiff);
@@ -174,9 +175,9 @@ void CalibCornerPatch::MakeSharedTemplate() {
   const int nSideSize = 100;
   const int nHalf = nSideSize / 2;
 
-  mimSharedSourceTemplate.resize(ImageRef(nSideSize, nSideSize));
+  mimSharedSourceTemplate.resize(CVD::ImageRef(nSideSize, nSideSize));
 
-  ImageRef ir;
+  CVD::ImageRef ir;
   do {
     float fX = (ir.x < nHalf) ? 1.0 : -1.0;
     float fY = (ir.y < nHalf) ? 1.0 : -1.0;

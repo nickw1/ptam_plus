@@ -13,10 +13,12 @@
 #include <TooN/SVD.h>
 #include <TooN/wls.h>
 
+#include "ptam/ui/gl_helpers.h"
+
 using namespace std;
 using namespace CVD;
 namespace ptam {
-inline bool IsCorner(Image<byte> &im, ImageRef ir, int nGate) {
+inline bool IsCorner(Image<CVD::byte> &im, ImageRef ir, int nGate) {
   // Does a quick check to see if a point in an image could be a grid corner.
   // Does this by going around a 16-pixel ring, and checking that there's four
   // transitions (black - white- black - white - )
@@ -24,7 +26,7 @@ inline bool IsCorner(Image<byte> &im, ImageRef ir, int nGate) {
 
   // Find the mean intensity of the pixel ring...
   int nSum = 0;
-  static byte abPixels[16];
+  static CVD::byte abPixels[16];
   for (int i = 0; i < 16; i++) {
     abPixels[i] = im[ir + fast_pixel_ring[i]];
     nSum += abPixels[i];
@@ -42,7 +44,7 @@ inline bool IsCorner(Image<byte> &im, ImageRef ir, int nGate) {
   bool bState = (abPixels[15] > nMean);
   int nSwaps = 0;
   for (int i = 0; i < 16; i++) {
-    byte bValNow = abPixels[i];
+    CVD::byte bValNow = abPixels[i];
     if (bState) {
       if (bValNow < nLoThresh) {
         bState = false;
@@ -58,7 +60,7 @@ inline bool IsCorner(Image<byte> &im, ImageRef ir, int nGate) {
   return (nSwaps == 4);
 }
 
-TooN::Vector<2> GuessInitialAngles(Image<byte> &im, ImageRef irCenter) {
+TooN::Vector<2> GuessInitialAngles(CVD::Image<CVD::byte> &im, CVD::ImageRef irCenter) {
   // The iterative patch-finder works better if the initial guess
   // is roughly aligned! Find one of the line-axes by searching round
   // the circle for the strongest gradient, and use that and +90deg as the
@@ -67,7 +69,7 @@ TooN::Vector<2> GuessInitialAngles(Image<byte> &im, ImageRef irCenter) {
   // Yes, this is a very poor estimate, but it's generally (hopefully?)
   // enough for the iterative finder to converge.
 
-  image_interpolate<Interpolate::Bilinear, byte> imInterp(im);
+  image_interpolate<Interpolate::Bilinear, CVD::byte> imInterp(im);
   double dBestAngle = 0;
   double dBestGradMag = 0;
   double dGradAtBest = 0;
@@ -97,7 +99,7 @@ TooN::Vector<2> GuessInitialAngles(Image<byte> &im, ImageRef irCenter) {
   return v2Ret;
 }
 
-bool CalibImage::MakeFromImage(Image<byte> &im) {
+bool CalibImage::MakeFromImage(CVD::Image<CVD::byte> &im) {
   static GVars3::gvar3<int> gvnCornerPatchSize(
         "CameraCalibrator.CornerPatchPixelSize", 20, GVars3::SILENT);
   mvCorners.clear();
@@ -110,14 +112,14 @@ bool CalibImage::MakeFromImage(Image<byte> &im) {
   // This works better on a blurred image, so make a blurred copy
   // and run the corner finding on that.
   {
-    Image<byte> imBlurred = mim;
+    CVD::Image<CVD::byte> imBlurred = mim;
     imBlurred.make_unique();
     convolveGaussian(imBlurred,
                      GVars3::GV2.GetDouble("CameraCalibrator.BlurSigma",
                                            1.0, GVars3::SILENT));
-    ImageRef irTopLeft(5,5);
-    ImageRef irBotRight = mim.size() - irTopLeft;
-    ImageRef ir = irTopLeft;
+    CVD::ImageRef irTopLeft(5, 5);
+    CVD::ImageRef irBotRight = mim.size() - irTopLeft;
+    CVD::ImageRef ir = irTopLeft;
     glPointSize(1);
     glColor3f(1,0,1);
     glBegin(GL_POINTS);

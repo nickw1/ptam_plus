@@ -4,6 +4,7 @@
 #include <gvars3/instances.h>
 #include <TooN/SVD.h>
 #include "ptam/ui/opengl.h"
+#include "ptam/ui/gl_helpers.h"
 #include "camera_calibrator.h"
 #include "config.h"
 
