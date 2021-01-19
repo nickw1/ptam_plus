@@ -65,7 +65,7 @@ set(PTAM_CXX_FLAGS)
 add_definitions(-DPTAM_ROOT="${PTAM_ROOT}")
 
 if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
-  set(PTAM_CXX_FLAGS " -stdlib=libstdc++ ")  # prevent default libc++ on new mac
+  set(PTAM_CXX_FLAGS " -stdlib=libc++ ")  # prevent default libc++ on new mac
 endif()
 
 ## Common configuration

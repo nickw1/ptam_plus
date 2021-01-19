@@ -54,7 +54,7 @@ set(LibCVD_CXX_FLAGS)
 add_definitions(-DLibCVD_ROOT="${LibCVD_ROOT}")
 
 if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
-  set(LibCVD_CXX_FLAGS " -stdlib=libstdc++ ")  # prevent default libc++ on new mac
+  set(LibCVD_CXX_FLAGS " -stdlib=libc++ ")  # prevent default libc++ on new mac
 endif()
 
 ## Common configuration

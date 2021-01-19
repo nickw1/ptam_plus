@@ -54,7 +54,7 @@ set(GVars_CXX_FLAGS)
 add_definitions(-DGVars_ROOT="${GVars_ROOT}")
 
 if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
-  set(GVars_CXX_FLAGS " -stdlib=libstdc++ ")  # prevent default libc++ on new mac
+  set(GVars_CXX_FLAGS " -stdlib=libc++ ")  # prevent default libc++ on new mac
 endif()
 
 ## Common configuration

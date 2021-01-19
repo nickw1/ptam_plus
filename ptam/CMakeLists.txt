@@ -3,7 +3,10 @@ cmake_minimum_required(VERSION 2.8)
 project(ptam_library)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
+if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+  set(LibPTAM_CXX_FLAGS " -stdlib=libc++ -std=c++11 ")  # prevent default libc++ on new mac
+endif()
+set(CMAKE_CXX_FLAGS ${LibPTAM_CXX_FLAGS})
 set(sub_dirs construct math track util)
 
 if(PTAM_WITH_UI)
