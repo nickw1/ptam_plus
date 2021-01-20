@@ -89,7 +89,7 @@ file(GLOB cvd_headers   ${CMAKE_CURRENT_SOURCE_DIR}/cvd/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/io/*.h)
 
-set(sub_dirs fast i686)
+set(sub_dirs fast)
 if(WIN32)
   list(APPEND sub_dirs SSE2 Win32)
 elseif(ANDROID)
