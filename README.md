@@ -1,3 +1,16 @@
+```
+cmake .
+make
+```
+### Build with Emscripten
+Install emscripten: https://emscripten.org/docs/getting_started/downloads.html
+Build following the CMAKE instructions: https://emscripten.org/docs/compiling/Building-Projects.html?highlight=cmake
+```
+emcmake cmake .
+emmake make
+```
+Fix math.h include issue with setting the math.h path in cmath to `#include </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h>`
+
 PTAM Plus
 ============
 
