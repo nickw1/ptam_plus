@@ -7,7 +7,7 @@ if(PTAM_WITH_UI)
 
 option(PTAM_APP_CALIBRATION "Build Calibration" ON)
 if(PTAM_APP_CALIBRATION)
-  add_subdirectory(calibration)
+  # add_subdirectory(calibration)
 endif(PTAM_APP_CALIBRATION)
 
 option(PTAM_APP_SLAM "Build Slam" ON)

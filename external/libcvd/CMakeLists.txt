@@ -108,7 +108,8 @@ foreach(sub_dir ${sub_dirs})
 endforeach()
 
 # removing unwanted sources (e.x.: threading, video, etc)
-set(remove_items "cvd/eventobject.h" "cvd_src/eventobject.cpp" 
+set(remove_items 
+                "cvd/eventobject.h" "cvd_src/eventobject.cpp" 
                  "cvd_src/globlist.cxx"
                  "cvd_src/gltext.cpp"
                  "cvd/glwindow.h"    "cvd_src/glwindow.cc"
@@ -120,7 +121,8 @@ set(remove_items "cvd/eventobject.h" "cvd_src/eventobject.cpp"
                  "cvd_src/fast/fast_9*"
                  "cvd_src/fast/fast_11*"
                  "cvd_src/fast/fast_12*"
-                 "cvd_src/i686/*MMX*")
+                 "cvd_src/i686/*MMX*"
+                 )
 foreach(item ${remove_items})
   file(GLOB temp_src ${CMAKE_CURRENT_SOURCE_DIR}/${item})
   foreach(temp_item ${temp_src})

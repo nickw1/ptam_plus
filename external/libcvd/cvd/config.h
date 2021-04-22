@@ -4,6 +4,7 @@
 	#include <cvd/internal/win.h>
 #endif
 #define CVD_ARCH_LITTLE_ENDIAN 1
+#define CVD_DISABLE_CPU_x86_64
 #ifndef CVD_DISABLE_CPU_x86_64
     #define CVD_HAVE_CPU_x86_64 1
 #endif
