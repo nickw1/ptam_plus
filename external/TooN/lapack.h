@@ -48,7 +48,8 @@ namespace TooN {
   
 
 		// SVD of a general matrix
-		void dgesvd_(const char* JOBU, const char* JOBVT, FortranInteger* M, FortranInteger *N, double* A, FortranInteger* lda,
+		// NW change to int return
+		int dgesvd_(const char* JOBU, const char* JOBVT, FortranInteger* M, FortranInteger *N, double* A, FortranInteger* lda,
 					 double* S, double *U, FortranInteger* ldu, double* VT, FortranInteger* ldvt,
 					 double* WORK, FortranInteger* lwork, FortranInteger* INFO);
 
