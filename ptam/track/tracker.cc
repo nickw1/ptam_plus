@@ -1,5 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "track/tracker.h"
+//#include "track/tracker.h"
+#include "tracker.h"
 
 #include <fstream>
 #include <fcntl.h>
@@ -11,11 +12,11 @@
 #include <gvars3/instances.h>
 #include <gvars3/GStringUtil.h>
 
-#include "track/m_estimator.h"
-#include "construct/shi_tomasi.h"
-#include "track/small_matrix_opts.h"
-#include "track/patch_finder.h"
-#include "track/tracker_data.h"
+#include "ptam/track/m_estimator.h"
+#include "ptam/construct/shi_tomasi.h"
+#include "ptam/track/small_matrix_opts.h"
+#include "ptam/track/patch_finder.h"
+#include "ptam/track/tracker_data.h"
 
 using namespace CVD;
 using namespace std;
@@ -64,8 +65,8 @@ void Tracker::Reset() {
   // for an abort-check during calculation, so sleep while waiting.
   // MapMaker will also clear the map.
   mMapMaker.RequestReset();
-  while(!mMapMaker.ResetDone())
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+//  while(!mMapMaker.ResetDone())
+//    std::this_thread::sleep_for(std::chrono::milliseconds(1));
 }
 
 // TrackFrame is called by System.cc with each incoming video frame.
