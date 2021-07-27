@@ -35,7 +35,7 @@ static integer c__49 = 49;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     doublecomplex hl[2401]	/* was [49][49] */;

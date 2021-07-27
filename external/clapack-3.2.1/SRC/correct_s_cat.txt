@@ -1,0 +1,2 @@
+1,$s/int s_cat/void s_cat/g
+wq
