@@ -28,7 +28,7 @@ integer ilaenv_(integer *ispec, char *name__, char *opts, integer *n1,
     integer ret_val;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen); // NW changed return type int->void to match implementation, gives strange link error with emscripten
     integer s_cmp(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
