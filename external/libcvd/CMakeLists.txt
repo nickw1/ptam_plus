@@ -89,16 +89,18 @@ file(GLOB cvd_headers   ${CMAKE_CURRENT_SOURCE_DIR}/cvd/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/*.h
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd/internal/io/*.h)
 
-set(sub_dirs fast)
-if(WIN32)
-  list(APPEND sub_dirs SSE2 Win32)
-elseif(ANDROID)
-  lsit(APPEND NEON)
-elseif(APPLE)
-  list(APPEND sub_dirs SSE2)
-else()
-  list(APPEND noarch)
-endif()
+# Force include of noarch for emscripten, will not be included by logic below
+set(sub_dirs fast noarch)
+# NW REMOVED THIS
+#if(WIN32)
+#  list(APPEND sub_dirs SSE2 Win32)
+#elseif(ANDROID)
+#  list(APPEND NEON)
+#elseif(APPLE)
+#  list(APPEND sub_dirs SSE2)
+#else()
+#  list(APPEND noarch)
+#endif()
 
 file(GLOB cvd_sources   ${CMAKE_CURRENT_SOURCE_DIR}/cvd_src/*.c*
                         ${CMAKE_CURRENT_SOURCE_DIR}/cvd_src/*.c*)
