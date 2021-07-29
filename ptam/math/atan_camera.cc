@@ -11,11 +11,26 @@ namespace ptam {
 ATANCamera::ATANCamera(string sName) {
   // The camera name is used to find the camera's parameters in a GVar.
   msName = sName;
+  /* NW remove gvars - adds complexity - just use hard coded values (from
+     Thorsten?) for now
   GVars3::GV2.Register(mgvvCameraParams, sName+".Parameters", mvDefaultParams,
                GVars3::HIDDEN | GVars3::FATAL_IF_NOT_DEFINED);
+  */
+  mgvvCameraParams = new TooN::Vector<NUMTRACKERCAMPARAMETERS>();
+  (*mgvvCameraParams)[0] = 1.59328;
+  (*mgvvCameraParams)[1] = 2.11149; 
+  (*mgvvCameraParams)[2] = 0.512158; 
+  (*mgvvCameraParams)[3] = 0.436717; 
+  (*mgvvCameraParams)[4] = 0.961982; 
+
   mvImageSize[0] = 640.0;
   mvImageSize[1] = 480.0;
   RefreshParams();
+}
+
+// NW added
+ATANCamera::~ATANCamera() {
+ delete mgvvCameraParams;
 }
 
 void ATANCamera::SetImageSize(TooN::Vector<2> vImageSize) {
