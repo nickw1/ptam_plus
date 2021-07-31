@@ -204,6 +204,7 @@ namespace ptam
                                 vector<pair<CVD::ImageRef, CVD::ImageRef>> &vTrailMatches,
                                 TooN::SE3<> &se3TrackerPose)
   {
+    printf("MapMaker::InitFromStereo()\n");
     mdWiggleScale = *mgvdWiggleScale; // Cache this for the new map.
 
     mCamera.SetImageSize(kF.aLevels[0].im.size());
@@ -217,6 +218,7 @@ namespace ptam
       m.m2PixelProjectionJac = mCamera.GetProjectionDerivs(); // this derivs is only from the second vector!
       vMatches.push_back(m);
     }
+    printf("Found %d vMatches\n", vMatches.size());
 
     TooN::SE3<> se3;
     bool bGood;
@@ -226,6 +228,8 @@ namespace ptam
     {
       printf("Could not init from stereo pair, try again.\n");
       return false;
+    } else {
+      printf("HoomographyInit.Compute() is good\n");
     }
 
     // Check that the initialiser estimated a non-zero baseline
@@ -235,7 +239,6 @@ namespace ptam
       printf("Estimated zero baseline from stereo pair, try again.\n");
       return false;
     }
-    // change the scale of the map so the second camera is wiggleScale away from the first
     se3.get_translation() *= mdWiggleScale / dTransMagn;
 
     KeyFrame *pkFirst = new KeyFrame();
@@ -252,6 +255,7 @@ namespace ptam
     // Construct map from the stereo matches.
     PatchFinder finder;
 
+    printf("Looping through vMatches...\n");
     for (unsigned int i = 0; i < vMatches.size(); i++)
     {
       MapPoint *p = new MapPoint();
@@ -276,6 +280,7 @@ namespace ptam
       bool bGood = finder.IterateSubPixToConvergence(*pkSecond, 10);
       if (!bGood)
       {
+        printf("The point isn't good, deleting it\n");
         delete p;
         continue;
       }
@@ -285,12 +290,14 @@ namespace ptam
       p->v3WorldPos = ReprojectPoint(se3, mCamera.UnProject(v2SecondPos), vMatches[i].v2CamPlaneFirst);
       if (p->v3WorldPos[2] < 0.0)
       {
+        printf("Negative z pos for the point, deleting it\n");
         delete p;
         continue;
       }
 
       // Not behind map? Good, then add to map.
       p->pMMData = new MapMakerData();
+      printf("Adding point to map\n");
       mMap.points.push_back(p);
 
       // Construct first two measurements and insert into relevant DBs:
@@ -310,14 +317,19 @@ namespace ptam
       pkSecond->mMeasurements[p] = mSecond;
       p->pMMData->sMeasurementKFs.insert(pkSecond);
     }
+    printf("After loop there are %d points on map\n", mMap.points.size());
 
     mMap.keyframes.push_back(pkFirst);
     mMap.keyframes.push_back(pkSecond);
     pkFirst->MakeKeyFrame_Rest();
     pkSecond->MakeKeyFrame_Rest();
 
+    printf("Adjusting all the bundles\n");
+
     for (int i = 0; i < 5; i++)
-      BundleAdjustAll();
+      BundleAdjustAll(); // FAILS HERE
+
+    printf("Adjusted all the bundles\n");
 
     // Estimate the feature depth distribution in the first two key-frames
     // (Needed for epipolar search)
@@ -333,15 +345,19 @@ namespace ptam
     mbBundleConverged_Full = false;
     mbBundleConverged_Recent = false;
 
+    printf("Not converged yet\n");
     while (!mbBundleConverged_Full)
     {
       BundleAdjustAll();
-      if (mbResetRequested)
+      if (mbResetRequested) {
+        printf("Reset requested - returning false\n");
         return false;
+      }
     }
 
     // Rotate and translate the map so the dominant plane is at z=0:
     ApplyGlobalTransformationToMap(CalcPlaneAligner());
+    printf("THE MAP IS GOOD !!!\n");
     mMap.good = true;
     se3TrackerPose = pkSecond->se3CfromW;
 

@@ -74,6 +74,7 @@ void Tracker::Reset() {
 // functions. bDraw tells the tracker wether it should output any GL graphics
 // or not (it should not draw, for example, when AR stuff is being shown.)
 void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
+  printf("TrackFrame()\n");
   mbDraw = bDraw;
   mMessageForUser.str("");   // Wipe the user message clean
 
@@ -109,7 +110,9 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //  }
 
   // Decide what to do - if there is a map, try to track the map ...
+  printf("Is the map good?\n");
   if (mMap.IsGood()) {
+    printf("The map is good.\n");
     if (mnLostFrames < 3) {  // .. but only if we're not lost!
       if(mbUseSBIInit)
         CalcSBIRotation();
@@ -149,8 +152,10 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //    if (mbDraw)
 //      RenderGrid();
   }
-  else // If there is no map, try to make one.
+  else { // If there is no map, try to make one.
+    printf("The map isn't good, making one\n");
     TrackForInitialMap();
+  }
 }
 
 // Try to relocalise in case tracking was lost.
@@ -177,6 +182,7 @@ bool Tracker::AttemptRecovery() {
 // break it.) The salient points are stored in a list of `Trail' data structures.
 // What action TrackForInitialMap() takes depends on the mnInitialStage enum variable..
 void Tracker::TrackForInitialMap() {
+  printf("Tracker::TrackForInitialMap()\n");
   // MiniPatch tracking threshhold.
   static GVars3::gvar3<int> gvnMaxSSD("Tracker.MiniPatchMaxSSD",
                                       100000, GVars3::SILENT);
@@ -184,11 +190,15 @@ void Tracker::TrackForInitialMap() {
 
   // What stage of initial tracking are we at?
   if (mnInitialStage == TRAIL_TRACKING_NOT_STARTED) {
+    printf("Trail tracking not started...\n");
     if (mbUserAskInitialTrack) {  // First spacebar = this is the first keyframe
       mbUserAskInitialTrack = false;
+      printf("Startting trail tracking...\n");
       TrailTracking_Start();
+      printf("Trail tracking started.\n");
       mnInitialStage = TRAIL_TRACKING_STARTED;
     } else {
+      printf("Waiting for user input to start tracking\n");
       mMessageForUser << "Point camera at planar scene and press spacebar to start tracking for initial map." << endl;
     }
     return;
@@ -203,6 +213,7 @@ void Tracker::TrackForInitialMap() {
 
     // If the user pressed spacebar here, use trails to run stereo and make the intial map..
     if (mbUserAskInitialTrack) {
+      printf("Action corresponding to user pressing space...\n");
       mbUserAskInitialTrack = false;
       vector<pair<ImageRef, ImageRef> > vMatches;   // This is the format the mapmaker wants for the stereo pairs
       for (list<Trail>::iterator i = mlTrails.begin(); i != mlTrails.end(); i++)
@@ -212,6 +223,7 @@ void Tracker::TrackForInitialMap() {
       mnInitialStage = TRAIL_TRACKING_COMPLETE;
     } else {
       mMessageForUser << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
+      cout << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
     }
   }
 }
