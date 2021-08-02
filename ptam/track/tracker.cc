@@ -203,6 +203,7 @@ void Tracker::TrackForInitialMap() {
     }
     return;
   };
+  printf("Trail tracking started\n");
 
   if (mnInitialStage == TRAIL_TRACKING_STARTED) {
     int nGoodTrails = TrailTracking_Advance();  // This call actually tracks the trails

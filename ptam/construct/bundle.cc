@@ -269,7 +269,7 @@ bool Bundle::Do_LM_Step(bool *pbAbortSignal) {
 
     // Update the accumulators
     if (!cam.bFixed) {
-      //	  cam.m6U += meas.m26A.T() * meas.m26A; 	  // SLOW SLOW this matrix is symmetric
+      //      cam.m6U += meas.m26A.T() * meas.m26A;       // SLOW SLOW this matrix is symmetric
       BundleTriangle_UpdateM6U_LL(cam.m6U, meas.m26A);
       cam.v6EpsilonA += meas.m26A.T() * meas.v2Epsilon;
       // NOISE COVAR OMITTED because it's the 2-Identity
@@ -450,13 +450,15 @@ bool Bundle::Do_LM_Step(bool *pbAbortSignal) {
     // Calculate new error by re-projecting, doing tukey, etc etc:
     dNewError = FindNewError<MEstimator>();
 
+    /* NW Comment out as cluttering
     printf("Lamda%.1f    Old %.3f New %.3f Diff %.3f",
            mdLambda, dCurrentError, dNewError, dCurrentError-dNewError);
+    */
 
     // Was the step good? If not, modify lambda and try again!!
     // (if it was good, will break from this loop.)
     if (dNewError > dCurrentError) {
-      printf(" TRY AGAIN\n");
+    // NW  printf(" TRY AGAIN\n");
       ModifyLambda_BadStep();
     };
 
@@ -466,7 +468,7 @@ bool Bundle::Do_LM_Step(bool *pbAbortSignal) {
   }   // End of while error too big loop
 
   if (dNewError < dCurrentError) { // Was the last step a good one?
-    printf(" WINNER            ------------ \n");
+// NW    printf(" WINNER            ------------ \n");
     // Woo! got somewhere. Update lambda and make changes permanent.
     ModifyLambda_GoodStep();
     for(unsigned int j = 0; j < mvCameras.size(); j++)
@@ -490,7 +492,7 @@ bool Bundle::Do_LM_Step(bool *pbAbortSignal) {
   for (unsigned int i = 0; i < vit.size(); i++)
     mMeasList.erase(vit[i]);
 
-  printf("Nuked %d measurements.\n",vit.size());
+//  NW printf("Nuked %d measurements.\n",vit.size());
   return true;
 }
 

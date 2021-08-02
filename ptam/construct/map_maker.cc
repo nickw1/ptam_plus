@@ -326,8 +326,11 @@ namespace ptam
 
     printf("Adjusting all the bundles\n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) {
+      printf("Trying to adjust bundle %d\n", i);
       BundleAdjustAll(); // FAILS HERE
+      printf("Adjusted bundle %d\n", i);
+    }
 
     printf("Adjusted all the bundles\n");
 
@@ -736,6 +739,7 @@ namespace ptam
   // Perform bundle adjustment on all keyframes, all map points
   void MapMaker::BundleAdjustAll()
   {
+    printf("MapMaker::BundleAdjustAll()\n");
     // construct the sets of kfs/points to be adjusted:
     // in this case, all of them
     std::set<KeyFrame *> sAdj;
@@ -750,7 +754,10 @@ namespace ptam
     for (unsigned int i = 0; i < mMap.points.size(); i++)
       sMapPoints.insert(mMap.points[i]);
 
+    printf("Calling BundleAdjust() with %d map points\n", sMapPoints.size());
     BundleAdjust(sAdj, sFixed, sMapPoints, false);
+    printf("BundleAdjust() completed\n");
+    printf("Returning from MapMaker::BundleAdjustAll()\n");
   }
 
   // Peform a local bundle adjustment which only adjusts
@@ -815,6 +822,7 @@ namespace ptam
     mbBundleRunning = true;
     mbBundleRunningIsRecent = bRecent;
 
+    printf("MapMaker::BundleAdjust()\n");
     // The bundle adjuster does different accounting of keyframes and map points;
     // Translation maps are stored:
     std::map<MapPoint *, int> mPoint_BundleID;
@@ -823,6 +831,7 @@ namespace ptam
     std::map<int, KeyFrame *> mBundleID_View;
 
     // Add the keyframes' poses to the bundle adjuster. Two parts: first nonfixed, then fixed.
+    printf("Adding the keyframes' poses to the bundle adjuster...\n");
     for (set<KeyFrame *>::iterator it = sAdjustSet.begin();
          it != sAdjustSet.end(); it++)
     {
@@ -839,6 +848,7 @@ namespace ptam
     }
 
     // Add the points' 3D position
+    printf("Adding the points' 3D Position\n");
     for (set<MapPoint *>::iterator it = sMapPoints.begin();
          it != sMapPoints.end(); it++)
     {
@@ -848,6 +858,7 @@ namespace ptam
     }
 
     // Add the relevant point-in-keyframe measurements
+    printf("Adding the relevant point-in-keyframe measurements\n");
     for (unsigned int i = 0; i < mMap.keyframes.size(); i++)
     {
       if (mView_BundleID.count(mMap.keyframes[i]) == 0)
@@ -867,7 +878,9 @@ namespace ptam
     }
 
     // Run the bundle adjuster. This returns the number of successful iterations
+    printf("Actually running the bundle adjuster...\n");
     int nAccepted = b.Compute(&mbBundleAbortRequested);
+    printf("Accepted: %d\n", nAccepted);
 
     if (nAccepted < 0)
     {
@@ -881,6 +894,7 @@ namespace ptam
     }
 
     // Bundle adjustment did some updates, apply these to the map
+    printf("Applying updates from bundle adjustment...\n");
     if (nAccepted > 0)
     {
       for (map<MapPoint *, int>::iterator itr = mPoint_BundleID.begin();
@@ -908,6 +922,7 @@ namespace ptam
     mbBundleAbortRequested = false;
 
     // Handle outlier measurements:
+    printf("Handling outlier measurements...\n");
     std::vector<std::pair<int, int>> vOutliers_PC_pair =
         b.GetOutlierMeasurements();
     for (unsigned int i = 0; i < vOutliers_PC_pair.size(); i++)
@@ -932,6 +947,7 @@ namespace ptam
         pp->pMMData->sMeasurementKFs.erase(pk);
       }
     }
+    printf("MapMaker::BundleAdjust() : done.\n");
   }
 
   // Mapmaker's try-to-find-a-point-in-a-keyframe code. This is used to update
