@@ -74,7 +74,6 @@ void Tracker::Reset() {
 // functions. bDraw tells the tracker wether it should output any GL graphics
 // or not (it should not draw, for example, when AR stuff is being shown.)
 void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
-  printf("TrackFrame()\n");
   mbDraw = bDraw;
   mMessageForUser.str("");   // Wipe the user message clean
 
@@ -110,9 +109,8 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //  }
 
   // Decide what to do - if there is a map, try to track the map ...
-  printf("Is the map good?\n");
   if (mMap.IsGood()) {
-    printf("The map is good.\n");
+    printf("We have a map.\n");
     if (mnLostFrames < 3) {  // .. but only if we're not lost!
       if(mbUseSBIInit)
         CalcSBIRotation();
@@ -153,7 +151,7 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //      RenderGrid();
   }
   else { // If there is no map, try to make one.
-    printf("The map isn't good, making one\n");
+    printf("We don't have a map yet - trying to make one\n");
     TrackForInitialMap();
   }
 }
@@ -193,7 +191,7 @@ void Tracker::TrackForInitialMap() {
     printf("Trail tracking not started...\n");
     if (mbUserAskInitialTrack) {  // First spacebar = this is the first keyframe
       mbUserAskInitialTrack = false;
-      printf("Startting trail tracking...\n");
+      printf("User 'pressed space' : Starting trail tracking...\n");
       TrailTracking_Start();
       printf("Trail tracking started.\n");
       mnInitialStage = TRAIL_TRACKING_STARTED;
@@ -214,7 +212,7 @@ void Tracker::TrackForInitialMap() {
 
     // If the user pressed spacebar here, use trails to run stereo and make the intial map..
     if (mbUserAskInitialTrack) {
-      printf("Action corresponding to user pressing space...\n");
+      printf("User 'pressed space' a second time...\n");
       mbUserAskInitialTrack = false;
       vector<pair<ImageRef, ImageRef> > vMatches;   // This is the format the mapmaker wants for the stereo pairs
       for (list<Trail>::iterator i = mlTrails.begin(); i != mlTrails.end(); i++)

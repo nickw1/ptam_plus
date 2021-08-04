@@ -24,7 +24,8 @@ add_library(PTAM ${PTAM_LIB_TYPE} ${ptam_sources})
 target_link_libraries(PTAM ${PTAM_EXTERNAL_LIBS})
 set_property(TARGET PTAM PROPERTY FOLDER "ptam/libs")
 
-add_link_options("-s INITIAL_MEMORY=32000000")
+# NW added this to try and fix memory issue, didn't help so removing again...
+#add_link_options("-s INITIAL_MEMORY=32000000")
 add_link_options("-s ALLOW_MEMORY_GROWTH=1")
 
 # ==============================================================================
