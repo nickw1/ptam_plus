@@ -229,7 +229,7 @@ namespace ptam
       printf("Could not init from stereo pair, try again.\n");
       return false;
     } else {
-      printf("HoomographyInit.Compute() is good\n");
+      printf("HomographyInit.Compute() is good\n");
     }
 
     // Check that the initialiser estimated a non-zero baseline
@@ -280,7 +280,6 @@ namespace ptam
       bool bGood = finder.IterateSubPixToConvergence(*pkSecond, 10);
       if (!bGood)
       {
-        printf("The point isn't good, deleting it\n");
         delete p;
         continue;
       }
@@ -290,14 +289,12 @@ namespace ptam
       p->v3WorldPos = ReprojectPoint(se3, mCamera.UnProject(v2SecondPos), vMatches[i].v2CamPlaneFirst);
       if (p->v3WorldPos[2] < 0.0)
       {
-        printf("Negative z pos for the point, deleting it\n");
         delete p;
         continue;
       }
 
       // Not behind map? Good, then add to map.
       p->pMMData = new MapMakerData();
-      printf("Adding point to map\n");
       mMap.points.push_back(p);
 
       // Construct first two measurements and insert into relevant DBs:
@@ -324,15 +321,13 @@ namespace ptam
     pkFirst->MakeKeyFrame_Rest();
     pkSecond->MakeKeyFrame_Rest();
 
-    printf("Adjusting all the bundles\n");
-
     for (int i = 0; i < 5; i++) {
-      printf("Trying to adjust bundle %d\n", i);
+      printf("Bundle adjust iteration %d\n", i);
       BundleAdjustAll(); // FAILS HERE
       printf("Adjusted bundle %d\n", i);
     }
 
-    printf("Adjusted all the bundles\n");
+    printf("Bundle adjust done.\n");
 
     // Estimate the feature depth distribution in the first two key-frames
     // (Needed for epipolar search)
@@ -348,7 +343,6 @@ namespace ptam
     mbBundleConverged_Full = false;
     mbBundleConverged_Recent = false;
 
-    printf("Not converged yet\n");
     while (!mbBundleConverged_Full)
     {
       BundleAdjustAll();
@@ -360,7 +354,6 @@ namespace ptam
 
     // Rotate and translate the map so the dominant plane is at z=0:
     ApplyGlobalTransformationToMap(CalcPlaneAligner());
-    printf("THE MAP IS GOOD !!!\n");
     mMap.good = true;
     se3TrackerPose = pkSecond->se3CfromW;
 

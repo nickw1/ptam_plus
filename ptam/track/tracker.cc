@@ -110,7 +110,7 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 
   // Decide what to do - if there is a map, try to track the map ...
   if (mMap.IsGood()) {
-    printf("We have a map.\n");
+    printf("*** WE HAVE A MAP ***\n");
     if (mnLostFrames < 3) {  // .. but only if we're not lost!
       if(mbUseSBIInit)
         CalcSBIRotation();
@@ -128,7 +128,7 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
         mMessageForUser << " Found:";
         for (int i = 0; i < LEVELS; i++)
           mMessageForUser << " " << manMeasFound[i] << "/" << manMeasAttempted[i];
-        //	    mMessageForUser << " Found " << mnMeasFound << " of " << mnMeasAttempted <<". (";
+        //        mMessageForUser << " Found " << mnMeasFound << " of " << mnMeasAttempted <<". (";
         mMessageForUser << " Map: " << mMap.points.size() << "P, " << mMap.keyframes.size() << "KF";
       }
 
@@ -151,7 +151,7 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //      RenderGrid();
   }
   else { // If there is no map, try to make one.
-    printf("We don't have a map yet - trying to make one\n");
+    printf("*** We don't have a map yet - trying to make one\n");
     TrackForInitialMap();
   }
 }
@@ -180,7 +180,6 @@ bool Tracker::AttemptRecovery() {
 // break it.) The salient points are stored in a list of `Trail' data structures.
 // What action TrackForInitialMap() takes depends on the mnInitialStage enum variable..
 void Tracker::TrackForInitialMap() {
-  printf("Tracker::TrackForInitialMap()\n");
   // MiniPatch tracking threshhold.
   static GVars3::gvar3<int> gvnMaxSSD("Tracker.MiniPatchMaxSSD",
                                       100000, GVars3::SILENT);
@@ -188,31 +187,31 @@ void Tracker::TrackForInitialMap() {
 
   // What stage of initial tracking are we at?
   if (mnInitialStage == TRAIL_TRACKING_NOT_STARTED) {
-    printf("Trail tracking not started...\n");
+    printf("*** Trail tracking NOT started...\n");
     if (mbUserAskInitialTrack) {  // First spacebar = this is the first keyframe
+      printf("*** User 'pressed space' : Starting trail tracking...\n");
       mbUserAskInitialTrack = false;
-      printf("User 'pressed space' : Starting trail tracking...\n");
       TrailTracking_Start();
-      printf("Trail tracking started.\n");
       mnInitialStage = TRAIL_TRACKING_STARTED;
     } else {
-      printf("Waiting for user input to start tracking\n");
+      printf("........ Waiting for 'space to be pressed'\n");
       mMessageForUser << "Point camera at planar scene and press spacebar to start tracking for initial map." << endl;
     }
     return;
   };
-  printf("Trail tracking started\n");
 
   if (mnInitialStage == TRAIL_TRACKING_STARTED) {
+    printf("*** Trail tracking HAS started, i.e. user has 'pressed space' once...\n");
     int nGoodTrails = TrailTracking_Advance();  // This call actually tracks the trails
     if (nGoodTrails < 10) { // if most trails have been wiped out, no point continuing.
+      printf("!!! Few good trails, giving up !!!\n");
       Reset();
       return;
     }
 
     // If the user pressed spacebar here, use trails to run stereo and make the intial map..
     if (mbUserAskInitialTrack) {
-      printf("User 'pressed space' a second time...\n");
+      printf("*** User 'pressed space' a second time...\n");
       mbUserAskInitialTrack = false;
       vector<pair<ImageRef, ImageRef> > vMatches;   // This is the format the mapmaker wants for the stereo pairs
       for (list<Trail>::iterator i = mlTrails.begin(); i != mlTrails.end(); i++)
@@ -220,9 +219,10 @@ void Tracker::TrackForInitialMap() {
                                                     i->irCurrentPos));
       mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, vMatches, mse3CamFromWorld);  // This will take some time!
       mnInitialStage = TRAIL_TRACKING_COMPLETE;
+      printf("*** TRAIL TRACKING COMPLETE!\n");
     } else {
+      printf("*** Waiting for user to 'press space' a second time...\n");
       mMessageForUser << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
-      cout << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
     }
   }
 }
