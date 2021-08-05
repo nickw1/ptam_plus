@@ -73,7 +73,7 @@ void Tracker::Reset() {
 // It figures out what state the tracker is in, and calls appropriate internal tracking
 // functions. bDraw tells the tracker wether it should output any GL graphics
 // or not (it should not draw, for example, when AR stuff is being shown.)
-void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
+Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
   mbDraw = bDraw;
   mMessageForUser.str("");   // Wipe the user message clean
 
@@ -152,8 +152,9 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
   }
   else { // If there is no map, try to make one.
     printf("*** We don't have a map yet - trying to make one\n");
-    TrackForInitialMap();
+    return TrackForInitialMap();
   }
+  return NOT_RESET;
 }
 
 // Try to relocalise in case tracking was lost.
@@ -179,7 +180,7 @@ bool Tracker::AttemptRecovery() {
 // using cheap frame-to-frame tracking (which is very brittle - quick camera motion will
 // break it.) The salient points are stored in a list of `Trail' data structures.
 // What action TrackForInitialMap() takes depends on the mnInitialStage enum variable..
-void Tracker::TrackForInitialMap() {
+Tracker::ResetStatus Tracker::TrackForInitialMap() {
   // MiniPatch tracking threshhold.
   static GVars3::gvar3<int> gvnMaxSSD("Tracker.MiniPatchMaxSSD",
                                       100000, GVars3::SILENT);
@@ -197,7 +198,7 @@ void Tracker::TrackForInitialMap() {
       printf("........ Waiting for 'space to be pressed'\n");
       mMessageForUser << "Point camera at planar scene and press spacebar to start tracking for initial map." << endl;
     }
-    return;
+    return NOT_RESET;
   };
 
   if (mnInitialStage == TRAIL_TRACKING_STARTED) {
@@ -206,7 +207,7 @@ void Tracker::TrackForInitialMap() {
     if (nGoodTrails < 10) { // if most trails have been wiped out, no point continuing.
       printf("!!! Few good trails, giving up !!!\n");
       Reset();
-      return;
+      return RESET;
     }
 
     // If the user pressed spacebar here, use trails to run stereo and make the intial map..
@@ -225,6 +226,7 @@ void Tracker::TrackForInitialMap() {
       mMessageForUser << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
     }
   }
+  return NOT_RESET;
 }
 
 // The current frame is to be the first keyframe!

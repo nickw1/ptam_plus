@@ -29,6 +29,7 @@
 #include "ptam/track/relocaliser.h"
 
 namespace ptam {
+
 class TrackerData;
 struct Trail {  // Data for initial correspondences of the first stereo pair.
   Trail() : found(true) {}
@@ -42,8 +43,10 @@ class Tracker {
 public:
   Tracker(CVD::ImageRef irVideoSize, const ATANCamera &c, Map &m, MapMaker &mm);
 
+  enum ResetStatus { NOT_RESET, RESET };
+
   // TrackFrame is the main working part of the tracker: call this every frame.
-  void TrackFrame(CVD::Image<CVD::byte> &imFrame, bool bDraw = false);
+  ResetStatus TrackFrame(CVD::Image<CVD::byte> &imFrame, bool bDraw = false);
 
   inline TooN::SE3<> GetCurrentPose() { return mse3CamFromWorld;}
 
@@ -51,6 +54,7 @@ public:
   std::string GetMessageForUser();
 
   const std::list<Trail>& GetTrails() { return mlTrails; }
+
 
   void Reset();                   // Restart from scratch. Also tells the mapmaker to reset itself.
 
@@ -70,7 +74,7 @@ public:
   CVD::ImageRef mirSize;          // Image size of whole image
 
   // The following members are used for initial map tracking (to get the first stereo pair and correspondences):
-  void TrackForInitialMap();      // This is called by TrackFrame if there is not a map yet.
+  ResetStatus TrackForInitialMap();      // This is called by TrackFrame if there is not a map yet.
   enum {TRAIL_TRACKING_NOT_STARTED,
   TRAIL_TRACKING_STARTED,
   TRAIL_TRACKING_COMPLETE} mnInitialStage;  // How far are we towards making the initial map?
