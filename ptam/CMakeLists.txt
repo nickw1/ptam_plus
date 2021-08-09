@@ -28,6 +28,10 @@ set_property(TARGET PTAM PROPERTY FOLDER "ptam/libs")
 #add_link_options("-s INITIAL_MEMORY=32000000")
 add_link_options("-s ALLOW_MEMORY_GROWTH=1")
 
+# pthread support?
+add_compile_options("-pthread")
+add_link_options("-pthread")
+
 # ==============================================================================
 # Optional Configuration
 option(PTAM_WITH_TEST "Build Library with Tests" OFF)

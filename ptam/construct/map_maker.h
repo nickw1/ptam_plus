@@ -13,7 +13,7 @@
 #pragma once
 #include <queue>
 #include <memory>
-//#include <thread>
+#include <thread>
 
 #include <cvd/image.h>
 #include <cvd/byte.h>
@@ -105,7 +105,7 @@ protected:
   void RefreshSceneDepth(KeyFrame *pKF);
 
   // Member variables:
-//  std::shared_ptr<std::thread> mpThread;
+  std::shared_ptr<std::thread> mpThread;
   bool bStop;
   std::vector<KeyFrame*> mvpKeyFrameQueue;  // Queue of keyframes from the tracker waiting to be processed
   std::vector<std::pair<KeyFrame*, MapPoint*> > mvFailureQueue; // Queue of failed observations to re-find

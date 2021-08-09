@@ -65,8 +65,8 @@ void Tracker::Reset() {
   // for an abort-check during calculation, so sleep while waiting.
   // MapMaker will also clear the map.
   mMapMaker.RequestReset();
-//  while(!mMapMaker.ResetDone())
-//    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+  while(!mMapMaker.ResetDone())
+    std::this_thread::sleep_for(std::chrono::milliseconds(1));
 }
 
 // TrackFrame is called by System.cc with each incoming video frame.
