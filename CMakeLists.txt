@@ -70,6 +70,8 @@ endif()
 
 ## Common configuration
 add_definitions(-Dptam3_HAVE_TOON -DTOON_TYPEOF_DECLTYPE)
+add_compile_options("-pthread")
+add_link_options("-pthread")
 set(CMAKE_CXX_FLAGS ${PTAM_CXX_FLAGS})
 PTAM_build_setting()
 

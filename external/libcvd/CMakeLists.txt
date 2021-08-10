@@ -110,12 +110,13 @@ foreach(sub_dir ${sub_dirs})
 endforeach()
 
 # removing unwanted sources (e.x.: threading, video, etc)
+# NW we do want threading!
 set(remove_items "cvd/eventobject.h" "cvd_src/eventobject.cpp" 
                  "cvd_src/globlist.cxx"
                  "cvd_src/gltext.cpp"
                  "cvd/glwindow.h"    "cvd_src/glwindow.cc"
-                 "cvd/thread.h" "cvd_src/thread.cpp"
-                 "cvd/synchronized.h" "cvd_src/synchronized.cpp"
+#                 "cvd/thread.h" "cvd_src/thread.cpp"
+#                 "cvd/synchronized.h" "cvd_src/synchronized.cpp"
                  "cvd/video*" "cvd_src/video*"
                  "cvd_src/fast/fast_7*"
                  "cvd_src/fast/fast_8*"

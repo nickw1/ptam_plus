@@ -87,7 +87,7 @@ void Thread::sleep(unsigned int milli)
 #ifdef WIN32
     Sleep(milli);
 #else
-   struct timespec ts = { milli/1000, (milli%1000)*1000000 };
+   struct timespec ts = { static_cast<time_t>(milli/1000), static_cast<long>((milli%1000)*1000000) };
    nanosleep(&ts, 0);
 #endif
 }
