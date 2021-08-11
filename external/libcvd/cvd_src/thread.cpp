@@ -1,6 +1,7 @@
 #include <cvd/config.h>
 #include <cvd/thread.h>
 #include <time.h>
+#include <cstdio>
 
 
 
@@ -17,6 +18,7 @@ unsigned int Thread::ourCount;
 /** The constructor performs global initialization of the Thread class if necessary. */
 Thread::Thread() : myRunningFlag(false), myStopFlag(false)
 {
+    printf("!!! Thread constructor!!!\n");
    if (!ourInitializedFlag)
      {
 	init();
@@ -37,6 +39,7 @@ Thread::~Thread()
 /** Use PThreads to create a new thread. */
 void Thread::start(Runnable* runnable) 
 {
+    printf("!!! Starting a new thread from CVD !!!\n");
     myRunnable = runnable ? runnable : this;
     myStopFlag = false;
     pthread_attr_t attr;

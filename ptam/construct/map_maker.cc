@@ -35,6 +35,7 @@ namespace ptam
     //  start(); // This CVD::thread func starts the map-maker thread with function run()
     GVars3::GV3::Register(mgvdWiggleScale,
                           "MapMaker.WiggleScale", 0.1, GVars3::SILENT); // Default to 10cm between keyframes
+    printf("!!! MapMaker: starting a thread...\n");
     mpThread = std::shared_ptr<std::thread>(new std::thread(std::bind(&MapMaker::run, this)));
   }
 
@@ -66,7 +67,8 @@ namespace ptam
 
   void MapMaker::run()
   {
-
+     printf("!!! MapMaker::run() !!!\n");
+     int i = 0;
 #ifdef WIN32
     // For some reason, I get tracker thread starvation on Win32 when
     // adding key-frames. Perhaps this will help:

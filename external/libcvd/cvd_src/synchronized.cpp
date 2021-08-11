@@ -1,4 +1,5 @@
 #include <cvd/synchronized.h>
+#include <cstdio>
 
 namespace CVD {
 
@@ -7,6 +8,7 @@ Synchronized::Synchronized()
     pthread_mutexattr_init(&myAttr);
     pthread_mutexattr_settype(&myAttr, PTHREAD_MUTEX_RECURSIVE);
     pthread_mutex_init(&myMutex, &myAttr);
+    printf("!!! Synchronized constructor !!!\n");
 }
 
 Synchronized::~Synchronized()
