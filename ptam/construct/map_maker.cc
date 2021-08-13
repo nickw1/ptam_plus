@@ -102,7 +102,7 @@ namespace ptam
       CHECK_RESET;
       // Run global bundle adjustment?
       if (mbBundleConverged_Recent && !mbBundleConverged_Full && QueueSize() == 0)
-        BundleAdjustAll();
+        {  printf("Running BundleAdjustAll() because mbBundleConvergedRecent and not mbBundleConvergedFull and queue is empty"); BundleAdjustAll(); }
 
       CHECK_RESET;
       // Very low priorty: re-find measurements marked as outliers
@@ -347,6 +347,7 @@ namespace ptam
 
     while (!mbBundleConverged_Full)
     {
+      printf("calling BundleAdjustAll() while bundle not fully converged\n");
       BundleAdjustAll();
       if (mbResetRequested) {
         printf("Reset requested - returning false\n");

@@ -43,7 +43,7 @@ class Tracker {
 public:
   Tracker(CVD::ImageRef irVideoSize, const ATANCamera &c, Map &m, MapMaker &mm);
 
-  enum ResetStatus { NOT_RESET, RESET };
+  enum ResetStatus {  RESET, NOT_RESET, BOTH_FRAMES_CAPTURED };
 
   // TrackFrame is the main working part of the tracker: call this every frame.
   ResetStatus TrackFrame(CVD::Image<CVD::byte> &imFrame, bool bDraw = false);

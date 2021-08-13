@@ -156,7 +156,7 @@ Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
   }
   else { // If there is no map, try to make one.
     if(prevStage == APPLICATION_LAUNCHED) {
-    	printf("*** We don't have a map yet - trying to make one\n"); 
+        printf("*** We don't have a map yet - trying to make one\n"); 
     }
     return TrackForInitialMap();
   }
@@ -230,10 +230,13 @@ Tracker::ResetStatus Tracker::TrackForInitialMap() {
       for (list<Trail>::iterator i = mlTrails.begin(); i != mlTrails.end(); i++)
         vMatches.push_back(pair<ImageRef, ImageRef>(i->irInitialPos,
                                                     i->irCurrentPos));
+      printf("*** Calling MapMaker::InitFromStereo()... hopefully this works...\n");
       mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, vMatches, mse3CamFromWorld);  // This will take some time!
+      printf("*** MapMaker::InitFromStereo(): complete, now at TRAIL_TRACKING_COMPLETE stage!");
       mnInitialStage = TRAIL_TRACKING_COMPLETE;
       prevStage = TRAIL_TRACKING_COMPLETE;
       printf("*** TRAIL TRACKING COMPLETE!\n");
+      return BOTH_FRAMES_CAPTURED; 
     } else if (prevStage != TRAIL_TRACKING_STARTED) {
       printf("*** Trail tracking HAS started, i.e. user has 'pressed space' once...\n");
       printf("*** Waiting for user to 'press space' a second time...\n");
