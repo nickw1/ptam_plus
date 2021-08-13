@@ -36,6 +36,8 @@ Tracker::Tracker(ImageRef irVideoSize, const ATANCamera &c, Map &m, MapMaker &mm
   mpSBILastFrame = NULL;
   mpSBIThisFrame = NULL;
 
+  prevStage = APPLICATION_LAUNCHED; 
+
   // Most of the initialisation is done in Reset()
   Reset();
 }
@@ -137,10 +139,12 @@ Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
           mMapMaker.NeedNewKeyFrame(mCurrentKF) &&
           mnFrame - mnLastKeyFrameDropped > 20  &&
           mMapMaker.QueueSize() < 3) {
+        printf("*** Adding key frame!\n");
         mMessageForUser << " Adding key-frame.";
         AddNewKeyFrame();
       }
     } else {  // what if there is a map, but tracking has been lost?
+      printf("*** There is a map, but tracking has been lost!!!\n");
       mMessageForUser << "** Attempting recovery **.";
       if (AttemptRecovery()) {
         TrackMap();
@@ -151,7 +155,9 @@ Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 //      RenderGrid();
   }
   else { // If there is no map, try to make one.
-    printf("*** We don't have a map yet - trying to make one\n");
+    if(prevStage == APPLICATION_LAUNCHED) {
+    	printf("*** We don't have a map yet - trying to make one\n"); 
+    }
     return TrackForInitialMap();
   }
   return NOT_RESET;
@@ -164,9 +170,13 @@ Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
 // crazy when lost. Could use a tighter SSD threshold and return more false,
 // but the way it is now gives a snappier response and I prefer it.
 bool Tracker::AttemptRecovery() {
+  printf("Attempting recovery as tracking lost...\n");
   bool bRelocGood = mRelocaliser.AttemptRecovery(mCurrentKF);
-  if (!bRelocGood)
+  if (!bRelocGood) {
+    printf("... Couldn't do, sorry.\n");
     return false;
+  }
+  printf("... Recovered!\n");
 
   TooN::SE3<> se3Best = mRelocaliser.BestPose();
   mse3CamFromWorld = mse3StartPos = se3Best;
@@ -188,24 +198,26 @@ Tracker::ResetStatus Tracker::TrackForInitialMap() {
 
   // What stage of initial tracking are we at?
   if (mnInitialStage == TRAIL_TRACKING_NOT_STARTED) {
-    printf("*** Trail tracking NOT started...\n");
+    if(prevStage != TRAIL_TRACKING_NOT_STARTED) printf("*** Trail tracking NOT started...\n");
+    prevStage = TRAIL_TRACKING_NOT_STARTED;
     if (mbUserAskInitialTrack) {  // First spacebar = this is the first keyframe
       printf("*** User 'pressed space' : Starting trail tracking...\n");
       mbUserAskInitialTrack = false;
       TrailTracking_Start();
       mnInitialStage = TRAIL_TRACKING_STARTED;
-    } else {
-      printf("........ Waiting for 'space to be pressed'\n");
+      printf("... Trail traking started.\n");
+    } else if (prevStage != TRAIL_TRACKING_NOT_STARTED) {
+      printf(">>>>> Waiting for 'space to be pressed'. Point camera at planar scene and 'press spacebar' to start tracking for initial map.'\n");
       mMessageForUser << "Point camera at planar scene and press spacebar to start tracking for initial map." << endl;
     }
     return NOT_RESET;
   };
 
   if (mnInitialStage == TRAIL_TRACKING_STARTED) {
-    printf("*** Trail tracking HAS started, i.e. user has 'pressed space' once...\n");
     int nGoodTrails = TrailTracking_Advance();  // This call actually tracks the trails
+    // NW change to 5 to get success more often
     if (nGoodTrails < 10) { // if most trails have been wiped out, no point continuing.
-      printf("!!! Few good trails, giving up !!!\n");
+      printf("!!! Few good trails (%d), giving up !!!\n", nGoodTrails);
       Reset();
       return RESET;
     }
@@ -220,10 +232,14 @@ Tracker::ResetStatus Tracker::TrackForInitialMap() {
                                                     i->irCurrentPos));
       mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, vMatches, mse3CamFromWorld);  // This will take some time!
       mnInitialStage = TRAIL_TRACKING_COMPLETE;
+      prevStage = TRAIL_TRACKING_COMPLETE;
       printf("*** TRAIL TRACKING COMPLETE!\n");
-    } else {
+    } else if (prevStage != TRAIL_TRACKING_STARTED) {
+      printf("*** Trail tracking HAS started, i.e. user has 'pressed space' once...\n");
       printf("*** Waiting for user to 'press space' a second time...\n");
       mMessageForUser << "Translate the camera slowly sideways, and press spacebar again to perform stereo init." << endl;
+      printf(">>>>> Translate the camera slowly sideways, and press spacebar again to perform stereo init.\n");
+      prevStage = TRAIL_TRACKING_STARTED;
     }
   }
   return NOT_RESET;

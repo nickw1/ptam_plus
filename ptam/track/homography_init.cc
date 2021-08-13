@@ -66,6 +66,9 @@ bool HomographyInit::Compute(vector<HomographyMatch> vMatches,
 TooN::Matrix<3> HomographyInit::HomographyFromMatches(
     vector<HomographyMatch> vMatches) {
   unsigned int nPoints = vMatches.size();
+  if(nPoints < 4) {
+    printf("!!! ERROR - nPoints unexpectedly low: %d, should be >= 4\n", nPoints);
+  }
   assert(nPoints >= 4);
   int nRows = 2*nPoints;
   if (nRows < 9)

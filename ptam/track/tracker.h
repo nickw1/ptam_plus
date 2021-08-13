@@ -63,6 +63,7 @@ public:
   }
 
  protected:
+  enum Stage { APPLICATION_LAUNCHED, TRAIL_TRACKING_NOT_STARTED, TRAIL_TRACKING_STARTED, TRAIL_TRACKING_COMPLETE };
   KeyFrame mCurrentKF;            // The current working frame as a keyframe struct
 
   // The major components to which the tracker needs access:
@@ -75,9 +76,11 @@ public:
 
   // The following members are used for initial map tracking (to get the first stereo pair and correspondences):
   ResetStatus TrackForInitialMap();      // This is called by TrackFrame if there is not a map yet.
+  /*
   enum {TRAIL_TRACKING_NOT_STARTED,
   TRAIL_TRACKING_STARTED,
-  TRAIL_TRACKING_COMPLETE} mnInitialStage;  // How far are we towards making the initial map?
+  TRAIL_TRACKING_COMPLETE} mnInitialStage;  // How far are we towards making the initial map? */
+  Stage mnInitialStage, prevStage;
   void TrailTracking_Start();     // First frame of initial trail tracking. Called by TrackForInitialMap.
   int  TrailTracking_Advance();   // Steady-state of initial trail tracking. Called by TrackForInitialMap.
   std::list<Trail> mlTrails;      // Used by trail tracking
