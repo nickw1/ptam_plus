@@ -72,6 +72,8 @@ endif()
 add_definitions(-Dptam3_HAVE_TOON -DTOON_TYPEOF_DECLTYPE)
 add_compile_options("-pthread")
 add_link_options("-pthread")
+add_compile_options("-g")
+add_compile_options("-fsanitize=address")
 set(CMAKE_CXX_FLAGS ${PTAM_CXX_FLAGS})
 PTAM_build_setting()
 

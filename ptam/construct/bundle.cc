@@ -142,9 +142,11 @@ int Bundle::Compute(bool *pbAbortSignal) {
   }
 
   if (mbHitMaxIterations)
+	/*
     printf("  Hit max iterations.");
   printf("Final Sigma Squared:%.10f (=%.3f pixels)\n",
          mdSigmaSquared, std::sqrt(mdSigmaSquared)/4.685);
+	*/
   return mnAccepted;
 }
 

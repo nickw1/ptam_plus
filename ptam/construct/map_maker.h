@@ -61,7 +61,7 @@ public:
 protected:
 
   Map &mMap;               // The map
-  ATANCamera mCamera;      // Same as the tracker's camera: N.B. not a reference variable!
+  ATANCamera mCamera;      // Same as the tracker's camera: N.B. not a reference variable! 
   virtual void run();      // The MapMaker thread code lives here
 
   bool shouldStop() { return bStop;}

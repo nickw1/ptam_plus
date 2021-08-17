@@ -63,8 +63,6 @@ class CalibImage;
 class ATANCamera {
  public:
   ATANCamera(std::string sName);
-  // NW add
-  ~ATANCamera();
 
   // Image size get/set: updates the internal projection params to that target image size.
   void SetImageSize(TooN::Vector<2> v2ImageSize);
@@ -110,8 +108,7 @@ class ATANCamera {
  protected:
   //GVars3::gvar3<TooN::Vector<NUMTRACKERCAMPARAMETERS> > mgvvCameraParams; // The actual camera parameters
   // NW remove GVars3 - see .cc file
-  // use pointer to avoid having to change code
-  TooN::Vector<NUMTRACKERCAMPARAMETERS> * mgvvCameraParams; // The actual camera parameters
+  TooN::Vector<NUMTRACKERCAMPARAMETERS> mgvvCameraParams; // The actual camera parameters
 
   TooN::Matrix<2, NUMTRACKERCAMPARAMETERS> GetCameraParameterDerivs();
   void UpdateParams(TooN::Vector<NUMTRACKERCAMPARAMETERS> vUpdate);

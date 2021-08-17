@@ -89,10 +89,16 @@ Tracker::ResetStatus Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw) {
   static GVars3::gvar3<int> gvnUseSBI("Tracker.UseRotationEstimator", 1, GVars3::SILENT);
   mbUseSBIInit = *gvnUseSBI;
   if (!mpSBIThisFrame) {
+    printf("!!! Creating mpSBIThisFrame and mpSBILastFrame\n");
     mpSBIThisFrame = new SmallBlurryImage(mCurrentKF, *gvdSBIBlur);
     mpSBILastFrame = new SmallBlurryImage(mCurrentKF, *gvdSBIBlur);
   } else {
+    printf("!!! Deleting mpSBITLastFrame and setting it to mpSBIThisFrame\n");
+    if(mpSBILastFrame == NULL) {
+        printf("!!!!! Extreme warning - double deletion !!!!!\n");
+    }
     delete  mpSBILastFrame;
+    mpSBILastFrame = NULL;
     mpSBILastFrame = mpSBIThisFrame;
     mpSBIThisFrame = new SmallBlurryImage(mCurrentKF, *gvdSBIBlur);
   }

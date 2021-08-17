@@ -8,6 +8,7 @@ Map::Map() {
 }
 
 void Map::Reset() {
+  if(points.size() > 0) printf("!!! Map::Reset(): Deleting %d points\n", points.size());
   for (unsigned int i = 0; i < points.size(); i++)
     delete points[i];
   points.clear();
@@ -27,6 +28,7 @@ void Map::MoveBadPointsToTrash() {
 }
 
 void Map::EmptyTrash() {
+  if(trashed_points.size() > 0) printf("!!! Map::EmptyTrash(): Deleting %d trashed points\n", trashed_points.size());
   for (unsigned int i = 0; i < trashed_points.size(); i++)
     delete trashed_points[i];
   trashed_points.clear();
